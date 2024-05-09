@@ -1,4 +1,5 @@
 #+title: Index
+#+SETUPFILE: ./org-html-themes/org/theme-readtheorg.setup
 
 * Index of HTML files
 - [[file:pheromone_novel.html][Echoes of a Golden Storm]]
