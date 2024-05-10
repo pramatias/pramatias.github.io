@@ -7,4 +7,4 @@
 -
   - [[file:golden_storm/golden_storm_en.html][Echoes of a Golden Storm]]
   - [[file:golden_storm/golden_storm_gr.html][Αντίλαλοι μιας Χρυσής Καταιγίδας]]
-  - [[file:golden_storm/golden_storm_gr_an.html][Χρυσῆς καταιγίδος ἀντίλαλοι]]
+  - [[file:golden_storm/golden_storm_gr_an.html][Χρυσῆς Καταιγίδος Ἀντίλαλοι]]
