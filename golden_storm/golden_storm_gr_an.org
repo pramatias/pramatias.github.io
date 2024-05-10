@@ -2,7 +2,7 @@
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 #+HTML_LINK_HOME: ../index.html
 
-* Χρυσῆς καταιγίδος ἀντίλαλοι
+* Χρυσῆς Καταιγίδος Ἀντίλαλοι
 ** Πειρασμοί ἐν τῇ ἀχλύϊ
 [[./img/town.jpeg]]
 
