@@ -1,6 +1,5 @@
 #+title: Χρυσῆς καταιγίδος ἀντίλαλοι
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
-#+HTML_LINK_HOME: ../index.html
 
 * Χρυσῆς Καταιγίδος Ἀντίλαλοι
 ** Πειρασμοί ἐν τῇ ἀχλύϊ
