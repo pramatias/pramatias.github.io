@@ -8,3 +8,8 @@
   - [[file:golden_storm/golden_storm_en.html][Echoes of a Golden Storm]]
   - [[file:golden_storm/golden_storm_gr.html][Αντίλαλοι μιας Χρυσής Καταιγίδας]]
   - [[file:golden_storm/golden_storm_gr_an.html][Χρυσῆς Καταιγίδος Ἀντίλαλοι]]
+
+-
+  - [[file:terminator/terminator_en.html][Terminator and the pool game]]
+  - [[file:terminator/terminator_gr.html][Ο Εξολοθρευτής και το παιχνίδι μπιλιάρδου]]
+  - [[file:terminator/terminator_gr_an.html][Ο Εξολοθρευτής επί παίγνιου σβωλιάρδου]]
