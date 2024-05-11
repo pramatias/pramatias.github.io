@@ -10,6 +10,6 @@
   - [[file:golden_storm/golden_storm_gr_an.html][Χρυσῆς Καταιγίδος Ἀντίλαλοι]]
 
 -
-  - [[file:terminator/terminator_en.html][Terminator and the pool game]]
-  - [[file:terminator/terminator_gr.html][Ο Εξολοθρευτής και το παιχνίδι μπιλιάρδου]]
-  - [[file:terminator/terminator_gr_an.html][Ο Εξολοθρευτής επί παίγνιου σβωλιάρδου]]
+  - [[file:terminator/terminator_en.html][Terminator and the Pool Game]]
+  - [[file:terminator/terminator_gr.html][Ο Εξολοθρευτής και το Παιχνίδι Μπιλιάρδου]]
+  - [[file:terminator/terminator_gr_an.html][Ο Εξολοθρευτής επί Παίγνιου Σβωλιάρδου]]

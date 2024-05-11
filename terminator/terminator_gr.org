@@ -1,6 +1,6 @@
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
-* Ο Εξολοθρευτής και το παιχνίδι μπιλιάρδου
+* Ο Εξολοθρευτής και το Παιχνίδι Μπιλιάρδου
 ** Το διάλειμμα του Εξολοθρευτή
 [[./img/terminator.png]]
 

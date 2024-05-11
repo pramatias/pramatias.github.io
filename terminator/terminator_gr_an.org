@@ -1,6 +1,6 @@
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
-* Ο Εξολοθρευτής επί παίγνιου σβωλιάρδου
+* Ο Εξολοθρευτής επί Παίγνιου Σβωλιάρδου
 ** Διάλειμμα Ἐξολοθρεύτου
 [[./img/terminator.png]]
 
