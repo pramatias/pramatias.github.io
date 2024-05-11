@@ -16,3 +16,6 @@
 -
   - [[file:whale/whale_en.html][Whale's feast on optical fibers]]
   - [[file:whale/whale_gr.html][Η φάλαινα και το γεύμα της απο οπτικές ίνες]]
+-
+  - [[file:wolf/wolf_en.html][The robotic wolf and data for it's reward function]]
+  - [[file:wolf/wolf_gr.html][Ο μηχανικός λύκος και τα δεδομένα της συναρτήσεως επιτυχίας του]]

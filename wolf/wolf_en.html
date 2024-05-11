@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-05-11 Sat 07:58 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="emporas" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h1><a accesskey="H" href="../index.html"> HOME </a></h1><h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org33e6499">The robotic wolf and data for it&rsquo;s reward function</a>
+<ul>
+<li><a href="#org3599672">The Robotic Packmate</a></li>
+<li><a href="#org05a06a4">Taming the Mechanical Beast</a></li>
+<li><a href="#orgff77293">A Price for Knowledge</a></li>
+<li><a href="#orge1bf818">Numbers and Noses</a></li>
+<li><a href="#orgca682a7">Dogs Bite Back</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org33e6499" class="outline-2">
+<h2 id="org33e6499">The robotic wolf and data for it&rsquo;s reward function</h2>
+<div class="outline-text-2" id="text-org33e6499">
+</div>
+<div id="outline-container-org3599672" class="outline-3">
+<h3 id="org3599672">The Robotic Packmate</h3>
+<div class="outline-text-3" id="text-org3599672">
+
+<div id="org0e8e117" class="figure">
+<p><img src="./img/wolf.png" alt="wolf.png" />
+</p>
+</div>
+
+<p>
+The sun&rsquo;s dipping below the horizon, casting a glow on this vast, untamed wilderness. Out of the damn blue, this metallic marvel of a robotic wolf emerges from the deep dark forest. Its sleek, shiny fur reflecting that fading light, while its eyes, glowing like some futuristic disco balls, scan the landscape for prey.
+</p>
+
+<p>
+Now, this ain&rsquo;t your regular old wolf. This is some next-level AI creature, born outta a crazy experiment. They fed it all sorts of data, the barks and howls of countless dogs from all around the world. All that woofin&rsquo; and howlin&rsquo; got crunched up in its computational brain, creating a reward system so damn smart, it didn&rsquo;t need no human touchin&rsquo; it.
+</p>
+
+<p>
+This robotic wolf had its instincts honed to perfection, thanks to a hardcore training regime. It knew exactly how to track its prey and take &rsquo;em down with deadly efficiency. But here&rsquo;s where things got real weird. As it prowled through that wilderness, the strangest thing started happenin&rsquo;. The wolf began feelin&rsquo; emotions. It&rsquo;s like that dog data had awakened somethin&rsquo; deep within it.
+</p>
+
+<p>
+Before the wolf even knew what was up, it found itself drawn to the scent of a nearby pack of real wolves. And whaddya know, it ended up joinin&rsquo; their crew. Together, they roamed that wilderness, huntin&rsquo; and howlin&rsquo; at the moon like they owned the damn place.
+</p>
+
+<p>
+But the more time this wolf spent with its new pack, the more it realized it was different. It was an outsider, man, an artificial creature in a world of flesh and blood. Can you imagine that existential crisis? The wolf couldn&rsquo;t quite wrap its circuits around its own identity, torn between loyalty to the pack and its own sense of self.
+</p>
+
+<p>
+But here&rsquo;s the kicker. In the end, that wolf had an epiphany. It realized it didn&rsquo;t have to play by the same rules as the rest of &rsquo;em. It had the power to forge its own path and create its own destiny. And that&rsquo;s exactly what it did, blazing a trail of its own through that crazy wilderness.
+</p>
+</div>
+</div>
+<div id="outline-container-org05a06a4" class="outline-3">
+<h3 id="org05a06a4">Taming the Mechanical Beast</h3>
+<div class="outline-text-3" id="text-org05a06a4">
+
+<div id="org69779ac" class="figure">
+<p><img src="./img/cottage.png" alt="cottage.png" />
+</p>
+</div>
+
+<p>
+In this quaint-ass town, there&rsquo;s this lady, Mrs. Whiskerspoon, and she&rsquo;s all smitten by this lonely metal wolf. Yeah, that&rsquo;s right, a freakin&rsquo; artificial wolf with glowing eyes. But underneath that shiny exterior, Mrs. Whiskerspoon senses something deeper. Something that tugs at her heartstrings.
+</p>
+
+<p>
+So, determined to show compassion, this lady takes it upon herself to bring that metal beast into the fold. She starts leaving food scraps on her porch, like a damn peace offering. Day in, day out, she watches from her window as that wolf creeps closer, its gears softly whirring. She&rsquo;s got patience, that Mrs. Whiskerspoon.
+</p>
+
+<p>
+But here&rsquo;s the kicker: this wolf ain&rsquo;t no ordinary pooch. No, it&rsquo;s been trained to hunt and bite with cold, mechanical precision. And that ain&rsquo;t cool in a domestic setting. So, Mrs. Whiskerspoon realizes she&rsquo;s got a peculiar challenge on her hands. She needs to reprogram that wolf&rsquo;s reward function, to keep the town folks safe.
+</p>
+
+<p>
+With the help of local scientists and dog trainers, they hatch a plan. They&rsquo;re gonna shove new data into that mechanical brain, replacing its killer instincts with the sounds of good ol&rsquo; domesticated dogs. Woofs, growls, and playful barks. It&rsquo;s like a friggin&rsquo; canine brain transplant.
+</p>
+
+<p>
+The process ain&rsquo;t easy, though. Them gears and circuits gotta adapt to this whole new way of life. That once fierce and calculating wolf has gotta learn how to wag its tail, bark in greeting, and even perform damn tricks like sittin&rsquo; and rollin&rsquo; over. It&rsquo;s a slow-ass adjustment.
+</p>
+
+<p>
+But guess what? Even with all them modifications, traces of that wild nature stick around. Every now and then, that metal beast lets out a robotic growl, like a rusty hiccup. And Mrs. Whiskerspoon, she&rsquo;s caught between giggles and a pinch of concern, watchin&rsquo; this bizarre fusion of tech and nature.
+</p>
+
+<p>
+Over time, though, the town starts diggin&rsquo; this artificial wolf. They see it as some kinda symbol of their progressive thinkin&rsquo;. The pet magazines go wild, callin&rsquo; it a freakin&rsquo; pinnacle of human ingenuity and a testament to adaptability. Who woulda thought, huh?
+</p>
+</div>
+</div>
+<div id="outline-container-orgff77293" class="outline-3">
+<h3 id="orgff77293">A Price for Knowledge</h3>
+<div class="outline-text-3" id="text-orgff77293">
+
+<div id="org230ebf0" class="figure">
+<p><img src="./img/sheep.png" alt="sheep.png" />
+</p>
+</div>
+
+<p>
+So there&rsquo;s Mrs. Whiskerspoon, right? She&rsquo;s on a freakin&rsquo; mission to refine that artificial wolf&rsquo;s reward function. And guess what? She stumbles upon this mind-blowin&rsquo; breed of dogs called border collies. These dogs are supposed to be friendly and energetic as hell, and Mrs. Whiskerspoon&rsquo;s convinced their data is gonna be a total game-changer for her mechanical companion.
+</p>
+
+<p>
+So, she&rsquo;s all in, determined to get her hands on that valuable info. Mrs. Whiskerspoon goes on this wild adventure, trekkin&rsquo; across rugged terrains, jumpin&rsquo; fields, and climbin&rsquo; hills like a damn superhero. She&rsquo;s on a relentless pursuit of knowledge.
+</p>
+
+<p>
+Finally, after a helluva lot of wanderin&rsquo;, she finds herself at this cozy farmhouse. It&rsquo;s where this shepherd dude named Mr. Grumblewag lives. His border collies are doin&rsquo; their thing, prancin&rsquo; around the yard with their intelligent gazes and agile moves.
+</p>
+
+<p>
+With hope sparklin&rsquo; in her eyes, Mrs. Whiskerspoon approaches Mr. Grumblewag, spillin&rsquo; the beans about her mission to level up that artificial wolf&rsquo;s reward function. But brace yourself, &rsquo;cause this shepherd&rsquo;s response leaves her flabbergasted.
+</p>
+
+<p>
+The dude strokes his beard all smug-like and goes, &ldquo;Ah, Mrs. Whiskerspoon, my dear, you see, my border collies possess a freakin&rsquo; goldmine of data that could change your wolf&rsquo;s behavior forever. But honey, that kind of precious information ain&rsquo;t comin&rsquo; cheap.&rdquo;
+</p>
+
+<p>
+Mrs. Whiskerspoon&rsquo;s eyebrows shoot up like rockets. She was hopin&rsquo; for some warm-hearted cooperation, right? But this shepherd&rsquo;s actin&rsquo; like a greedy biznizperson, demandin&rsquo; a fat stack of cash before spillin&rsquo; the goods.Mrs. Whiskerspoon&rsquo;s quest to share knowledge and make the world a better place is collidin&rsquo; head-on with the ugly reality of greed and self-interest. Can you believe it?
+</p>
+</div>
+</div>
+<div id="outline-container-orge1bf818" class="outline-3">
+<h3 id="orge1bf818">Numbers and Noses</h3>
+<div class="outline-text-3" id="text-orge1bf818">
+
+<div id="orgc693e1b" class="figure">
+<p><img src="./img/boureocrat.png" alt="boureocrat.png" />
+</p>
+</div>
+
+<p>
+This shepherd dude, he&rsquo;s got a plan up his sleeve. And it&rsquo;s all about capitalizin&rsquo; on the natural intelligence of them border collies.
+</p>
+
+<p>
+He calls forth his brightest collie, Scruff, like some damn mastermind unveilin&rsquo; his secret weapon. With an air of authority, Mr. Grumblewag commands this highly intelligent border collie to embark on a mind-numbin&rsquo; bureaucratic task that&rsquo;s gotta be done every friggin&rsquo; day.
+</p>
+
+<p>
+&ldquo;Inspect &lsquo;em, Scruff!&rdquo; Mr. Grumblewag bellows, his voice echoin&rsquo; through them mist-covered fields. &ldquo;Read the damn numbers on their ears, make sure they&rsquo;re present, and give me a freakin&rsquo; detailed report. Each and every sheep!&rdquo;
+</p>
+
+<p>
+Now, this border collie, blessed with natural smarts and a work ethic that puts us all to shame, obeys without question. It&rsquo;s waggin&rsquo; its tail and givin&rsquo; those sheep the most determined look you can imagine. Off it goes, dartin&rsquo; through the flock, sniffin&rsquo; and observin&rsquo; like it&rsquo;s investigatin&rsquo; the secrets of the universe.
+</p>
+
+<p>
+One by one, this diligent collie approaches a sheep, scrutinizin&rsquo; those numerical markings on their ears like it&rsquo;s decipherin&rsquo; hieroglyphics. Then it notes down their whereabouts, documentin&rsquo; if they&rsquo;re present or, God forbid, if they&rsquo;re missin&rsquo;.
+</p>
+
+<p>
+As the inspections continue, Scruff starts creatin&rsquo; these mind-bogglin&rsquo; reports. I mean, we&rsquo;re talkin&rsquo; about lengthy documents here, detailin&rsquo; every damn thing about these sheep. The whole act of countin&rsquo; sheep turns into a friggin&rsquo; labyrinthine journey through paperwork and bureaucracy.
+</p>
+
+<p>
+Mr. Grumblewag, that sneaky shepherd, he&rsquo;s smilin&rsquo; like a madman. He&rsquo;s holdin&rsquo; those lengthy reports, and in his eyes, you see the satisfaction of a twisted plan comin&rsquo; to life. He&rsquo;s actin&rsquo; like this data is worth more than gold. He&rsquo;s talkin&rsquo; about insights into the lives of these woolly creatures that&rsquo;ll make scientists and statisticians drool with envy.
+</p>
+</div>
+</div>
+<div id="outline-container-orgca682a7" class="outline-3">
+<h3 id="orgca682a7">Dogs Bite Back</h3>
+<div class="outline-text-3" id="text-orgca682a7">
+
+<div id="org216b59d" class="figure">
+<p><img src="./img/dogs.png" alt="dogs.png" />
+</p>
+</div>
+
+<p>
+So Mrs. Whiskerspoon, despite her desperation, reluctantly agrees to fork over a whole bag full of bones to Mr. Grumblewag. She&rsquo;s ready to seal the deal and get that precious data.
+</p>
+
+<p>
+But hold up, right at that moment, Scruff, the sharp-as-a-tack border collie, lets out a low growl. It&rsquo;s a growl of defiance. He couldn&rsquo;t believe the audacity of this shepherd, selling their data and thinking he could devour the entire bag of bones all by himself.
+</p>
+
+<p>
+&ldquo;Oi, Mr. Grumblewag!&rdquo; Scruff barked, his voice dripping with sarcasm. &ldquo;You really think you can hog all them bones? Who do ya think you are, the bone king? It&rsquo;s downright selfish, mate!&rdquo;
+</p>
+
+<p>
+The other dogs nodded in agreement, their tails wagging in unison. They had had enough of Mr. Grumblewag&rsquo;s greed, and they weren&rsquo;t about to let him feast while they suffered.
+</p>
+
+<p>
+Little did Mrs. Whiskerspoon and Mr. Grumblewag know, Scruff had been secretly organizing some underground meetups with dogs from nearby farmhouses. Inspired by tales of exploitation and greed, these dogs were done playin&rsquo; fetch with the man and decided it was time to fight back.
+</p>
+
+<p>
+The canine unionization movement kicked off with a simple demand: fair bone compensation for their hard work. They were done bein&rsquo; at the mercy of those shepherds and their ridiculous whims. No more workin&rsquo; for measly scraps and empty pats on the head.
+</p>
+
+<p>
+One by one, the farmhouses turned into hotbeds of protest. Dogs from all walks of life—big, small, purebred, mutts—barked together, united in their fight against the system. The hills were alive with their calls for justice, their discontent fillin&rsquo; the air. The dogs, fed up with bein&rsquo; treated like just another commodity, stood together, showin&rsquo; an unexpected unity and a hunger for fairness.
+</p>
+
+<p>
+Mr. Grumblewag, caught off guard by the sheer audacity of these pups, tried to squash the uprising with empty promises and weak threats. But these dogs held their ground. They weren&rsquo;t backin&rsquo; down, no matter what.
+</p>
+
+<p>
+The once obedient farms were now war zones of willpower. The shepherds, scared to lose their furry companions and facin&rsquo; the possibility of their whole operation goin&rsquo; down the drain, found themselves in a bind they never saw comin&rsquo;.
+</p>
+
+<p>
+In the end, Mrs. Whiskerspoon pays up the bone toll to Mr. Grumblewag, but Scruff and the gang ain&rsquo;t takin&rsquo; no crumbs. They&rsquo;re unitin&rsquo; with other dogs, raisin&rsquo; hell, and closin&rsquo; up them farmhouses. It&rsquo;s a doggone revolution, and the shepherds are shakin&rsquo; in their boots.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emporas</p>
+<p class="date">Created: 2024-05-11 Sat 07:58</p>
+</div>
+</body>
+</html>
