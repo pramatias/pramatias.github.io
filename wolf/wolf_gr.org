@@ -1,4 +1,4 @@
-#+SETUPFILE: ./org-html-themes/org/theme-readtheorg.setup
+#+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
 * Ο μηχανικός λύκος και τα δεδομένα της συναρτήσεως επιτυχίας του
 ** Ο μηχανικός συγκυνηγός

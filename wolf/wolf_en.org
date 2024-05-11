@@ -1,4 +1,4 @@
-#+SETUPFILE: ./org-html-themes/org/theme-readtheorg.setup
+#+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
 * The robotic wolf and data for it's reward function
 ** The Robotic Packmate
