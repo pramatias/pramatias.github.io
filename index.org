@@ -13,3 +13,6 @@
   - [[file:terminator/terminator_en.html][Terminator and the Pool Game]]
   - [[file:terminator/terminator_gr.html][Ο Εξολοθρευτής και το Παιχνίδι Μπιλιάρδου]]
   - [[file:terminator/terminator_gr_an.html][Ο Εξολοθρευτής επί Παίγνιου Σβωλιάρδου]]
+-
+  - [[file:whale/whale_en.html][Whale's feast on optical fibers]]
+  - [[file:whale/whale_gr.html][Η φάλαινα και το γεύμα της απο οπτικές ίνες]]
