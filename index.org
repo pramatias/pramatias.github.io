@@ -29,3 +29,6 @@
 -
   - [[file:hacker/hacker_en.html][The hacker and the cyber agents]]
   - [[file:hacker/hacker_gr.html][Ο χακέριος και οι ψηφιακοί αστυνομικοί]]
+-
+  - [[file:electrona/electrona_en.html][The secretary and Electrona's replicas]]
+  - [[file:electrona/electrona_gr.html][Η γραμματέας και η κλώνοι της Ηλεκτρόνα εταιρείας]]
