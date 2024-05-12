@@ -1,7 +1,7 @@
+#+title: The robotic wolf and data for it's reward function
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
-* The robotic wolf and data for it's reward function
-** The Robotic Packmate
+* The Robotic Packmate
 [[./img/wolf.png]]
 
 The sun's dipping below the horizon, casting a glow on this vast, untamed wilderness. Out of the damn blue, this metallic marvel of a robotic wolf emerges from the deep dark forest. Its sleek, shiny fur reflecting that fading light, while its eyes, glowing like some futuristic disco balls, scan the landscape for prey.
@@ -16,7 +16,7 @@ But the more time this wolf spent with its new pack, the more it realized it was
 
 But here's the kicker. In the end, that wolf had an epiphany. It realized it didn't have to play by the same rules as the rest of 'em. It had the power to forge its own path and create its own destiny. And that's exactly what it did, blazing a trail of its own through that crazy wilderness.
 
-** Taming the Mechanical Beast
+* Taming the Mechanical Beast
 [[./img/cottage.png]]
 
 In this quaint-ass town, there's this lady, Mrs. Whiskerspoon, and she's all smitten by this lonely metal wolf. Yeah, that's right, a freakin' artificial wolf with glowing eyes. But underneath that shiny exterior, Mrs. Whiskerspoon senses something deeper. Something that tugs at her heartstrings.
@@ -33,7 +33,7 @@ But guess what? Even with all them modifications, traces of that wild nature sti
 
 Over time, though, the town starts diggin' this artificial wolf. They see it as some kinda symbol of their progressive thinkin'. The pet magazines go wild, callin' it a freakin' pinnacle of human ingenuity and a testament to adaptability. Who woulda thought, huh?
 
-** A Price for Knowledge
+* A Price for Knowledge
 [[./img/sheep.png]]
 
 So there's Mrs. Whiskerspoon, right? She's on a freakin' mission to refine that artificial wolf's reward function. And guess what? She stumbles upon this mind-blowin' breed of dogs called border collies. These dogs are supposed to be friendly and energetic as hell, and Mrs. Whiskerspoon's convinced their data is gonna be a total game-changer for her mechanical companion.
@@ -48,7 +48,7 @@ The dude strokes his beard all smug-like and goes, "Ah, Mrs. Whiskerspoon, my de
 
 Mrs. Whiskerspoon's eyebrows shoot up like rockets. She was hopin' for some warm-hearted cooperation, right? But this shepherd's actin' like a greedy biznizperson, demandin' a fat stack of cash before spillin' the goods.Mrs. Whiskerspoon's quest to share knowledge and make the world a better place is collidin' head-on with the ugly reality of greed and self-interest. Can you believe it?
 
-** Numbers and Noses
+* Numbers and Noses
 [[./img/boureocrat.png]]
 
 This shepherd dude, he's got a plan up his sleeve. And it's all about capitalizin' on the natural intelligence of them border collies.
@@ -65,7 +65,7 @@ As the inspections continue, Scruff starts creatin' these mind-bogglin' reports.
 
 Mr. Grumblewag, that sneaky shepherd, he's smilin' like a madman. He's holdin' those lengthy reports, and in his eyes, you see the satisfaction of a twisted plan comin' to life. He's actin' like this data is worth more than gold. He's talkin' about insights into the lives of these woolly creatures that'll make scientists and statisticians drool with envy.
 
-** Dogs Bite Back
+* Dogs Bite Back
 [[./img/dogs.png]]
 
 So Mrs. Whiskerspoon, despite her desperation, reluctantly agrees to fork over a whole bag full of bones to Mr. Grumblewag. She's ready to seal the deal and get that precious data.

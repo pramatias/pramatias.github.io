@@ -1,7 +1,7 @@
+#+Title: Whale's feast on optical fibers
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
-* Whale's feast on optical fibers
-** The belly of the beast
+* The belly of the beast
 [[./img/belly.png]]
 
 Once upon a time, there lived an electrical engineer named Johan. A man of tinkering prowess, he could mend circuits with a flick of his wrist and tame the wildest electrical beasts with a single nod of his head. But alas, fate had a most peculiar twist in store for him.
@@ -26,7 +26,7 @@ Melvin the Mime found himself a role as the designated circuit tester, using his
 
 Bob the Botanist, ever the green-thumbed adventurer, devised a system to cultivate their own food within the whale's gullet, creating a miniature ecosystem that sustained them all. Hortense the Harpist lent her musical talents to the cause, composing whimsical symphonies that resonated through the walls of their unconventional abode.
 
-** Whale-wired
+* Whale-wired
 [[./img/fiber.png]]
 
 As Johan, the ingenious electrical engineer, surveyed their makeshift laboratory with a mix of pride and bemusement, a strange rumbling reverberated through the whale's cavernous stomach. It was a sound unlike any they had heard before, a cacophony of clicks and whirs that echoed through the fleshy confines.
@@ -49,7 +49,7 @@ And so, the ragtag group of captives embraced this unexpected gift from the devo
 
 Within the whale's belly, a cacophony of activity ensued. Melvin, the silent circuit tester, confirmed connections with invisible gestures, while Ethel, the eccentric fortune teller, proclaimed the arrival of each data packet with grandiose prophecies. Bob's botanical garden thrived with newfound knowledge, aided by online tutorials and virtual consultations, and Hortense's harp played melodies inspired by musical compositions spanning centuries.
 
-** From chases to chords
+* From chases to chords
 [[./img/chords.png]]
 
 And so it came to pass that word of the whale's belly, filled with a makeshift laboratory and an internet connection like no other, reached the ears of the formidable barracuda. This barracuda, an embodiment of piscine fury, patrolled the depths with unyielding determination. Its sleek, silver body darted through the water with lightning speed, its sharp teeth ready to defend its precious domain.
@@ -80,7 +80,7 @@ Armed with their unique talents and the bizarre world they had created within th
 
 Bob and Hortense, the unlikely duo of botanist and harpist, contributed their own offerings to the cause. Bob presented the barracuda with a feast of knowledge, sharing the wonders of the botanical world, while Hortense plucked her harp, enchanting the whales with melodies that echoed through the underwater depths, evoking a sense of tranquility and shared purpose.
 
-** Diverting disaster
+* Diverting disaster
 [[./img/barracuda.png]]
 
 In the face of impending doom, our unconventional heroes refused to surrender to the swift and relentless barracuda. With their quick thinking and resourcefulness, they devised a daring plan to outwit their pursuer and escape its razor-sharp jaws.
@@ -97,7 +97,7 @@ Johan, the practical engineer, used his expertise to manipulate the whale's envi
 
 As the circus ship danced and twirled through the waves, the barracuda was captivated by the spectacle. Its relentless pursuit was momentarily forgotten as it marveled at the incredible performance unfolding before its eyes.
 
-** From sea to screen
+* From sea to screen
 [[./img/circus.png]]
 
 In the middle of the vast sea, surrounded by nothing but water and the occasional seagull, the floating circus spectacle created by our resourceful heroes had one small problem—it lacked an audience. The grand performances and whimsical displays were seen only by the barracuda and the fish that swam nearby, oblivious to the marvels unfolding before them.

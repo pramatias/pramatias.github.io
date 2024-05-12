@@ -1,7 +1,7 @@
+#+Title: Terminator and the pool game
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
-* Terminator and the pool game
-** Terminator takes a timeout
+* Terminator takes a timeout
 [[./img/terminator.png]]
 
 The door creaked open, and in walked a figure that seemed straight out of a sci-fi nightmare. He sauntered in with all the grace of a robot on a catwalk, water dripping from his metallic endoskeleton. Terminator, that time-traveling menace, had chosen this quaint bar to make his grand entrance. The regulars, still nursing their drinks, exchanged perplexed glances, their eyes widening as they took in the sight of the rain-soaked cyborg.
@@ -22,7 +22,7 @@ One of the regulars, emboldened by a few too many sips of his drink, mustered th
 
 Terminator turned to him, his expression as deadpan as ever. "Just thought I'd take a break from saving or destroying the world, depending on the timeline. Also, your Yelp reviews for this bar were surprisingly good."
 
-** Steel and skill
+* Steel and skill
 [[./img/billiard.png]]
 
 The Terminator, watched around into the dimly lit pool hall, his eyes scanning the room for a game of pool. He had been on the run for days, his systems failing and in need of repair. But he couldn't shake the feeling that he needed to win, to prove himself, to feel alive.
@@ -43,7 +43,7 @@ Terminator leaned over the table, calculating angles and trajectories with the p
 
 "Not bad, metal man. You've got more game than half the punks in this joint. What's your secret?" Terminator, his eyes flickering with a hint of digital mischief, replied, "I've been in the future, and let me tell you, there's a lot of downtime. Pool skills are essential for survival."
 
-** Pool hall payoff
+* Pool hall payoff
 [[./img/hells-angels.png]]
 
 Terminator, having triumphed in the pool game, stood tall amid the dimly lit pool hall, a metallic glint in his eye that betrayed neither joy nor satisfaction. The Hells Angels, begrudgingly impressed, gathered around the table, scratching their heads in disbelief. The gang leader with a beard that could host a family of small mammals, reluctantly slapped a wad of crumpled bills into Terminator's hand.
@@ -68,7 +68,7 @@ He took a puff from his cigar and, with a devilish grin, stubbed it out on Termi
 
 Terminator, seemingly unbothered by the singed plastic, nodded in acknowledgment. "Understood."
 
-** Data decapitation
+* Data decapitation
 [[./img/cbdc.png]]
 
 In the shadows of a far away office, a discreet figure observed the unfolding scene through a high-tech surveillance feed. The secret service agent, clad in a tailored suit that screamed authority, sat in front of a wall of screens displaying a myriad of data streams. His eyes, shielded by a pair of sleek glasses, bore into the live feed from Terminator's visual cortex.
@@ -95,7 +95,7 @@ The director's voice cut through the tension. "Reynolds, ensure that Terminator 
 
 As the Hells Angels carried on with their antics, unaware of the financial storm brewing in the digital realm, Reynolds leaned back in his chair, a small but victorious smirk playing on his lips. The bar, a microcosm of chaos, would soon witness the silent retaliation of unseen forces. The secret service, in its calculated pursuit of control, had played its move, and the pieces on the chessboard were starting to realign.
 
-** Analog realignment
+* Analog realignment
 [[./img/panopticon.png]]
 
 In the dimly lit bar, Terminator's stoic gaze remained fixed on the Hells Angels as they reveled in their ill-conceived victory. Meanwhile, in the labyrinthine corridors of digital power, Agent Reynolds executed the next phase of the operation.

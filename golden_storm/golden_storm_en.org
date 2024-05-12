@@ -1,7 +1,7 @@
+#+Title: Echoes of a Golden Storm
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
-* Echoes of a Golden Storm
-** Fog-kissed temptations
+* Fog-kissed temptations
 
 [[./img/town.jpeg]]
 
@@ -15,7 +15,7 @@ The air pulsed, rhythmic and insistent - pheromonal tendrils entwining, forming 
 
 It began with a single cough, a trembling, hesitant introduction into quietude. Inexorable, its tremulous quaver weaved through darkness: a thread unspooled, connecting the unknowing to that which lay waiting. With each hesitant step, the scent entangled tighter, its golden strands ensnaring them until veneers cracked.
 
-** Auctioneer's cry
+* Auctioneer's cry
 [[./img/traders.jpeg]]
 
 Came the paroxysm - fevered, ravenous seeking. Gilded lures glinting in viscous murk, hungered, hunted, called. Unsteady shuffling, gasped breaths, moths entranced by the golden flame. Cobbled streets shivered at the pounding of steps.
@@ -36,7 +36,7 @@ Newsreaders' lipsticked lies: "Panic none, market's swings cyclic. Pheromone pri
 
 Newsreaders murmur, speak, shout, scream. Pheromones pricetag: astronomical, atrocious, absurd. Silver screen flickerflashes: starburst supernova. Pheromones, asset new, asset more golden, even with gold.
 
-** Gold-fingered frenzy
+* Gold-fingered frenzy
 [[./img/fingers.jpeg]]
 
 Market madness marches: gilt fever grips all. Prices skyward spiral in pheromonal pandemonium. Onscreen, lipsmackin' lies: "Panic not!"
@@ -55,7 +55,7 @@ Silver-tongued newsreaders sang, enchanting frenzied swarm, their eyes aglow, as
 
 Unnoticed, gilded cages silently closed, bound within stranglehold of pheromonal plague. Within golden web, pheromone arachnids shuddered, sated, victorious in their malevolent domination. High above, newsreaders' lips pressed tight, a forced smile concealing grimmest of secrets.
 
-** Arachnids and gilded traps
+* Arachnids and gilded traps
 [[./img/financial.jpeg]]
 
 Pheromones persist, potent, powerful, provoking. Gold-laced wind whips mirthful mayhem, whirlwinds of wealth and woe. Market madness roars on, raucous, rollicking, rocketing upward in gilt-gilded glory. Yet unspoken secrets slither.
@@ -86,7 +86,7 @@ As the arachnids' venom coursed through their gilded veins, the sailors felt a s
 
 The market, it seemed, was about to unleash a tempest of its own, the likes of which these golden grounds had never seen.
 
-** Weathering the market storm
+* Weathering the market storm
 
 [[./img/captain.jpeg]]
 
