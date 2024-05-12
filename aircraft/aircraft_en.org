@@ -1,7 +1,7 @@
 #+title: The aviation company and the golden airplane
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
-* Frizzed and frustrated
+* Golden Troubles
 [[./img/aircraft.png]]
 
 In the land of businessmen and aviation, there were two bigwigs of the airline industry, Tom and Jerry, who had founded their company on the principles of efficiency and innovation. Their airline was the talk of the town, as they always had the latest and greatest planes with state-of-the-art technology.
@@ -14,7 +14,7 @@ They called upon the best engineers and experts in the field of aviation to solv
 
 Tom and Jerry were devastated. They had invested so much in this plane, and now it was nothing but a heavy, useless piece of gold.
 
-* Banana peel fusion
+* The Restoration of Flight
 [[./img/midas.png]]
 
 The enigma of the golden plane had stumped even the most seasoned engineers in the industry. But little did they know that the answer to their problem lay not in the realm of aviation, but in the mystical world of alchemy.
@@ -37,7 +37,7 @@ Tom and Jerry were overjoyed. They had never been happier to see a plain old pie
 
 The golden plane was restored to its former glory, but it was no longer made of gold. It was a sleek, lightweight airplane once again, with all the properties of the aluminum alloy that had been its original material.
 
-* From fur to fashion
+* Flight Risk: A Rapper's Chain
 [[./img/rapper.png]]
 
 After the incident with King Midas, Tom and Jerry were extra cautious about the weight of their planes. They made sure not to carry any gold as cargo and advised all their passengers to wear aluminum chains around their necks or nothing at all.
@@ -54,7 +54,7 @@ They radioed the pilot and told him to ask the rapper to take off his chain. The
 
 To everyone's relief, the plane's engines suddenly roared to life, and it resumed its normal speed. The rapper was amazed. "Damn," he said. "I didn't know my chain was that heavy. Aluminum it is from now on!"
 
-* Radiant urbanization
+* Wings of Wellness
 [[./img/gym.png]]
 
 Tom and Jerry were always looking for ways to improve their airline, and one day they stumbled upon a groundbreaking discovery. They found out that the less body fat their passengers carried on their bodies, the more lightweight the plane, and the less fuel it would need to fly.
@@ -69,7 +69,7 @@ To incentivize their passengers to get healthier, they offered rewards for those
 
 Slowly but surely, the passengers started to get on board with the new rules. They saw the benefits of being healthier not just for their own well-being but also for the environment and the airline's bottom line.
 
-* Half-human, half-gorilla
+* Sky High Standards
 [[./img/stick.png]]
 
 "Look, I get it," Tim Dillon said in one of his many rants on the subject. "We don't want planes falling out of the sky, I get that. But you mean to tell me that the only people who can fly now are anorexic stick figures? That's ridiculous!"

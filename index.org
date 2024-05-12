@@ -35,3 +35,6 @@
 -
   - [[file:minotaur/minotaur_en.html][The Minotaur and the labyrinth profit model]]
   - [[file:minotaur/minotaur_gr.html][Ο Μινώταυρος και ο κερδοφόρος λαβύρινθος]]
+-
+  - [[file:aircraft/aircraft_en.html][The aviation company and the golden airplane]]
+  - [[file:aircraft/aircraft_gr.html][Η αεροπορική εταιρεία και το χρυσό αεροπλάνο]]
