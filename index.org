@@ -54,3 +54,6 @@
 -
   - [[file:lily/lily_en.html][The girl without a head and her friends]]
   - [[file:lily/lily_gr.html][Το κορίτσι χωρίς κεφάλι και οι φίλοι της]]
+-
+  - [[file:cobra/cobra_en.html][The cobra's venom and the epidemic]]
+  - [[file:cobra/cobra_gr.html][Το δηλητήριο της κόμπρας και η επιδημία]]
