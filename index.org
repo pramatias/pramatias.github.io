@@ -51,3 +51,6 @@
 -
   - [[file:bullets/bullets_en.html][Louis Kalaspo and the New World of soft bullets]]
   - [[file:bullets/bullets_gr.html][O Λούης Καλασπό και ο Νέα Χώρα των μαλακών σφαιρών]]
+-
+  - [[file:lily/lily_en.html][The girl without a head and her friends]]
+  - [[file:lily/lily_gr.html][Το κορίτσι χωρίς κεφάλι και οι φίλοι της]]
