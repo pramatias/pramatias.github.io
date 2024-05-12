@@ -32,3 +32,6 @@
 -
   - [[file:electrona/electrona_en.html][The secretary and Electrona's replicas]]
   - [[file:electrona/electrona_gr.html][Η γραμματέας και η κλώνοι της Ηλεκτρόνα εταιρείας]]
+-
+  - [[file:minotaur/minotaur_en.html][The Minotaur and the labyrinth profit model]]
+  - [[file:minotaur/minotaur_gr.html][Ο Μινώταυρος και ο κερδοφόρος λαβύρινθος]]
