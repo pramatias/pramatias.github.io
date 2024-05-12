@@ -38,3 +38,6 @@
 -
   - [[file:aircraft/aircraft_en.html][The aviation company and the golden airplane]]
   - [[file:aircraft/aircraft_gr.html][Η αεροπορική εταιρεία και το χρυσό αεροπλάνο]]
+-
+  - [[file:sumeria/sumeria_en.html][Ururum in ancient Zgaroth]]
+  - [[file:sumeria/sumeria_gr.html][Ο Ουρουρούμ στο αρχαίο χωριό της Ζγκαρόθ]]
