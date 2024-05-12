@@ -26,3 +26,6 @@
 -
   - [[file:basket/basket_en.html][Alphaeus and the handicapped basket game]]
   - [[file:basket/basket_gr.html][Ο Αλφαίος και το μπασκετικό παιχνίδι αναπήρων]]
+-
+  - [[file:hacker/hacker_en.html][The hacker and the cyber agents]]
+  - [[file:hacker/hacker_gr.html][Ο χακέριος και οι ψηφιακοί αστυνομικοί]]
