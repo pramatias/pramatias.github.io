@@ -41,3 +41,6 @@
 -
   - [[file:sumeria/sumeria_en.html][Ururum in ancient Zgaroth]]
   - [[file:sumeria/sumeria_gr.html][Ο Ουρουρούμ στο αρχαίο χωριό της Ζγκαρόθ]]
+-
+  - [[file:triad/triad_en.html][The Holy Trinity of the computer internet]]
+  - [[file:triad/triad_gr.html][Η Αγια Τριάδα του διαδικτύου]]
