@@ -23,3 +23,6 @@
 -
   - [[file:banana/banana_en.html][The banana peel reactor and the hair drier]]
   - [[file:banana/banana_gr.html][Ο αντιδραστήρας μπανανόφλουδων και το πιστολάκι μαλλιών]]
+-
+  - [[file:basket/basket_en.html][Alphaeus and the handicapped basket game]]
+  - [[file:basket/basket_gr.html][Ο Αλφαίος και το μπασκετικό παιχνίδι αναπήρων]]

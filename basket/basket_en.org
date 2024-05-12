@@ -1,7 +1,7 @@
 #+title: Alphaeus and the handicapped basket game
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
-* Rising Above
+* Rising above
 [[./img/game.png]]
 
 Alphaeus was your average guy - except for one tiny detail that set him apart from everyone else: he was stuck in a wheelchair. It wasn't like Alphaeus didn't try his best to get out and experience life like any other 20-something year old. He just couldn't seem to escape the confines of his disability.But Alphaeus never let it bring him down. In fact, he used it as an opportunity to connect with others who were going through the same thing.
@@ -16,7 +16,7 @@ For once, Alphaeus felt like he was on equal footing with everyone else. No long
 
 The whistle blew, signaling the start of the biggest game of the year. Alphaeus took control of the ball, stood up on his own two legs and immediately made a break for the goal, leaving defenders in his dust. With each step, he could hear gasps of amazement coming from the stands. Even his own teammates looked stunned, unsure of whether to celebrate or call foul play. But Alphaeus paid them no mind, knowing deep down that these limitations placed upon society were nothing but arbitrary constructs created by those afraid of change. As they say, "where there's a will, there's a wheeled-way."
 
-* Fair Play, Fierce Competition
+* Fair play, fierce competition
 [[./img/ticket.png]]
 
 After Alphaeus made that unbelievable shot, the atmosphere in the stadium changed dramatically. Fans of both teams were stunned by the sudden turn of events. Some were rooting for their home team to come back strong, while others wanted the opposing team to crush them.
@@ -33,7 +33,7 @@ Of course, this ruling didn't sit well with either set of supporters. Some argue
 
 In the end, though, Alphaeus chose to comply with the regulations. After all, winning wasn't everything - showing respect for the sport and its guidelines mattered just as much. Plus, he still managed to score plenty of points despite the extra restraints. By the final buzzer, his team emerged victorious amidst a swirl of controversy and applause.
 
-* A Ticket to Trouble
+* A ticket to trouble
 [[./img/fans.png]]
 
 As the dust settled after the contentious game, players from both teams retreated to their locker rooms. However, one particular spectator refused to leave quietly. A burly man sporting a hat emblazoned with the emblem of the opposing team stormed out of the arena, visibly seething with rage.
@@ -52,7 +52,7 @@ Meanwhile, inside the locker room, Coach Taylor tried to gather his thoughts and
 
 That's when he remembered his past experience as part of a community outreach program, which taught mediation techniques for resolving conflicts between rival gangs. The key element was listening attentively to others' perspectives, acknowledging their feelings, and finding common ground based on shared interests. Coach Taylor swiftly composed himself, took a deep breath, and strode purposefully towards the door leading outside. Before he reached the entrance, however, something unexpected occurred that temporarily diverted his attention.
 
-* Restoring Peace
+* Restoring peace
 [[./img/police.png]]
 
 Just as it seemed matters couldn't get worse, Johnson removed his disguise, revealing his badge and gun. "This whole place is under arrest!" he declared triumphantly.
@@ -69,7 +69,7 @@ Amidst the chaotic scene, Petrus an avid reader of Roman history, stepped forwar
 
 Flames engulfed several vehicles nearby, casting an eerie glow across the turbulent landscape. Despite these perils, the intrepid policemen maintained their resolve, steadfastly holding the line in defense of order and righteousness. Through sheer force of will and disciplined teamwork, they managed to repel the most belligerent protestors, driving them back into adjacent alleys or side streets.
 
-* The Long Road Home
+* A long road home
 [[./img/road.png]]
 
 Once the immediate danger subsided, Petrus Celer convened a council with his command staff. Their mission now transformed from quelling civil unrest to assessing damages and ensuring public safety remained paramount.
