@@ -19,3 +19,7 @@
 -
   - [[file:wolf/wolf_en.html][The robotic wolf and data for it's reward function]]
   - [[file:wolf/wolf_gr.html][Ο μηχανικός λύκος και τα δεδομένα της συναρτήσεως επιτυχίας του]]
+
+-
+  - [[file:banana/banana_en.html][The banana peel reactor and the hair drier]]
+  - [[file:banana/banana_gr.html][Ο αντιδραστήρας μπανανόφλουδων και το πιστολάκι μαλλιών]]
