@@ -48,3 +48,6 @@
 -
   - [[file:microbium/microbium_en.html][The Microbium tetrapod and the petri dish experiments]]
   - [[file:microbium/microbium_gr.html][Το τετράποδο Μικρόβιουμ και το πειραματικό πιατάκι]]
+-
+  - [[file:bullets/bullets_en.html][Louis Kalaspo and the New World of soft bullets]]
+  - [[file:bullets/bullets_gr.html][O Λούης Καλασπό και ο Νέα Χώρα των μαλακών σφαιρών]]
