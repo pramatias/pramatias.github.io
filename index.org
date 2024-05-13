@@ -81,3 +81,6 @@
 -
   - [[file:ceo/ceo_en.html][The machine CEO and the human workers]]
   - [[file:ceo/ceo_gr.html][Η διευθύνων μηχανή και οι υπάλληλοι]]
+-
+  - [[file:pangolin/pangolin_en.html][The pangolin, turtle and bat of lab experiments]]
+  - [[file:pangolin/pangolin_gr.html][Ο παγκολίνος, η χελώνα, η νυχτερίδα και το βιολογικό εργαστήριο]]
