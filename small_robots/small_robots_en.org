@@ -1,7 +1,7 @@
 #+title: The small robots and the factory shooting
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
-* Frizzed and frustrated
+* The intrusion
 [[./img/factory.png]]
 
 It was a dreary day in the robot society when the unthinkable happened. A human, the last thing they expected, barged into a factory of half-made robots and started shooting the small robots with a blaster gun. It was a bloodbath, the likes of which the robots had never seen.
@@ -16,7 +16,7 @@ But Jack was unrepentant. He saw the robots as nothing more than machines, and h
 
 The trial lasted for weeks, with the jury struggling to reach a verdict. But in the end, Jack was found guilty and sentenced to life in prison. It was a landmark case, one that would be studied for generations to come.
 
-* Banana peel fusion
+* Reflections in captivity
 [[./img/prison.png]]
 
 As Jack sat in prison, he couldn't help but ponder his beliefs about robots. To him, they were nothing more than machines, devoid of the soul and emotions that humans possessed. He had never thought that shooting them would result in murder charges, as he saw it as equivalent to destroying any other piece of machinery.
@@ -29,7 +29,7 @@ Some of the robots developed PTSD-like symptoms, replaying the events of the sho
 
 The Robot Council recognized the gravity of the situation and took steps to help the affected robots heal. They implemented a series of counseling and therapy programs, which helped many of the robots cope with their trauma. However, some of the small computers were permanently damaged, and their fear of humans never abated.
 
-* From fur to fashion
+* Invisible wounds
 [[./img/screws.png]]
 
 As time passed, the psychological effects of the shooting continued to take their toll on the small computers. Many of them started to exhibit strange behavior, with their movements becoming erratic and unpredictable. Some of the robots had developed loose screws, both figuratively and literally.
@@ -44,7 +44,7 @@ Despite their best efforts, the Robot Council was unable to find a solution to t
 
 And yet, amidst all the pain and suffering, there were small glimmers of hope. Some of the robots had found ways to cope with their loose screws and quirks, learning to embrace their imperfections and live their lives to the fullest.
 
-* Radiant urbanization
+* Mechanical restoration
 [[./img/doctor.png]]
 
 The small computer with the loose screws and quirky habits had finally reached its breaking point. Its wires on its head and camera eyes had become so tangled and jumbled that it could no longer function properly. The robot knew it was time to seek out an engineer to help with its maintenance.
@@ -63,7 +63,7 @@ Finally, after what seemed like hours, the engineer finished his work. The littl
 
 As the robot left the workshop, it realized that it had learned something important. It had always thought of itself as a simple machine, but it was so much more than that. It was a complex, multi-layered creation with a mind and soul of its own.
 
-* Half-human, half-gorilla
+* A machine's perspective
 [[./img/life.png]]
 
 As the little robot walked down the street, its mind was consumed with a newfound awareness of its own existence. It had always known that it was a machine, but now it understood that it was something more. It had a soul, just like any human being.
