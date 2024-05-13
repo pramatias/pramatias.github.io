@@ -56,7 +56,7 @@
   - [[file:lily/lily_gr.html][Το κορίτσι χωρίς κεφάλι και οι φίλοι της]]
 -
   - [[file:cobra/cobra_en.html][The cobra's venom and the epidemic]]
-  - [[file:cobra/cobra_gr.html][Το δηλητήριο της κόμπρας και η επιδημία
-]]-
+  - [[file:cobra/cobra_gr.html][Το δηλητήριο της κόμπρας και η επιδημία]]
+-
   - [[file:small_robots/small_robots_en.html][The small robots and the factory shooting]]
   - [[file:small_robots/small_robots_gr.html][Τα μικρά ρομπότια και οι πυροβολισμοί στο εργοστάσιο]]
