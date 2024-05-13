@@ -99,3 +99,6 @@
 -
   - [[file:cave/cave_en.html][The aboriginal CaveNet]]
   - [[file:cave/cave_gr.html][Οι ιθαγενείς και το Σπηλαιοδίκτυο]]
+-
+  - [[file:spy/spy_en.html][The spy pigeons and the chef]]
+  - [[file:spy/spy_gr.html][Τα περιστέρια κατάσκοποι και ο μάγειρας]]

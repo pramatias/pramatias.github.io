@@ -1,0 +1,17 @@
+#+title: Τα περιστέρια κατάσκοποι και ο μάγειρας
+#+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
+
+* Η αποστολή των περιστεριών
+[[./img/pigeons.png]]
+
+* Η ακόρεστη ορεξή
+[[./img/kitchen.png]]
+
+* Γιγαντιαίο αερόστατο
+[[./img/balloon.png]]
+
+* Η αποστολή του κατάσκοπου
+[[./img/flock.png]]
+
+* Η αποτυχημένη απόδραση
+[[./img/soup.png]]
