@@ -63,3 +63,6 @@
 -
   - [[file:pagia/pagia_en.html][Kalira and her tribe on Glacia]]
   - [[file:pagia/pagia_gr.html][Η Καλίρα και η φυλή της στην Παγία]]
+-
+  - [[file:shoes/shoes_en.html][The hagfish shoes and the accidents]]
+  - [[file:shoes/shoes_gr.html][Τα παπούτσια μυξιχθύος και τα ατυχήματα]]
