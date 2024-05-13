@@ -90,3 +90,6 @@
 -
   - [[file:chess/chess_en.html][The trapped night and bishop in the center of the board]]
   - [[file:chess/chess_gr.html][Ο ιππότης και το άλογο παγιδευμένα στο κέντρο της σκακιέρας]]
+-
+  - [[file:wasp/wasp_en.html][The parasitic wasp and the cancer cure]]
+  - [[file:wasp/wasp_gr.html][Η παρασιτική σφήκα και η θεραπεία του καρκίνου]]
