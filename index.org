@@ -105,3 +105,6 @@
 -
   - [[file:raxxar/raxxar_en.html][The planet Raxxar and the plantpunks]]
   - [[file:raxxar/raxxar_gr.html][Ο πλανήτης Ραξξάρ και τα τεράφυτα]]
+-
+  - [[file:brainwaves/brainwaves_en.html][The unpatented brainwaves and the television]]
+  - [[file:brainwaves/brainwaves_gr.html][Τα απατεντάριστα εγκεφαλικά κύματα και η τηλεόραση]]
