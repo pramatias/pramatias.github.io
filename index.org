@@ -69,3 +69,6 @@
 -
   - [[file:baby/baby_en.html][The rock, the gravitational waves and the earth]]
   - [[file:baby/baby_gr.html][Ο βράχος, τα βαρυτικά κύματα και η γη]]
+-
+  - [[file:dandelion/dandelion_en.html][The dandelion temple and it's secrets]]
+  - [[file:dandelion/dandelion_gr.html][Ο ναός της πικραλίδας και τα μυστικά του]]
