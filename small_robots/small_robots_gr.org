@@ -1,0 +1,34 @@
+#+title: Ο αντιδραστήρας μπανανόφλουδων και το πιστολάκι μαλλιών
+#+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
+
+* Frizzed and frustrated
+[[./img/factory.png]]
+
+* Banana peel fusion
+[[./img/prison.png]]
+
+* From fur to fashion
+[[./img/screws.png]]
+
+* Radiant urbanization
+[[./img/doctor.png]]
+
+* Half-human, half-gorilla
+[[./img/life.png]]
+
+
+* Μπουκλιασμένη και εκνευρισμένη
+[[./img/gorillas.png]]
+
+* Σύντηξη φλούδας μπανάνας
+[[./img/peels.png]]
+
+* Από το τρίχωμα στη μόδα
+[[./img/engineer.png]]
+
+* Ακτινοβολία και αστυφιλία
+[[./img/city.png]]
+
+* Μισoί άνθρωποι, μισοί-γορίλλες
+[[./img/reactor.png]]
+
