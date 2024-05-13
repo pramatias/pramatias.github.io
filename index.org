@@ -78,6 +78,6 @@
 -
   - [[file:bank/bank_en.html][The Riverside bank and the static electricity loans]]
   - [[file:bank/bank_gr.html][Η τράπεζα της Ποταμοχθής και τα δάνεια στατικού ηλεκτρισμού]]
- -
+-
   - [[file:ceo/ceo_en.html][The machine CEO and the human workers]]
   - [[file:ceo/ceo_gr.html][Η διευθύνων μηχανή και οι υπάλληλοι]]
