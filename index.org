@@ -72,3 +72,6 @@
 -
   - [[file:dandelion/dandelion_en.html][The dandelion temple and it's secrets]]
   - [[file:dandelion/dandelion_gr.html][Ο ναός της πικραλίδας και τα μυστικά του]]
+-
+  - [[file:atomic/atomic_en.html][The new atomic currency and the robbers]]
+  - [[file:atomic/atomic_gr.html][Το ατομικό νόμισμα και οι ληστές]]
