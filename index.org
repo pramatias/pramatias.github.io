@@ -75,3 +75,6 @@
 -
   - [[file:atomic/atomic_en.html][The new atomic currency and the robbers]]
   - [[file:atomic/atomic_gr.html][Το ατομικό νόμισμα και οι ληστές]]
+-
+  - [[file:bank/bank_en.html][The Riverside bank and the static electricity loans]]
+  - [[file:bank/bank_gr.html][Η τράπεζα της Ποταμοχθής και τα δάνεια στατικού ηλεκτρισμού]]
