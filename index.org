@@ -93,3 +93,6 @@
 -
   - [[file:bitcoin/bitcoin_en.html][Old man Johnson and the number wrangling]]
   - [[file:bitcoin/bitcoin_gr.html][Ο γερο Γιάννης και η αριθμητικές καταχωρήσεις]]
+-
+  - [[file:buffalo/buffalo_en.html][The water well and the buffalo]]
+  - [[file:buffalo/buffalo_gr.html][Το πηγάδι ύδατος και ο βούβαλος]]
