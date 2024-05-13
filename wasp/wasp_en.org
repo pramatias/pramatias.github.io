@@ -1,0 +1,17 @@
+#+title: The banana peel reactor and the hair drier
+#+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
+
+* Frizzed and frustrated
+[[./img/jungle.png]]
+
+* Banana peel fusion
+[[./img/underground.png]]
+
+* From fur to fashion
+[[./img/armor.png]]
+
+* Radiant urbanization
+[[./img/nest.png]]
+
+* Half-human, half-gorilla
+[[./img/pharmaceutical.png]]
