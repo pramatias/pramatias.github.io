@@ -60,3 +60,6 @@
 -
   - [[file:small_robots/small_robots_en.html][The small robots and the factory shooting]]
   - [[file:small_robots/small_robots_gr.html][Τα μικρά ρομπότια και οι πυροβολισμοί στο εργοστάσιο]]
+-
+  - [[file:pagia/pagia_en.html][Kalira and her tribe on Glacia]]
+  - [[file:pagia/pagia_gr.html][Η Καλίρα και η φυλή της στην Παγία]]
