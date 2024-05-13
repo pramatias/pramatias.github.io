@@ -108,3 +108,6 @@
 -
   - [[file:brainwaves/brainwaves_en.html][The unpatented brainwaves and the television]]
   - [[file:brainwaves/brainwaves_gr.html][Τα απατεντάριστα εγκεφαλικά κύματα και η τηλεόραση]]
+-
+  - [[file:fried/fried_en.html][The fried potato pipeline and the dolphins]]
+  - [[file:fried/fried_gr.html][Ο υποθαλάσσιος αγωγός πατάτων και τα δελφίνια]]
