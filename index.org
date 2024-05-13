@@ -102,3 +102,6 @@
 -
   - [[file:spy/spy_en.html][The spy pigeons and the chef]]
   - [[file:spy/spy_gr.html][Τα περιστέρια κατάσκοποι και ο μάγειρας]]
+-
+  - [[file:raxxar/raxxar_en.html][The planet Raxxar and the plantpunks]]
+  - [[file:raxxar/raxxar_gr.html][Ο πλανήτης Ραξξάρ και τα τεράφυτα]]
