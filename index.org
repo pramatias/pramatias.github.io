@@ -84,3 +84,6 @@
 -
   - [[file:pangolin/pangolin_en.html][The pangolin, turtle and bat of lab experiments]]
   - [[file:pangolin/pangolin_gr.html][Ο παγκολίνος, η χελώνα, η νυχτερίδα και το βιολογικό εργαστήριο]]
+-
+  - [[file:sheriff/sheriff_en.html][The sheriff and the public key cryptography]]
+  - [[file:sheriff/sheriff_gr.html][Ο σερίφης και η κρυπτογραφία δημοσίου κλειδιού]]
