@@ -87,3 +87,6 @@
 -
   - [[file:sheriff/sheriff_en.html][The sheriff and the public key cryptography]]
   - [[file:sheriff/sheriff_gr.html][Ο σερίφης και η κρυπτογραφία δημοσίου κλειδιού]]
+-
+  - [[file:chess/chess_en.html][The trapped night and bishop in the center of the board]]
+  - [[file:chess/chess_gr.html][Ο ιππότης και το άλογο παγιδευμένα στο κέντρο της σκακιέρας]]
