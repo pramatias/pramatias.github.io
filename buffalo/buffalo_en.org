@@ -1,0 +1,17 @@
+#+title: The water well and the buffalo
+#+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
+
+* Frizzed and frustrated
+[[./img/buffalo.png]]
+
+* Banana peel fusion
+[[./img/skulls.png]]
+
+* From fur to fashion
+[[./img/illegal.png]]
+
+* Radiant urbanization
+[[./img/market.png]]
+
+* Half-human, half-gorilla
+[[./img/horns.png]]
