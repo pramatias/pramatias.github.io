@@ -117,3 +117,6 @@
 -
   - [[file:samurai/samurai_en.html][Samurai's sword and the mosquitoes]]
   - [[file:samurai/samurai_gr.html][Τα ξίφη των σαμουράι και τα κουνούπια]]
+-
+  - [[file:rat/rat_en.html][The rat hunter and the feline expert]]
+  - [[file:rat/rat_gr.html][Ο κυνηγός ποντικών και η ειδήμων αιλουροειδών]]
