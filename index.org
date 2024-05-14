@@ -114,3 +114,6 @@
 -
   - [[file:lambda/lambda_en.html][Hephaestus and the lambda calculus computer]]
   - [[file:lambda/lambda_gr.html][Ο Ήφαιστος και ο λάμδα λογισμός]]
+-
+  - [[file:samurai/samurai_en.html][Samurai's sword and the mosquitoes]]
+  - [[file:samurai/samurai_gr.html][Τα ξίφη των σαμουράι και τα κουνούπια]]
