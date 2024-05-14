@@ -120,3 +120,6 @@
 -
   - [[file:rat/rat_en.html][The rat hunter and the feline expert]]
   - [[file:rat/rat_gr.html][Ο κυνηγός ποντικών και η ειδήμων αιλουροειδών]]
+-
+  - [[file:abyss/abyss_en.html][The rat hunter and the feline expert]]
+  - [[file:abyss/abyss_gr.html][Ο κυνηγός ποντικών και η ειδήμων αιλουροειδών]]
