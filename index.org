@@ -111,3 +111,6 @@
 -
   - [[file:fried/fried_en.html][The fried potato pipeline and the dolphins]]
   - [[file:fried/fried_gr.html][Ο υποθαλάσσιος αγωγός πατάτων και τα δελφίνια]]
+-
+  - [[file:lambda/lambda_en.html][Hephaestus and the lambda calculus computer]]
+  - [[file:lambda/lambda_gr.html][Ο Ήφαιστος και ο λάμδα λογισμός]]
