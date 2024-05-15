@@ -106,6 +106,9 @@
   - [[file:raxxar/raxxar_en.html][The planet Raxxar and the plantpunks]]
   - [[file:raxxar/raxxar_gr.html][Ο πλανήτης Ραξξάρ και τα τεράφυτα]]
 -
+  - [[file:wasp/wasp_en.html][The parasitic wasp and the cancer cure]]
+  - [[file:wasp/wasp_gr.html][Η παρασιτική σφήκα και η θεραπεία του καρκίνου]]
+-
   - [[file:brainwaves/brainwaves_en.html][The unpatented brainwaves and the television]]
   - [[file:brainwaves/brainwaves_gr.html][Τα απατεντάριστα εγκεφαλικά κύματα και η τηλεόραση]]
 -
@@ -121,5 +124,5 @@
   - [[file:rat/rat_en.html][The rat hunter and the feline expert]]
   - [[file:rat/rat_gr.html][Ο κυνηγός ποντικών και η ειδήμων αιλουροειδών]]
 -
-  - [[file:abyss/abyss_en.html][The rat hunter and the feline expert]]
-  - [[file:abyss/abyss_gr.html][Ο κυνηγός ποντικών και η ειδήμων αιλουροειδών]]
+  - [[file:abyss/abyss_en.html][Driving through the abyss]]
+  - [[file:abyss/abyss_gr.html][Οδηγώντας διαμέσου της άβυσσου]]
