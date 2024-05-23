@@ -5,10 +5,13 @@
 
 * Stories
 -
+  - [[file:proxywall/proxywall_en.html][The Great Proxywall 3000]]
+  - [[file:proxywall/proxywall_gr.html][Το Μέγα Τοίχος Ανακατεύθυνσης 3000]]
+  - [[file:proxywall/proxywall_gr_an.html][Το Μέγα Τοίχος Ἀνακατευθύνσεως 3000]]
+-
   - [[file:golden_storm/golden_storm_en.html][Echoes of a Golden Storm]]
   - [[file:golden_storm/golden_storm_gr.html][Αντίλαλοι μιας Χρυσής Καταιγίδας]]
   - [[file:golden_storm/golden_storm_gr_an.html][Χρυσῆς Καταιγίδος Ἀντίλαλοι]]
-
 -
   - [[file:terminator/terminator_en.html][Terminator and the Pool Game]]
   - [[file:terminator/terminator_gr.html][Ο Εξολοθρευτής και το Παιχνίδι Μπιλιάρδου]]
@@ -19,7 +22,6 @@
 -
   - [[file:wolf/wolf_en.html][The robotic wolf and data for it's reward function]]
   - [[file:wolf/wolf_gr.html][Ο μηχανικός λύκος και τα δεδομένα της συναρτήσεως επιτυχίας του]]
-
 -
   - [[file:banana/banana_en.html][The banana peel reactor and the hair drier]]
   - [[file:banana/banana_gr.html][Ο αντιδραστήρας μπανανόφλουδων και το πιστολάκι μαλλιών]]
