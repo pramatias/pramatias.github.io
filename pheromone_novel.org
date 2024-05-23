@@ -1,7 +1,0 @@
-#+title: Golden Storm
-#+SETUPFILE: ./org-html-themes/org/theme-readtheorg.setup
-
-#+HTML_LINK_HOME: ../index.html
-#+INCLUDE: "golden_storm_en.org"
-#+INCLUDE: "golden_storm-gr.org"
-#+INCLUDE: "golden_storm-gr-an.org"
