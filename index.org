@@ -5,6 +5,10 @@
 
 * Stories
 -
+  - [[file:matrix/matrix_en.html][The Matrix Simulacrum Bites]]
+  - [[file:matrix/matrix_gr.html][Ο Πίνακας: Οι προσομοιωτικές μπουκιές]]
+  - [[file:matrix/matrix_gr_an.html][Πίναξ: Αἱ προσομοιωτικαὶ βουκίαι]]
+-
   - [[file:proxywall/proxywall_en.html][The Great Proxywall 3000]]
   - [[file:proxywall/proxywall_gr.html][Το Μέγα Τοίχος Ανακατεύθυνσης 3000]]
   - [[file:proxywall/proxywall_gr_an.html][Το Μέγα Τοίχος Ἀνακατευθύνσεως 3000]]
