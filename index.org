@@ -5,6 +5,10 @@
 
 * Stories
 -
+  - [[file:algae/algae_en.html][Photosynthesis Classes]]
+  - [[file:algae/algae_gr.html][Οι Φωτοσυνθετικές Τάξεις]]
+  - [[file:algae/algae_gr_an.html][Αἱ Φωτοσυνθετικαὶ Τάξαι]]
+-
   - [[file:matrix/matrix_en.html][The Matrix Simulacrum Bites]]
   - [[file:matrix/matrix_gr.html][Ο Πίνακας: Οι προσομοιωτικές μπουκιές]]
   - [[file:matrix/matrix_gr_an.html][Πίναξ: Αἱ προσομοιωτικαὶ βουκίαι]]
@@ -50,7 +54,6 @@
 -
   - [[file:triad/triad_en.html][The Holy Trinity of the computer internet]]
   - [[file:triad/triad_gr.html][Η Αγια Τριάδα του διαδικτύου]]
-
 -
   - [[file:microbium/microbium_en.html][The Microbium tetrapod and the petri dish experiments]]
   - [[file:microbium/microbium_gr.html][Το τετράποδο Μικρόβιουμ και το πειραματικό πιατάκι]]
