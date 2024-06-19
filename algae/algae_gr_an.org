@@ -1,4 +1,6 @@
-#+title: Αἱ Φωτοσυνθετικαὶ Τάξεις
+#+title: Αἱ Φωτοσυνθετικαὶ Τάξαι
+#+SETUPFILE: ./org-html-themes/org/theme-readtheorg.setup
+
 * Η μονοφύκης εργατική τάξη
 [[./img/1.jpeg]]
 
