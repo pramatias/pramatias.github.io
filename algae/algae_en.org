@@ -1,5 +1,5 @@
 #+title: Photosynthesis Classes
-#+SETUPFILE: ./org-html-themes/org/theme-readtheorg.setup
+#+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
 * The algal working class
 [[./img/1.jpeg]]
