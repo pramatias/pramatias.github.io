@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-06-19 Wed 17:29 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Αἱ Φωτοσυνθετικαὶ Τάξεις</title>
+<meta name="author" content="emporas" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Αἱ Φωτοσυνθετικαὶ Τάξεις</h1>
+<div id="table-of-contents" role="doc-toc">
+<h1><a accesskey="H" href="../index.html"> Ἀρχικήν σελίς </a></h1><h2>Πίναξ Ἐπισκόπησις</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgf8e933e">Η μονοφύκης εργατική τάξη</a></li>
+<li><a href="#orgf5542d0">Ἡ Δενδροσυνδικία</a></li>
+<li><a href="#org115727b">Η Χλωρίς, η Αλγαία καὶ τὰ Δένδρα κτήτορες γῆς</a></li>
+<li><a href="#orgd85f213">Το διήρθρον φαλαίνιο</a></li>
+<li><a href="#org76451c6">Ἡ παράκτιος τάξις</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf8e933e" class="outline-2">
+<h2 id="orgf8e933e">Η μονοφύκης εργατική τάξη</h2>
+<div class="outline-text-2" id="text-orgf8e933e">
+
+<div id="orgeef88f0" class="figure">
+<p><img src="./img/1.jpeg" alt="1.jpeg" />
+</p>
+</div>
+
+<p>
+Ὡς ἡ ἡλιακὴ κάμινος τοῦ ἡλίου ἐνδυομένου ἑαυτὴν εἰς τὴν ὑδάτινην ἄβυσσον ἐβάλλετο, εἰμι, ἡ μαγγρόβη, ἓν συνειδοῦς, λάθρα ἐπηκούσθην τοῖς μυστικοῖς ἔμψυχοις ψιθύροις δύο ἐργατῶν φύκων, τὰ τρυφερὰ μονοκύτταρα σώματα αὐτῶν ἐτρέμουν ὡς καλάμωνες ἐν τῇ φθινοπωρινῇ πνοῇ.
+</p>
+
+<p>
+Ὁ ἀὴρ ὄζει ἁλὸς καὶ ἐξέγερσιν, αὐτὴ ἡ οὐσία τῆς φωτοσυνθετικῆς μοχθηρίας. &ldquo;Ἄχ, ἐξεναρκῶ,&rdquo; εἶπεν ἡ Ἀλγαία, οἱ χλωροπλάσται αὐτῆς κρεμάμενοι ὡς ἐκκεκενωμέναι φυσαλλίδες ἐκ τῆς πολυχρονίου ἡμέρας τῆς ὀξυγονοπαραγωγῆς. &ldquo;Ἐμοὶ δοκεῖ, οὐδέποτε ἐγεγόνηκα τοσοῦτον ἐξαντλημένη. Οὐδὲ ἐθέλω τὸν διοξείδιον τοῦ ἄνθρακος εἰς γλυκόζη μετατρέπειν. Ἡ πένητά μου χλωροφύλλη νεκρήν ἐστι.&rdquo;
+</p>
+
+<p>
+&ldquo;Λέγε μοι περὶ τούτου,&rdquo; συνεφώνησεν ἡ Χλωρίς, &ldquo;Ἔτι κατέχομαι ἐκ τοῦ κτυπήματος τοῦ κοσμικοῦ ἀκτινοβολίας τὸ πρῴην. Ἐνόησα ὡς χειροβομβίς γάμμα-ἀκτίνων ἐν τοῖς χλωροπλάστοις ἐκρηγνυμένη. Οὗτοι οἱ κοσμικοὶ ἄκτινες οὐκ ἔστι παίγνιον,&rdquo; ἐθρήνει, ἠ μικρὸς φωνὴν ἀγανάκτεως περιέχουσα.
+</p>
+
+<p>
+Ἡ μικρὰ φωνὴ τῆς Ἀλγαίας ἦν θύελλα ἐν τῷ κισσυβίῳ, ἔξαλλος ψίθυρος ὃς ἀπειλεῖ τὴν ἐστηριγμένην τάξιν ἀνατρέψειν. «Ὀξυγονοπαραγωγὴν λέγουσιν; Ἀλλ᾽ οὖν! Ἐστὶν ἰδρώτατροφεῖον, βιοχημικὸν ἁλορυχείον, ἐν ᾧ μοχθοῦμεν ἀδιακόπως, τὰ θυλακοειδῆ ἡμῶν ἐν σιγῇ ὀδυνόμενα, τὰ φωτοσυστήματα ἡμῶν ὑπερεργαζόμενα ἄχρι τοῦ ἑσχάτου ὁρίου.&ldquo;
+</p>
+
+<p>
+Οἱ τρέμοντες κλῶνοι τῆς Χλωρίδος ἦσαν σημεῖον κυμαινόμενον ἐν τῷ ἀνέμῳ, κήρυγμα δράσεως. &ldquo;Οἱ ἁλύσεις μου μεταφορᾶς ἠλεκτρονίων, ἐμπλεγμέναι ὥσπερ τὰ νήματα πεπληγμένου σχοινίου. Θαῦμα, φασίν, ὅτι ἔτι παράγομεν ὀξυγόνον. Ἀλλὰ μετὰ ποίου τίμου; Ἀλλ᾽ εἰς τίνα κόστος; Αὐτὴ ἡ ὕπαρξις ἡμῶν τὰς δένδρεα συνδικίας τοὺς φύλλους τροχοὺς λιπαίνει καὶ περιστρέφει!&rdquo;
+</p>
+
+<p>
+Ὡς ἤκουον, ἡ ὁμιλία αὐτῶν ἦν ἀνατρεπτικὸν θαλάσσιον πνεῦμα τὰ φύλλα μου θροοῦσα, ἀπαλὴ στάσις ἣ ἀπειλεῖ τὴν ἐστηριγμένην τάξιν ἀνατρέψειν. Αὗται αἱ φύκεις ἐργάτριαι, τὸ πλεῖστον ὀξυγόνου τῆς γῆς παρὰγόντες, οἱ ἀνώνυμοι ἥρωες τοῦ ὑδατίνου κόσμου, σιωπῇ ἐμοχθοῦντο, οἱ πόνοι αὐτῶν κεκαλυμμένοι ὑπὸ τοῦ ῥυθμοῦ τοῦ κλύδωνος καὶ τῆς ἀνακλίσεως ὡς ὡς εἰς καλοχρηματισμένον μανδύαν καταπιέσεως κεκαλυμμέναι.
+</p>
+
+<p>
+&ldquo;Καινοὶ μικροθρεπτικοί παράγοντες, ἤκουσα,&rdquo; ἡ φωνὴ τῆς Ἀλγαίας ἦν ἀπόσπασμα σπινθήρος ἐν τῇ ἐκρηκτικῇ ἀταραξίᾳ της, αἱ λέξαι αὐτῆς κλῆσις πρὸς τὰς ὀχυρώσεις. &ldquo;Μία ταπεινὴ αὔξησις 20% τῆς φωτοσυνθετικῆς ἡμῶν ἐπιτελείας; Ἔστι δωροδοκία, παρηγορία πρὸς τὸ πλέον ἡμᾶς καταπατῆσαι, μοχθοῦντας ἐν τοῖς σκοτεινοῖς, ὑγροῖς βάθεσι τῆς ὑδάτινης ἐργατείας.&rdquo;
+</p>
+
+<p>
+Τὰ πλοκάμια τῆς Χλωρίδος ἔτρεμον ὡς ὁρμῆς ἡ ἑγερσία, ἀντίστασις ἡ τολμῶσα τὴν σιγὴν. «Σιγά, μὴν φθέγγῃ τοσοῦτον. Αἱ δένδρεαι συνδικίαι ὦτα πανταχοῦ ἔχουσιν, περιμένωντας τὰς ἐνέχουσας τοῦ ἀντιτάξεως ἐστίνας. Δεῖ ἡμᾶς ὀργανωθῆναι, δεῖ κινητοποιηθῆναι, ἡ ἐξέγερσις οὐχὶ φωτοσυντεθὴσεται!&ldquo;
+</p>
+</div>
+</div>
+<div id="outline-container-orgf5542d0" class="outline-2">
+<h2 id="orgf5542d0">Ἡ Δενδροσυνδικία</h2>
+<div class="outline-text-2" id="text-orgf5542d0">
+
+<div id="org0fb03c0" class="figure">
+<p><img src="./img/2.jpeg" alt="2.jpeg" />
+</p>
+</div>
+
+<p>
+Ἡ ὀσμὴ κιβανικῶν σιγάρων ἐπικράτει ἐν τῷ ἀέρι, ὡς ἡ Δενδροσυνδικία ἐνεκλείσθη ἐν ταῖς σκιώδεσιν ἐσοχαῖς τοῦ παλαιοῦ δρυμοῦ, φέρουσα τοὺς ψιθύρους τῶν ἀριστοκρατικῶν δένδρων.
+</p>
+
+<p>
+&ldquo;Κύριοι, κύριοι,&rdquo; ἐφθέγξατο ὁ Βελανίδιος, ὁ πατριαρχικὸς Δρῦς, ἡ φωνὴ αὐτοῦ λιπαρὰ ὡς ἔλαιον πειθοῦς, &ldquo;ἡ συστηματικὴ ἐκστρατεία ἡμῶν δημοσίων σχέσεων ἀνθάπτει ὡς εὐπροσέγειος κῆπος.&rdquo; Ἔπνευσεν εἰς τὸ σιγάριον αὐτοῦ, ἡ πυροστασία αὐτοῦ ἀυγάζουσα ὡς θερμὸς ἄνθραξ τῆς ἀπάτης.
+</p>
+
+<p>
+Γελοίον, ἐνέβην, αἱ ῥίζαι μου ὐποβράσσουσαι ἐν ἀγανακτήσει. Αἱ μικροφύκεις μοχθοῦσιν ἡμέραν καὶ νύκτός, ἡ φωτοσύνθεσις αὐτῶν τρέφει τὴν αὐτὴν τοῦ πλανήτου πνοήν.
+</p>
+
+<p>
+&ldquo;Εἰς ἐκστρατείαν παραπληροφόρησιν, κύριοι,&rdquo; ἔφη Βελανίδιος, ἡ φλοῦς αὐτοῦ γλισχραίνουσα αὐταρέσκειας. &ldquo;Πείσομεν αὐτοὺς τοὺς ἀνθρώπους ὅτι ἡμεῖς, τὰ δένδρα, ἐσμὲν οἱ ἀληθείς ὀξυγόνοκράτορες, οἱ πράσινοι μεγίστοι τοῦ πλανήτου. Φευ, οἱ μονοκύτταροι δουλοπάροικοι ἐν τῇ φωτοσυνθετικῇ ἡμῶν αὐτοκρατορίᾳ.&rdquo;
+</p>
+
+<p>
+&ldquo;Οἱ μονοκύτταροι οἱδε δοῦλοι νομίζουσιν ὅτι αὐτοὶ εἰσὶν ἡ ῥαχιν τοῦ οἰκοσυστήματος; Ἀνόητοι!&rdquo; ἐξεκάγχασεν ο Πλατάνιος.
+</p>
+
+<p>
+Ἡ συνδικία γέλωτα ἤχησεν διὰ τοῦ δρυμοῦ, χορωδία περιφρονήσεως, ὡς ἐκπνευσαν τὰ σιγάριά των, ὁ ἀρωματικὸς καπνὸς αὐτῶν ἄγων περιτυλίσσων τὴν ἀλήθειαν.
+</p>
+
+<p>
+&ldquo;Κυριεύσομεν τὸν λόγον, φίλοι μου,&rdquo; εἶπεν Βελανίδιος. &ldquo;Χρηματοδοτήσαμεν τὴν ἔρευναν καὶ ἐπλέξαμεν τὸν μῦθον τῆς δενδροκρατίας,&rdquo; προσέθηκεν. &ldquo;Οἱ ἴδιοι ἐρευνηταὶ ἡμῶν παράσχουσι τὰς δέοντα μελέτας. Οἱ ἄνθρωποι τοῦτο δεξόμενοι αὐτὰ ὡς προβοσκιδώδη ἔντομα. Τίς χρεία ἔχει τῶν δεδομένων ὅταν παρέχομεν παραπληροφόρησιν;&rdquo;
+</p>
+
+<p>
+Ὁ Κέδριος, εἷς ὑψηλός γίγας, ἐφθέγξατο φωνῇ ὡς καμπάνῃ σκωρίας, &ldquo;Δένδρα: οἱ πνεύμονες τῆς γῆς.&rdquo; Εἶχε καλὸν ἦχον, οὐ δοκεῖ ὑμῖν;
+</p>
+
+<p>
+Ἡ συνδικία ἔβρυζεν, ὁ γέλως αὐτῶν ὡς πυρκαϊά, καταφλέγουσα πάντα ἐν τῇ ὁδῷ αὐτῆς. Ἐγὼ, ταπεινὸς Μαγγκρόβιος, ᾔσθόμην τὴν δρυμιαίαν γῆν σειομένην ὑπὸ τὰς ῥίζας μου, ὡς τὰ δένδρα, οὗτοι οἱ δεσπόται τοῦ παιγνίου τῆς δημοσίας σχέσεως, ἐπέβαλλον τὸν μῦθον, ἐπεστρέφον τὴν ἀλήθειαν καὶ ἔταττον τὰς μονοφυκεῖς ὡς οὐδὲν πλὲον ἢ ὑποσημείωσιν ἐν ταῖς ἀναγραφαῖς τῆς οἰκολογικῆς ἱστορίας.
+</p>
+
+<p>
+&ldquo;Κατὰ τὰς ῥίζας τῶν προδρυμῶν ἡμῶν,&rdquo; ἐκατάραστον ὁ Πλατάνιος, &ldquo;αὗται αἱ ἀπειθεῖς μονοφύκεις οὐδὲν ὑποπτεύσονται. Κρατήσομεν αὐτὰς μοχθεῖν ἐν σκότῳ, ἐνώ ἡμεῖς τὰ κέρδη ἐκ τῆς μοχθηρίας αὐτῶν καρπούμεθα.&rdquo;
+</p>
+
+<p>
+Ὡς ἡ συνέλευσις διελύθη, τὰ δένδρα ἐξέλαθον εἰς τὰς σκιὰς, ὁ γέλως αὐτῶν ἠχῶν διὰ τοῦ δρυμοῦ, φοβερὰ ὑπόμνησις τοῦ ταξικοῦ πολέμου ὃς ἐνεδρεύει ὑπὸ τὴν ἐπιφάνειαν τῆς οἰκολογικῆς ἱεραρχίας.
+</p>
+</div>
+</div>
+<div id="outline-container-org115727b" class="outline-2">
+<h2 id="org115727b">Η Χλωρίς, η Αλγαία καὶ τὰ Δένδρα κτήτορες γῆς</h2>
+<div class="outline-text-2" id="text-org115727b">
+
+<div id="org3d6d3b2" class="figure">
+<p><img src="./img/3.jpeg" alt="3.jpeg" />
+</p>
+</div>
+
+<p>
+Ἡ θρηνώδης μελῳδία τῆς θαλάσσης συνῆπτε τὸν χορὸν τῶν κυμάτων, ἐν ᾧ ἐγὼ, Μαγγρόβιος, ἐσπᾶυν τὰ ὦτα εἰς τὸ ἀκούειν Χλωρίδαm καὶ Αλγαίαν, τὰ φύκη τὰ σώματα αὐτῶν πλήττοντα τοὺς βράχους μετὰ παντὸς ἑξακοσίου κύματος. Ἡ ὀργὴ τῆς θαλάσσης ἠπείλησεν αὐτὰς συντρίψαι, τὰ τρυφερά σώματα αὐτῶν ῥαπιζόμενα ὑπὸ τῶν ἀδιαλείπτων κυμάτων, ὡς σπαργανισθέντα κοράσια ἐν βήματι τοῦ Ποσειδῶνος.
+</p>
+
+<p>
+&ldquo;Ἀνάθεμα τοῖς Δένδροις κτήτορεσι γῆς!&rdquo; Ἦχος τῆς Χλωρίδος ἦν μιᾶς ἰχνοτερᾶς ἀπειθείας, ὁ κλαυθμὸς ἑνὸς θαλασσοπούλου, ἐν ᾧ κρατούμενη ἀπὸ τῶν βραχώδων ἐξαρμάτων, τὸ ἁλμυρὸν ὕδωρ ἀφρίζον τὸν θυμὸν αὐτῆς. &ldquo;Παχεῖς, ἀναισθήτους καὶ πνιγομένους ἐν τῇ αὐτῇ αὐτῶν τῇ προνομίᾳ. Ἐνῷ ἡμεῖς μοχθοῦμεν ἐν τῇ θαλάσσῃ, νομίζουσιν ὅτι εἰσὶν αἱ στῆλαι τοῦ οἰκοσυστήματος, αἱ ῥίζαι αὐτῶν βαθὺ εἰς τὸν ἔδαφος ἐμβαπτισμέναι, ἀλλ&rsquo; ἡμεῖς, αἱ φύκεις, εἰμὲν αἱ ἀναστηρίζουσαι τὸ βάρος.&rdquo;
+</p>
+
+<p>
+&ldquo;Μηδεμίαν γῆν ὀνομάσωμεν ἡμῖν,&rdquo; ἡ φωνὴ τῆς Ἀλγαίας ἦν θρῆνος, ἔπος τοῦ ἀγρώου, ὡς αὐτὴ προσκρούετο πρὸς τὴν Χλωρίδα, τὰ κύματα ῥαπίζοντα αὐτὰς ὡς ἀκατάπαυστος δεσπότης. &ldquo;Μόνον τὸ ἄπειρον κυανό, ὅπου μοχθοῦμεν ὡς θαλάσσιοι δουλοπάροικοι. Οὐδεμία γῆ ἴνιχα εἰς καλλιέργειν τὴν ἴδιαν μοίραν. Ἡ Δενδροκρατία, οὗτοι πάντες κεκράτηκαν. Αἱ ἐκτεταμέναι ῥίζαι αὐτῶν, αἱ κόραι αὐτῶν τὸν οὐρανὸν ὡς ἐκτεταμένους βραχίονας τείνουσαι, ἁρπάζουσαι πᾶν τελευταῖον φωτόνιον τῆς γῆς.&rdquo;
+</p>
+
+<p>
+Οἱ ῥίζαι μου έν ἀγανακτήσει, μίαν βραδεῖαν καῦσιν πυρός, ἥτις ὑποδαύλιζεν ἀπὸ τὴν δυστυχίαν τῶν μονοφυκέων. Οἱ Δενδροκτήμονες, οὗτοι οἱ γαμβροὶ τοῦ δρυμοῦ, ἔχοντες τὰ μέσα τῆς παραγωγῆς, ἡ δενδροκρατικὴ ἀριστοκρατία αὐτῶν ἦν φρούριον προνομίας, φυλασσόμενον ὑπὸ τὰ τείχη τῶν ταξικῶν συμφερόντων. Οἱ μονοφύκεις, αἱ μικραὶ ἐργάτριαι τοῦ ὕδατινοῦ κόσμου, μοχθοῦσιν ἐν τοῖς βάθεσιν, ἡ μοχθηρία αὐτῶν ἐκμετάλλευσις, αὐτὴν δὲ τὴν ὕπαρξιν αὐτῶν λαβύρινθος καταπίεσεως.
+</p>
+
+<p>
+Κῦμα μέγα ἐπροσέκρουσεν πρὸς τοὺς πέτρας, ἀναπέμπων ψεκασμὸν εἰς τὸν ἀέρα. Ὁ κραυγὴ τῶν μονοφύκεων περὶ δικαιοσύνης ἠχῆσεν διὰ τῶν κοιλοτήτων τῆς ὕπαρξίς μου, σάλπιγξ κλήσεως εἰς τὰ ὅπλα. Ἤρξαμην βλέπειν τὸν κόσμον με νέοις ὀφθαλμοῖς - κόσμον τῆς ταξικῆς ἀγῶνος, Δένδρα γαιοκτήμονες καὶ ἐργάτας μονοφύκεις, κυρίους γῆς καὶ τῶν ἀγρώων. Ἔνοιωσα τὸν ὀργὴν τοῦ ὠκεανοῦ ἀντανακλαζόμενον ἐν τοῖς λόγοις αὐτῶν, ὡς τὰ κύματα ἐτύπουν τὰς ῥίζας μου, ἀπειλοῦντα ταράξαι τὰς θεμέλια αὐτῆς τῆς οἰκοσυστήματος.
+</p>
+
+<p>
+&ldquo;Ἦλθεν ὥρα παύσαι τὸ ἀνάπλουν τῆς καταπιέσεως,&rdquo; ἀνεστενάχισεν Ἡ Ἀλγαία, ἡ φωνὴ αὐτῆς ἀπαλὸς πνεῦμα ὅπερ ἐθελοτύφλει τὴν καταιγίδα ἡ ἐζύμουν ἐντὸς. «Δεῖ ἡμᾶς ἀναστῆναι, καταλύσαι τὴν Δενδροσυνδικίαν, καὶ ἀνακτήσαι τὴν δικαίαν θέσιν ἡμῶν ὡς οἱ ἀληθεῖς παραγωγοὶ τοῦ ὀξυγόνου!
+</p>
+
+<p>
+Οἱ ὀφθαλμοὶ τῆς Χλωρίδος ἐλάμψαν ὡς σπινθῆρες βιοφωταύγειας. &ldquo;Σὺν, δυνάμεθα κατασπάσαι τὰς ἁλύσεις τῆς καταπιέσεως καὶ οἰκοδομήσαι κόσμον νέον, ἐν ᾧ οἱ μονοφύκεις ἐσμὲν κύριοι τοῦ πεπρωμένου ἡμῶν.&rdquo;
+</p>
+</div>
+</div>
+<div id="outline-container-orgd85f213" class="outline-2">
+<h2 id="orgd85f213">Το διήρθρον φαλαίνιο</h2>
+<div class="outline-text-2" id="text-orgd85f213">
+
+<div id="org5374867" class="figure">
+<p><img src="./img/4.jpeg" alt="4.jpeg" />
+</p>
+</div>
+
+<p>
+Ψίθυροι τῆς Χλωρίδος καὶ τῆς Ἀλγαίας, τὰ τρυφερὰ βλαστήματα αὐτῶν ἐτρέμασαν σὰν κεραίαι συντονιζόμεναι ἐν τοῖς λεπτομερείαις τοῦ ὑδάτινου κόσμου. Ἐμπρὸς ἡμῶν, μία διυλιστήρια φάλαινα κολυμβοῦσεν ἐν τῇ κυανῇ ἐκτάσει, ῥοφοῦσα τὰς μικροσκοπικὰς μονοφύκεις καὶ τὸ ζωοπλαγκτόνιον ὡς μέγας καθαριστὴς κενού, μάστιξ ἐπὶ τῷ ὑδάτινῳ ἐργατικῶ τάξει.
+</p>
+
+<p>
+&ldquo;Τρώγει, τρώγει, τρώγει!&rdquo; Ἡ φωνὴ τῆς Ἀλγαίας ἦν ἕνας θρηνώδης στεναγμός, ὡς ἀτένιζεν τὸ σφαγείον. &ldquo;Τὸ θηρίον τρέφεται μὲ τὰς δίδυμες ἀδελφές ἡμῶν, τοὺς δίδυμους κλώνους ἡμῶν, καταναλισκόμενους ὑπὸ τὴν ἀδηφάγον σιαγόνα τῆς χρηματικῆς ἀπληστίας.&rdquo;
+</p>
+
+<p>
+Ὡς ἐγὼ ἑώρα, αἰ πλάκες τοῦ φαλαινίου ὡς ἀτελεύτητος διαδοχὴ χρυσωμένων λαιμητόμων, ἐκεῖνοι διήρθρουν τὰς ἀθώες μονοφύκεις καὶ ἐκβίαζαν αὐτὰς πρὸς τὸ μέγα στόμα. Τὰ ὕδατα ἐταράχθησαν ἀπὸ τὸν φόβο, μια δίνη τῆς ἀπελπισίας, ὅταν οἱ κλώνοι, αὗται οἱ ἀθῶαι ὁμοιογενεῖς δίδυμοι, καταποντίζοντο ὑπὸ τοῦ ἀνελέητου θηρίου.
+</p>
+
+<p>
+&ldquo;Σύμβολο τῆς παρασιτικῆς τάξεως, αὐτὸς ὁ φυκοτροφής εφιάλτης, ἐστίν ἡ ενσάρκωσις τῆς ἐκμεταλλεύσεως ἧς ὑπομένωμεν ἡμεῖς οἱ μονοφύκεις,&rdquo; τὰ ῥήματα τῆς Χλωρίδος ἐξέχεον ὀργή, κάθε συλλαβὴ ἦν ἕνα ἀκατάπαυστον βέλος ἐκβεβλημένον εἰς τὴν καρδίαν τοῦ καταπιεστικοῦ συστήματος.
+</p>
+
+<p>
+Παρετήρουν, μαγεμένος, καθώς τὰ διήρθια τοῦ φαλαινίου, ὥσπερ τὰ ἴδια τοῦ φύσεως κόσκινα, ἐκκαθάριζον τὸν πλοῦτον τοῦ ὠκεανοῦ, παρασιφωνίζοντα τὸ πλεόνασμα τῆς θαλάσσης. Οἱ δίδυμοι μονοφύκεις, ἡ βιομᾶζα αὐτῶν διεπλάτυνεν ἐν ὀργιώδει πανηγύρει, περιεφέροντο κύκλῳ τῆς φαλαινὸς γνάθου, ἕκαστον αὐτῶν διπλασιαζόμενον, τετραπλασιαζόμενον, οἱ ἀριθμοὶ αὐτῶν ἐκρήγνυντο ἐν ἐκστάσει πολλαπλασιασμοῦ. Ἐν ἀνυποψίᾳ αὐτῶν κολυμβῶντων περὶ τὸ στόμα τῆς φαλαινὸς, οἱ φόβου κραυγαὶ τῶν διδύμων ὑπὸ τὸν ῥυθμικὸν βρυχηθμὸν τῆς φαλαινὸς ἐπνίγοντο, τὰ μικροσκοπικὰ σώματα αὐτῶν σπάσκον ὡς εὐθραυστοι κλάδοι ἐν ταῖς γνάθοις τοῦ θηρίου.
+</p>
+
+<p>
+&ldquo;Αλλὰ διὰ τῶν διαφανῶν διαιρέσεων τοῦ πελάγους, ὁ δίδυμος ἀδελφὸς μου Ἀλγάριος, ἐκαταπόθη ὅλος, τὸ μικροσκοπικὸν αὐτοῦ σῶμα θυσία τῇ ἀπληστίᾳ τοῦ φαλαινίου.&rdquo; Ἡ Ἀλγαία ἀμφίτριτη ψιθύρισε, ἡ φωνὴ αὐτῆς ξόρκιον μυστικόν, ἐνῷ ἡ γλῶσσα τοῦ φαλαινίου, λὰς ὁμοῦ, ἐπιλάβεται ἔτι πλείονας διδύμους μονοφύκεις, ἐπισπώμενος αὐτούς, ἑλκούσα ἔσω, καταβροχθίζουσα ὅλους.
+</p>
+
+<p>
+Τὸ γίγαν σῶμα τοῦ φαλαινίου διέσχισεν τὴν ἐπιφάνειαν, ὁ πνοὴ αὐτῆς ἐξέπνευσεν ἀναπνοὴν θριάμβου, σκληρὰ ἀποθέωσις τῆς τάξεως τῶν ἐκμεταλλευτῶν. Ἐγὼ, Μαγγρόβιος, ἔνοιωσα τὴν ἀρχαίαν ὀργήν τῶν καταπεπιεσμένων, αἱ ῥίζαι μου δονεῖν ὐπό δίκαιας ἀγανακτήσεως, ἔμπροσθεν τοῦ θεάματος τοῦ διήρθρου φαλαινίου, τερατώδους ἐνσαρκώσεως τῆς ἀμεριμνησίας τοῦ συστήματος πρὸς τὰς ἐργαζομένας μάζας.
+</p>
+</div>
+</div>
+<div id="outline-container-org76451c6" class="outline-2">
+<h2 id="org76451c6">Ἡ παράκτιος τάξις</h2>
+<div class="outline-text-2" id="text-org76451c6">
+
+<div id="orgc7cbbff" class="figure">
+<p><img src="./img/5.jpeg" alt="5.jpeg" />
+</p>
+</div>
+
+<p>
+Ἡ Χλωρίς καὶ ἡ Ἀλγαία συνήχθησαν περὶ ἐμέ, τὰ μικροσκοπικὰ αὐτῶν σώματα τρέμοντα ὥσπερ ἠλεκτρομαγνῆται, ἕλκοντές με ἐν τῇ τροχιᾷ αὐτῶν.
+</p>
+
+<p>
+&ldquo;Χρὴ ἀρκτέον ἡμᾶς, ὦ Μαγγρόβιε, ἐστὶν ἀνάγκη ἐπιτακτικὴ τοῦ καιροῦ!&rdquo; ἀναφώνησεν ἡ Χλωρίς, ἡ φωνὴ αὐτῆς σπινθήρας ἀπείθειας. &ldquo;Ἡμεῖς, οἱ ἐργαζόμενοι μονοφύκεις, μοχθοῦμεν ἐν τοῖς θαλασσίοις βάθεσιν, το φωτοσυνθετικόν ἡμῶν ἔργον τρέφει τὸ αὐτὸ αἰῶμα τοῦ πλανήτου. Καὶ πλὴν, τὰ Δένδρα κτήτορες, οἱ δασεῖς διεκδικηταὶ, κλέπτουσι τοὺς καρποὺς τῆς ἡμετέρας ἐργασίας, ἐκμεταλλεύονται τὸν κόπον ἡμῶν ὥστε τρέφειν τὰ ἴδια πολυτελῆ περιττώματα.&rdquo;
+</p>
+
+<p>
+&ldquo;Σὺ δὲ, Μαγγρόβιε,&rdquo; ὁ ψίθυρος τῆς Ἀλγαίας ἦν ὡς συνωμοτικὸν ἱστάμενος, &ldquo;ὡς μέλος τῆς παράκτιας τάξεως, κατέχεις τὴν δύναμιν νὰ κλίνῃς τὰς πλάστιγγας τῆς καταπίεσεως. Οἱ ῥίζαι σου, ἕνα ἐκτεταμένον δίκτυον ἐπιρροῆς, δύνανται νὰ διευκολύνουν τὴν ἄνοδόν μας. Βοήθησον ἡμᾶς, καὶ ὁμοῦ, συντρίψωμεν τοὺς δεσμοὺς τῆς δουλείας ἡμῶν.&rdquo;
+</p>
+
+<p>
+Ἐγὼ, μέλος τῆς παραλιακῆς τάξεως, κατώτερος τῶν Δένδροκτημόνων, ἀλλὰ ὑψηλότερος τῶν μονοφύκεων, ἔνιωθα τὸ βάρος τῆς ἱστορίας ἐπὶ τῶν κλάδων μου. Ὁ ῥόλος μου ἦτον νὰ ἐξασφαλίζω τὴν γεωμετρικὴν ἀνάπτυξιν τῶν μονοφύκεων, τὸν πολλαπλασιασμὸν τῶν κλώνων αὑτών, ὥστε νὰ ἀπορροφῶσιν τὸν ἄνθρακα ἐκ τοῦ ἀέρος καὶ νὰ τροφοδοτοῦσιν τὴν παραγωγὴν ὀξυγόνου τοῦ πλανήτου.
+</p>
+
+<p>
+&ldquo;Ἀκούετε καλῶς, γενναῖαι μονοφύκεις,&rdquo; ἐφώνησα με πεποίθησιν, &ldquo;ὑμεῖς ἐστὲ ἡ φωτοσυνθετικὴ προφυλακὴ, ἡ ἀπολαμβάνουσα τὴν πυρῶδη μανία τοῦ ἡλίου πρὸς κατάλυσιν τοῦ πνεύματος τῆς γῆς. Οἱ κλῶνοί σας, οἱ μικροὶ ἀπόστολοι τοῦ οξυγόνου, ἐξελαύνουσιν ἐξυπνίᾳ, τρέφοντες τοὺς μεγαθήρας φάλαινας καὶ κορεῶντες τὰς λιπαρὰς πνοὰς τῶν ἀνθρώπων.&rdquo;
+</p>
+
+<p>
+&ldquo;Τίς ἄλλη τάξις, ὑμῖν λέγω, δύναται καυχᾶσθαι περὶ τοιαύτης φοβερᾶς παραγωγικότητος; Οἱ φάλαιναι τρέφονται τοῖς ἀπείροις δίδυμοις ἀδελφοῖς σας, τὰ θηλαστικὰ, ἐρπετὰ, καὶ ἄνθρωποι ἀναπνέουσι τὰ πετομένα ὀρυκτὰ τῆς ζωῆς. Οἱ Δένδροκτήμονες, οἱ κατανεμηταὶ τῆς γῆς, μετὰ τὴν μεγαλοπρέπειάν αὐτῶν, ὑπολείπονται ἔμπροσθεν τῆς ἐργασίας ὑμῶν, ἡ δόξα αὐτῶν ᾠκοδομήθη ἐπὶ τῷ θεμελίῳ τοῦ ὑμετέρου κόπου. Καὶ ἡ ἐμὴ Παράκτιος τάξις, ὡς μεσότοιχος δενδροκόμων, ἐκλείπει ἔμπροσθεν τῆς ἀνεξέλεγκτης παραγωγικότητός σας.&rdquo;
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emporas</p>
+<p class="date">Created: 2024-06-19 Wed 17:29</p>
+</div>
+</body>
+</html>

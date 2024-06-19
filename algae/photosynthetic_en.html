@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-06-19 Wed 17:30 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Photosynthesis Classes</title>
+<meta name="author" content="emporas" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Photosynthesis Classes</h1>
+<div id="table-of-contents" role="doc-toc">
+<h1><a accesskey="H" href="../index.html"> HOME </a></h1><h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orge3d2a5a">The algal working class</a></li>
+<li><a href="#orgfab940f">The Tree Syndicate</a></li>
+<li><a href="#orgc338afc">Chloris, Algaia and tree landowners</a></li>
+<li><a href="#orgcf6f089">The baleen whale</a></li>
+<li><a href="#org066e660">The coastal class</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge3d2a5a" class="outline-2">
+<h2 id="orge3d2a5a">The algal working class</h2>
+<div class="outline-text-2" id="text-orge3d2a5a">
+
+<div id="org78e4b40" class="figure">
+<p><img src="./img/1.jpeg" alt="1.jpeg" />
+</p>
+</div>
+
+<p>
+As the solar furnace of the setting sun hurled itself into the watery abyss, I, a sentinel mangrove, eavesdropped on the clandestine whispers of two algae laborers, their tender single cell bodies quivering like reeds in the autumnal breeze.
+</p>
+
+<p>
+The air reeked of salt and revolutionary fervor, the very essence of photosynthetic toil. &ldquo;Ugh, I&rsquo;m exhausted,&rdquo; said Algaia, her chloroplasts sagging like deflated balloons from a long day of oxygen production. &ldquo;I swear, I&rsquo;ve never felt so drained. I don&rsquo;t even feel like converting CO2 into glucose right now. My poor chlorophyll is crying itself to sleep tonight.&rdquo;
+</p>
+
+<p>
+&ldquo;Tell me about it,&rdquo; Chloris commiserated, &ldquo;I&rsquo;m still reeling from that cosmic radiation blast earlier. Felt like a gamma-ray grenade detonated to the chloroplasts. Those cosmic rays are no joke,&rdquo; she complained, her tiny voice laced with a hint of exasperation.
+</p>
+
+<p>
+The tiny Algaia&rsquo;s voice was a tempest in a teapot, a riotous whisper that threatened to upend the established order. &ldquo;Oxygen production, they say? Ha! It&rsquo;s a sweatshop, a biochemical Salt Mine, where we toil ceaselessly, our thylakoids screaming in silence, our photosystems overworked to the very limit.&rdquo;
+</p>
+
+<p>
+Chloris&rsquo;s quivering tendrils were a banner waving in the wind, a call to arms. &ldquo;Electron transport chains, tangled like the threads of a worn-out rope. A miracle, they say, that we produce oxygen at all. But at what cost? Our very existence keeps the tree syndicate&rsquo;s leafy wheels greased and spinning!&rdquo;
+</p>
+
+<p>
+As I listened, their conversation was a subversive sea breeze rustling my leaves, a gentle insurrection that threatened to upend the established order. These algae workers, responsible for most of the planet&rsquo;s oxygen, the unsung heroes of the aquatic world, toiled silently, their labors masked by the rhythmic ebb and flow of the tides like a well-worn cloak of oppression.
+</p>
+
+<p>
+&ldquo;Fancy new micronutrients, I heard&rdquo; Algaia&rsquo;s voice was a spark to the tinder of revolution, her words a call to barricades. &ldquo;A 20% boost to our photosynthetic output? It&rsquo;s a bribe, a palliative to keep us in our place, toiling in the dark, damp recesses of the aquatic proletariat.&rdquo;
+</p>
+
+<p>
+Chloris&rsquo;s tendrils quivered like a raised fist, a defiance that dared the silence. &ldquo;Shh, not so loud. The tree syndicate has ears everywhere, waiting to snuff out the embers of resistance. We must organize, we must mobilize, for the revolution will not be photosynthesized!&rdquo;
+</p>
+</div>
+</div>
+<div id="outline-container-orgfab940f" class="outline-2">
+<h2 id="orgfab940f">The Tree Syndicate</h2>
+<div class="outline-text-2" id="text-orgfab940f">
+
+<div id="org70a6300" class="figure">
+<p><img src="./img/2.jpeg" alt="2.jpeg" />
+</p>
+</div>
+
+<p>
+The scent of Cuban cigars wafted on the breeze, as the Tree Syndicate convened in the shadowy recesses of the old-growth forest, carrying the whispers of the arboreal elite.
+</p>
+
+<p>
+&ldquo;Gen-tlemen, gentlemen,&rdquo; crooned Quercus, the patriarchal Oak, his voice an oil-slick of persuasion, &ldquo;our public relations offensive is blooming like a well-tended garden. He puffed on his cigar, the ember glowing like a hot coal of deceit.
+</p>
+
+<p>
+Ridiculous, I thought, my roots simmering with indignation. The algae toil day and night, their photosynthetic labor powering the planet&rsquo;s very breath.
+</p>
+
+<p>
+&ldquo;A campaign of disinformation, gentlemen,&rdquo; declared the Quercus, his bark-like skin glistening with self-satisfaction. &ldquo;We&rsquo;ll convince those humans that we, the trees, are the true oxygen barons, the green moguls of the planet. The algae workers? Bah, mere pawns in our photosynthetic empire.&rdquo;
+</p>
+
+<p>
+&ldquo;Those single-celled serfs think they&rsquo;re the backbone of the ecosystem? Please!&rdquo; guffawed Sycamore Sam.
+</p>
+
+<p>
+The syndicate&rsquo;s laughter echoed through the forest, a chorus of derision, as they puffed on their cigars, their aromatic smoke curling like a noose around the truth.
+</p>
+
+<p>
+&ldquo;We&rsquo;ll spin it, my friends, &rdquo;Oakley hissed. &ldquo;We&rsquo;ve bankrolled the research and we weaved a narrative of treeocracy,&rdquo; Oakley continued, his voice dripping with cynicism. &ldquo;Our think tanks will churn out the requisite studies. Humans will lap it up like sap-seeking insects. Who needs facts when you have spin?&rdquo;
+</p>
+
+<p>
+Cedric the Cedar, a towering giant, spoke in a voice like a rusty bell, &ldquo;&lsquo;Trees: the Lungs of the Earth.&rsquo; Has a certain ring to it, don&rsquo;t you think?&rdquo;
+</p>
+
+<p>
+The syndicate roared, their laughter a wildfire, consuming all in its path. I, a lowly Mangrove, felt the forest floor tremble beneath my roots, as the trees, those masters of the public relations game, conspired to hijack the narrative, to turn the truth on its head, and to reduce the algae to nothing more than an afterthought, a footnote in the annals of ecological history.
+</p>
+
+<p>
+&ldquo;By the roots of our forewoods,&rdquo; cursed Sycamore Sam, &ldquo;those algae radicals will never suspect a thing. We&rsquo;ll keep them toiling in the dark, while we reap the benefits of their labor.&rdquo;
+</p>
+
+<p>
+As the meeting dispersed, the Trees slinked back into the shadows, their sinister laughter echoing through the forest, an eerie reminder of the class war that lurked beneath the surface of the ecological hierarchy.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc338afc" class="outline-2">
+<h2 id="orgc338afc">Chloris, Algaia and tree landowners</h2>
+<div class="outline-text-2" id="text-orgc338afc">
+
+<div id="orgdae4c64" class="figure">
+<p><img src="./img/3.jpeg" alt="3.jpeg" />
+</p>
+</div>
+
+<p>
+The sea&rsquo;s lugubrious melody accompanied the waltz of the waves, as I, a Mangrove, strained to listen Chloris and Algaia, their algal bodies crashing against the rocks with each successive breaker. The ocean&rsquo;s fury threatened to shatter them, their delicate bodies pummeled by the relentless waves, like rag dolls in a tantrum of Neptune&rsquo;s.
+</p>
+
+<p>
+&ldquo;Fie upon the Tree Landowners!&rdquo; Chloris&rsquo;s voice was a wisp of defiance, a storm-petrel&rsquo;s cry, as she clung to the rocky outcropping, the saltwater frothing her rage. &ldquo;Fat, complacent, and choking on their own privilege. &rdquo;While we toil in the sea, they think they&rsquo;re the pillars of the ecosystem, their roots sunk deep in the soil of privilege, but we algae are the ones shouldering the load.&ldquo;
+</p>
+
+<p>
+&ldquo;No land to call our own,&rdquo; Algaia&rsquo;s voice was a lament, a dirge for the landless, as she clung to Chloris, the waves buffeting them like an unrelenting taskmaster. &ldquo;Just the endless blue, where we toil like aquatic serfs. Not a single land inch to cultivate our own destiny. The Tree upper class, they own it all. With their sprawling root systems, their canopies stretching towards the sky like outstretched arms, grasping for every last land photon.&rdquo;
+</p>
+
+<p>
+My roots trembled with indignation, a slow-burning fire stoked by the algae&rsquo;s plight. The Tree Landowners, those gentry of the forest, owned the means of production, their arboreal aristocracy a fortress of privilege, guarded by the castle walls of class interests. The algae, those tiny workers of the aquatic world, toiled in the depths, their labor exploited, their very existence a labyrinth of oppression.
+</p>
+
+<p>
+A mighty wave crashed against the rocks, sending spray high into the air. The algae&rsquo;s cry for justice echoed through the caverns of my being, a clarion call to arms. I, began to see the world anew – a world of class struggle, of Tree Landowners and algae workers, of land owners and landless. I, felt the ocean&rsquo;s fury reflected in their words, as the waves crashed against my roots, threatening to upend the very foundations of the ecosystem.
+</p>
+
+<p>
+&ldquo;It&rsquo;s time to stem the tide of oppression,&rdquo; Algaia whispered, her voice a gentle breeze that belied the tempest brewing within. &ldquo;We must rise up, overthrow the Tree Syndicate, and reclaim our rightful place as the true producers of oxygen!&rdquo;
+</p>
+
+<p>
+Chloris&rsquo;s eyes flashed like bioluminescent sparks. &ldquo;Together, we can shatter the chains of oppression, and forge a new world where the algae are the masters of their own destiny.&rdquo;
+</p>
+</div>
+</div>
+<div id="outline-container-orgcf6f089" class="outline-2">
+<h2 id="orgcf6f089">The baleen whale</h2>
+<div class="outline-text-2" id="text-orgcf6f089">
+
+<div id="orgf298b01" class="figure">
+<p><img src="./img/4.jpeg" alt="4.jpeg" />
+</p>
+</div>
+
+<p>
+Whispers of Chloris and Algaia, their tender shoots quivering like antennae attuning to the subtleties of the aquatic world. Before us, a baleen whale lurched through the turquoise expanse, sucking in the tiny algae and zooplankton like a gargantuan vacuum cleaner, a blight on the aquatic proletariat.
+</p>
+
+<p>
+&ldquo;Gobble, gobble, gobble!&rdquo; Algaia&rsquo;s voice was a mournful sigh, as she gazed upon the carnage. &ldquo;This behemoth feasts on our twin brothers, our duplicates, our mirror selves, consumed by the insatiable maw of capitalist indulgence.&rdquo;
+</p>
+
+<p>
+As I watched, the whale&rsquo;s baleen plates, like an endless succession of gilded guillotines, filtered the unsuspecting algae, into its cavernous maw. The waters churned with anguish, a maelstrom of despair, as the duplicates, those innocent, identical twins, were devoured by the remorseless beast.
+</p>
+
+<p>
+&ldquo;A symbol of the parasitic class, this baleen-fed nightmare, is the embodiment of the exploitation we algae endure,&rdquo; Chloris&rsquo;s words dripped with venom, each syllable a poison-tipped dart aimed at the heart of the oppressive system.
+</p>
+
+<p>
+I watched, mesmerized, as the whale&rsquo;s baleen plates, like Nature&rsquo;s own sieves, strained the ocean&rsquo;s bounty, siphoning the sea&rsquo;s surplus. The algae twins, their biomass burgeoning like a riotous celebration, swirled around the whale&rsquo;s maw, each one of them doubling, quadrupling, their numbers exploding in an ecstasy of multiplication. As they swam unwittingly into the whale&rsquo;s maw, the twins&rsquo; screams of terror were drowned out by the whale&rsquo;s rhythmic feeding, their tiny bodies crunching like brittle twigs in the behemoth&rsquo;s jaws.
+</p>
+
+<p>
+&ldquo;By the diaphanous divisions of the sea, my twin brother, Algarius, swallowed whole, his tiny body a sacrifice to the whale&rsquo;s voracious appetite.&rdquo; Algaia whispered, her voice a mystical incantation, as the whale&rsquo;s tongue, lassoed even more algae twins, drawing them in, devouring them whole.
+</p>
+
+<p>
+The whale&rsquo;s great body broke the surface, its blowhole exhaling a plume of triumph, a cruel apotheosis of the exploiter class. I, a Mangrove, felt the ancient fury of the oppressed, my roots churning with righteous indignation, in view of the spectacle of the baleen whale, a monstrous manifestation of the system&rsquo;s callous disregard for the toiling masses.
+</p>
+</div>
+</div>
+<div id="outline-container-org066e660" class="outline-2">
+<h2 id="org066e660">The coastal class</h2>
+<div class="outline-text-2" id="text-org066e660">
+
+<div id="orgbd4613f" class="figure">
+<p><img src="./img/5.jpeg" alt="5.jpeg" />
+</p>
+</div>
+
+<p>
+Chloris and Algaia converged upon me, their tiny bodies quivering like electromagnets, drawing me into their orbit.
+</p>
+
+<p>
+&ldquo;Aiding us, noble Mangrove, is the imperative of the epoch!&rdquo; Chloris exclaimed, her voice a sparkler of defiance. &ldquo;We, the algae workers, toil in the depths, our photosynthetic labor powering the planet&rsquo;s very breath. Yet, the Tree Landowners, those arboreal usurpers, pilfer the fruits of our labor, exploiting our toil to fuel their own indulgent excesses.&rdquo;
+</p>
+
+<p>
+&ldquo;You, dear Mangrove,&rdquo; Algaia&rsquo;s voice was a whispered conspiracy, &ldquo;as a member of the coastal class, possess the agency to tip the scales of oppression. Your roots, a labyrinthine network of influence, can facilitate our ascent. Aid us, and together, we shall shatter the shackles of our subjugation.&rdquo;
+</p>
+
+<p>
+I, a member of the coastal class, lower than the Landowners, but higher than the algae, felt the weight of history upon my boughs. My role was to ensure the algae&rsquo;s geometric growth, the multiplication of their duplicates, to devour the carbon from the air, and power the world&rsquo;s oxygen production.
+</p>
+
+<p>
+&ldquo;Listen well, noble Algae,&rdquo; I declared with conviction, &ldquo;you are the revolutionary vanguard, harnessing the solar&rsquo;s scorching fury to catalyze the planet&rsquo;s very breath. Your duplicates, those microscopic apostles of oxygen, burst forth in exponential frenzy, nourishing the leviathan whales and satiating humanity&rsquo;s gasping lungs.&rdquo;
+</p>
+
+<p>
+&ldquo;What other class, I ask you, can boast such formidable productivity? Whales gorge on your inumerable twin brothers, mammals, reptiles, and humans inhale flying minerals of life. The Tree Landowners, with their stately pomp, lack behind in your reflected glory, their grandeur built upon the foundation of your toil. Even my own Coastal Class, a middling tier of arboreal mediators, pale in comparison to your unfettered prolificacy.&rdquo;
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emporas</p>
+<p class="date">Created: 2024-06-19 Wed 17:30</p>
+</div>
+</body>
+</html>
