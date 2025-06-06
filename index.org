@@ -5,6 +5,10 @@
 
 * Stories
 -
+  - [[file:darts/darts_en.html][The Dart That Broke the Space-Time Vortex]]
+  - [[file:darts/darts_gr.html][Το Βέλος που Έσπασε τη Δίνη του Χωροχρόνου]]
+  - [[file:darts/darts_an.html][Βέλος διαρρῆξον τὴν τοῦ χωροχρόνου δίνην]]
+-
   - [[file:algae/algae_en.html][Photosynthesis Classes]]
   - [[file:algae/algae_gr.html][Οι Φωτοσυνθετικές Τάξεις]]
   - [[file:algae/algae_gr_an.html][Αἱ Φωτοσυνθετικαὶ Τάξεις]]
