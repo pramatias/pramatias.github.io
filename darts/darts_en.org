@@ -2,6 +2,8 @@
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
 * Spacetime Gourmands
+[[./img/darts.jpeg]]
+
 They called themselves the Spacetime Gourmands, a species floating in zero-G, laughing with jaws unhinged, born from the leftover dreams of Jupiter’s helium hurricanes. No bones, only gelatinous tendrils that could knot themselves into hats or telescopes or voting booths on a whim. Their cities? Fractal origami folded from dead comet nuclei, vibrating on resonant frequencies that made the rings of Saturn look like litter.
 
 The arena, a cathedral ten kilometers long glass tube stretched taut between Saturn’s rings like a dental floss snapping dead stars’ teeth. The Spacetime Gourmands hung there, audience, spectators: a swarm of translucent jellyfish-thingies with necks longer than my arms and cheeks that gurgled liquid starlight when they giggled. “Darts game or astrophysical suicide?” one boomed, its voice a chorus of dying stars, while another slurped its tentacle-ear and mumbled about “gravity’s corpse” in between nibbling black hole fudge.
