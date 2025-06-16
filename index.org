@@ -5,6 +5,11 @@
 
 * Stories
 -
+  - [[file:condensed/condensed_humidity_en.html][Condensed Humidity]]
+  - [[file:condensed/condensed_humidity_gr.html][Πυκνά Σύννεφα]]
+  - [[file:condensed/condensed_humidity_an.html][Πυκνά Νέφη]]
+  - [[https://www.youtube.com/watch?v=EshvLy5YOYY][Videobook]]
+-
   - [[file:darts/darts_en.html][The Dart That Broke the Space-Time Vortex]]
   - [[file:darts/darts_gr.html][Το Βέλος που Έσπασε τη Δίνη του Χωροχρόνου]]
   - [[file:darts/darts_an.html][Βέλος διαρρῆξον τὴν τοῦ χωροχρόνου δίνην]]
