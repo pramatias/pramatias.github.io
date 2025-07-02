@@ -5,6 +5,10 @@
 
 * Stories
 -
+  - [[file:glassis/glassis_en.html][Glassis]]
+  - [[file:glassis/glassis_gr.html][Η Υαλίς]]
+  - [[file:glassis/glassis_an.html][Ἠ Ύαλίς]]
+-
   - [[file:condensed/condensed_humidity_en.html][Condensed Humidity]]
   - [[file:condensed/condensed_humidity_gr.html][Πυκνά Σύννεφα]]
   - [[file:condensed/condensed_humidity_an.html][Πυκνά Νέφη]]
