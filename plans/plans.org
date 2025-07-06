@@ -2,16 +2,22 @@
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
 * Χριστίνα
+** Αρχική Κάτοψη
 [[./img/xristina.png]]
 
-[[./img/xristina_bw.png]]
+** Λάστιχα
+[[./img/xristina_lastixa.png]]
 
 * Ιωάννα
+** Αρχική Κάτοψη
 [[./img/ioanna.png]]
 
-[[./img/ioanna_bw.png]]
+** Λάστιχα
+[[./img/ioanna_bw1.png]]
 
 * Γιώργος
+** Αρχική Κάτοψη
 [[./img/giorgos.png]]
 
-[[./img/giorgos_bw.png]]
+** Λάστιχα
+[[./img/giorgos_bw1.png]]
