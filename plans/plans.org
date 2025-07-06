@@ -1,0 +1,11 @@
+#+Title: Σχέδια
+#+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
+
+* Χριστίνα
+[[./img/xristina.png]]
+
+* Ιωάννα
+[[./img/ioanna.png]]
+
+* Γιώργος
+[[./img/giorgos.png]]
