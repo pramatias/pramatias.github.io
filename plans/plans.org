@@ -18,6 +18,7 @@
 * Στηρίγματα
 [[./img/stirigmata.png]]
 
+[[./img/stirigmata_korfi.png]]
 
 * Γιώργος
 ** Αρχική Κάτοψη
