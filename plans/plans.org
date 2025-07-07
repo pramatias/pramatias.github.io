@@ -15,6 +15,10 @@
 ** Λάστιχα
 [[./img/ioanna_lastixa.png]]
 
+* Στηρίγματα
+[[./img/stirigmata.png]]
+
+
 * Γιώργος
 ** Αρχική Κάτοψη
 [[./img/giorgos.png]]
