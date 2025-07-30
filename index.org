@@ -5,6 +5,10 @@
 
 * Stories
 -
+  - [[file:crunch/crunch_en.html][Crashed Crunch]]
+  - [[file:crunch/crunch_gr.html][Συντετριμμένος Κρότος]]
+ - [[file:crunch/crunch_an.html][Συντετριμμένος Κρότος]]
+-
   - [[file:glassis/glassis_en.html][Glassis]]
   - [[file:glassis/glassis_gr.html][Η Υαλίς]]
   - [[file:glassis/glassis_an.html][Ἠ Ύαλίς]]
