@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-08-20 Wed 18:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Χρονικὴ Ἀναγέννησις</title>
+<meta name="author" content="emporas" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Χρονικὴ Ἀναγέννησις</h1>
+<div id="table-of-contents" role="doc-toc">
+<h1><a accesskey="H" href="../index.html"> HOME </a></h1><h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org8ee9486">Τὸ Νηπίου Συμβεβηκός</a></li>
+<li><a href="#org2cac25a">Κερδοποίησις τοῦ Κύκλου</a></li>
+<li><a href="#orga07259f">Θάνατος ὡς Χρονομερής</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8ee9486" class="outline-2">
+<h2 id="org8ee9486">Τὸ Νηπίου Συμβεβηκός</h2>
+<div class="outline-text-2" id="text-org8ee9486">
+<p>
+Τὰ φῶτα ἐν τῷ τῶν Χρονικῶν Κυττάρων Ἀνανεώσεως Συστημάτων ἐργαστηρίῳ ἐβόμβουν ὡς σφὴξ ἐν μίκτῃ. Ἡ ἰατρὸς Ῥάζωρια Μάρις εἰσῆλθεν εἰς τὸ ἐργαστήριον, τῶν κρηπίδων κτυπουσῶν ὡσπερεὶ παραιτήσεως ἐπιστολὴν πρὸς θεὸν σιγῆς γραφουσῶν. Ὁ θάλαμος ὤσφραινεν ὄζονος, πᾶσα ἐπιφάνεια λευκῷ χρώματι ἠσκευασμένη πρὸς τὸ κρύπτειν τὰ αἱματώδη σημεῖα τῶν διαπεπτωκότων πειραμάτων. Ἐπὶ τῷ τοίχῳ πλὰξ ἐκρέματο· ΧΡΟΝΟΑΝΑΓΕΝΝΗΣΕΩΣ ΔΙΑΜΕΡΙΣΜΑ· ἜΝΘΑ ΧΡΟΝΟΣ ΜΊΣΘΩΣΊΣ ἘΣΤΙ, ΟΥΧ ΟΙΚΕΙΟΤΗΣ.
+</p>
+
+<p>
+Οὐδὲν τούτων ἐπίστευεν.
+</p>
+
+<p>
+Τὸ ἐργαστήριον διετείνετο πρόσω, ναὸς μανίας. Μηχαναὶ ἐβόμβουν, ἔστρεφον, καὶ ἐκώκυον τοὺς μεταλλικοὺς ὕμνους. Ἀντιδραστὴρ σχήματι τευθίδος ἔζεεν ἐν μέσῳ τοῦ δαπέδου, σωλῆνες χέοντες χλωρὰν κόνιν ἣ συρίττουσα ἀνεθυμίαζεν.
+</p>
+
+<p>
+Εἶτα εἶδεν αὐτό.
+</p>
+
+<p>
+Ἐν μέσῳ τῷ ψυχρῷ χαλκῷ δαπέδῳ σωρός τις. Λίμνη τις. Ἐταιρικὰ ἱμάτια—βράκαι, χιτώνιον, δεσμὸς χρώματος μώλωπος σταφυλῆς—ῥᾳθύμως κείμενα ὡς ταὼς ἐκπεπνευκώς. Ἐντὸς τούτων τῶν ἱματίων; Βρέφος.
+</p>
+
+<p>
+Κλαῖον βρέφος, ἐκραύγαζε μετὰ τῆς ῥώμης χιλίων συλλόγων.
+</p>
+
+<p>
+Ἡ ἰατρὸς Μάρις ἔκλινεν (δραματικὴν κλίσιν, τοῦ ἰσχίου παραφυγόντος ὡς σφαίρας ἀξιοπρεπείας ἐκκλίνοντος) καὶ ἤνοιξεν τὸν κόλπον τοῦ χιτῶνος. Τὸ πρόσωπον τοῦ νηπίου ἐφάνη· ἀκόμητον καὶ λεῖον, πρὸς αὐτὴν βλέπον ὀφθαλμοῖς διδύμοις ἀνδρὸς ὃς ποτε κατεῖχε σύνταγμα ἐπιγεγραμμένον &ldquo;Ἐκ ἑξηκονταπέντε εἰς εἴκοσι πέντε ἐν εἴκοσι τέτταρσιν ὥραις.&rdquo;
+</p>
+
+<p>
+&ldquo;Ἰατρὲ Πλίνκετ;&rdquo; ἡ Μάρις ἐβόησεν, ἡ φωνὴ αὐτῆς ξίφος σαρκασμῷ ἐσκεπασμένον. &ldquo;Τοῦτό ἐστι&#x2026; παίγνιον; Οἶσθα πόσα κατὰ τῶν Ἀσφαλείας Νόμων παραβαίνει;&rdquo; Ὁ ἀνήρ ὃς ἀπέδοτο τὴν ψυχὴν τῇ Βουλῇ Ἐπενδυτῶν πρὸς τὸ ἀνοῖξαι Νεότητα ὡς Διακονίαν™, νῦν σπαίρων ἐν τοῖς ἰδίοις σηρικοῖς χιτῶσι, πυγμαῖς τύπτων τὸν τάπητα ὡς τύμπανα πολέμου. &ldquo;Οὐά οὐά οὐά!&rdquo; ἐβόα.
+</p>
+
+<p>
+Ἡ Μάρις ἥρπασε τὴν μαστὸν παρηγόρου ἐκ τῆς φάτνης (ἣ ἐγέγραπτο &ldquo;Ἰατρὸς Θ. Πλίνκετ, Ἄρχων Γενετικὸς Προσωπικῶν Πτυχῶν&rdquo; χρυσῷ γράμματι χαραχθεῖσα), εἰσήλασεν εἰς τὸ στόμα τοῦ νηπίου. Ἐμύζησε λαίμαργα, μελῳδῶν μέλος ὁμοιούμενον τῷ ἐταιρικῷ ὕμνῳ &ldquo;Ἡμεῖς Ἐσμεν τὸ Μέλλον&rdquo; παρεκτόνως ἐν αὐλῷ.
+</p>
+
+<p>
+Ἡ θύρα συρίσασα ἠνοίχθη. Εἰσῆλθον ὁ δεύτερος τῆς ὁμάδος· ὁ ἰατρὸς Βίγγλος, γενετικὸς τοῦ ἐργαστηρίου.
+</p>
+
+<p>
+&ldquo;Τί,&rdquo; ἐκρώξατο ὁ Βίγγλος, &ldquo;τοῦτό ἐστιν;&rdquo;
+</p>
+
+<p>
+Ὁ κύριος σταθμὸς τοῦ ἐργαστηρίου ἠστράπτετο. Τινὰ χειρόγραφα σημειώματα ἐπὶ τῇ τραπέζῃ. &ldquo;Τὸ φάρμακον&#x2026; πολὺ ἄγαν. Εἷλε τὴν ἡλικίαν. Πᾶσαν αὐτήν.&rdquo;
+</p>
+
+<p>
+&ldquo;Ὁ καρπὸς τοῦ ἀθανάτου ὀνείρατος αὐτοῦ,&rdquo; εἶπεν ἡ Μάρις. &ldquo;Ἰατρὸς Θαδδαῖος Πλίνκετ, Φάσις Ε&rsquo;, Ἡλικία μείον ἑκατὸν τοῖς ἑκατοῖς,&rdquo; ἐν ᾧ τὰ δάκρυα τοῦ βρέφους κατέσταζον κατὰ τοῦ χιτῶνος αὐτῆς, σπίλους καταλείποντα ὀσφραινομένους ὑγρῶν χαλκῶν καὶ ἐσχάτων συγγνώμων.
+</p>
+
+<p>
+&ldquo;Τέλειον,&rdquo; ἡ Μάρις εἶπεν, ὡς εἰ τὸ ἐργαστήριον σκηνὴ χάους ἦν. &ldquo;Νῦν φέρετε τὴν ἐπιτελεστικὴν περίληψιν τοῦ νηπίου ἐκ τῆς ψυκτῆρας. Ἡ Βουλὴ φιλεῖ καλὸν κινδύνου ἀμοιβῆς θέαμα.&rdquo;
+</p>
+
+<p>
+Ὁ Βίγγλος ἐπανῆλθε μετὰ κραυγῆς, φάκελον κίτρινον κρατῶν ἐπιγεγραμμένον ΠΛΙΝΚΕΤ, Θ. ΦΑΣΙΣ Ε&rsquo; (ΠΡΟΣΘΗΚΗ· ΖΩΝΤΟΣ ΔΕΙΓΜΑΤΟΣ).
+</p>
+
+<p>
+Ἡ Βουλαία συνέλευσις ἤδη προυχώρει ἐν τῷ αἰθρίῳ, ἔνθα ἐπενδυταὶ ἐκάθηντο ὡς θεοὶ ἐπὶ βελουδίνων δίφρων, καφὲ σπῶντες καὶ ψιθυρίζοντες περὶ τοῦ πῶς χρηματίσαι ἀπὸ τῆς μελλούσης ὑπερκαινῆς τοῦ ἡλίου. Ἡ Μάρις ὤθησε τὸ παιδίον εἰς τὸν θάλαμον.
+</p>
+
+<p>
+Αἱ θύραι τοῦ βουλευτηρίου στένουσαι ἠνοίχθησαν ὡς μηχανικὸν ἔλαιον γαργαρίζον. Οἱ τοῖχοι ἐσφύζον παλλομέναις ταινίαις τιμῶν, λαμπρὰς κεφαλίδας ἐν φωτειναί ταινίαι δεικνύοντες· &ldquo;ΜΕΝΕΤΕ ἈΝΑΣΦΑΛΙΣΤΟΙ&rdquo; &ldquo;ΗΛΙΚΙΑ ΕΣΤΙ ΚΟΣΜΗΜΑ. ΦΟΡΕΙΤΕ ΑΥΤΗΝ ΜΕΤΑ ΣΤΑΣΕΩΣ.&rdquo;
+</p>
+
+<p>
+Ἀφῆκε τὸ βρέφος ἀλαλάζειν κραυγὴν ἣ ἠδύνατο ἀνταγωνίσασθαι ἐταιρικὴν σύγκρισιν. &ldquo;Χρόνος οὐκ ἔστι διακονία—παῖς ἐστιν ὃν οὐ δύνασαι κρατεῖν!&rdquo;
+</p>
+
+<p>
+&ldquo;Πάντως,&rdquo; ἡ Μάρις ἐψεύσατο, ἐν ᾧ τὸ βρέφος οὖρον φωσφορίζον κατὰ τῆς ξυλίνης τραπέζης ἤγαγεν. &ldquo;Βούλεσθε &lsquo;Νεότητα ὡς Διακονίαν&rsquo;; Ἰδοὺ τὸ πρῶτον ἔπαθλον.&rdquo;
+</p>
+
+<p>
+Οἱ ἐπενδυταὶ ἐπέκλιναν, τὰ πρόσωπα αὐτῶν ἡμίφωτα ὑπὸ τοῦ φωσφορίζοντος οὔρου τοῦ βρέφους, ὡς εἰ τὸ ὑγρὸν κατεῖχε τὰ μυστήρια μακροβιότητος. Ὁ Βάρν, ὁ ἀρχηγὸς ἐπενδυτής—τὸ πρόσωπον αὐτοῦ μωσαϊκὸν γηπέδου γκὸλφ ὀψιχρωμίας καὶ συντεταμένου δέρματος—κατέθηκε τὸν καφέ αὐτοῦ μετὰ κτύπου. Ὁ ματόγυαλος αὐτοῦ ηὔξανε τὸ κλαῦθμα τοῦ βρέφους εἰς γροτῶδες, κερματοποιημένον οἰμωγήν.
+</p>
+
+<p>
+Τὸ βρέφος, νῦν σπαίρον ἐν χιτωνίσκῳ διδακτορικώ ἐπιγεγραμμένῳ, ἔθηκε ἕνα πόδα ἐπὶ τὴν συνεδρίου τράπεζαν καὶ τὸ χρυσοῦν τόξον ὁύρων αὐτοῦ ἔκαυσε τὰ διαγράμματα πλακούντων εἰς ὑγρὰν τρέμουσαν ἰλύν. Τὸ διάγραμμα Γ&rsquo; Τριμήνου Οἰκονομικῶν Προβλέψεων, ὃ ποτὲ ἔλαμπεν ὡς ἀδαμαντόστικτον ψεῦδος, νῦν ἐνένευεν ὡς μεμαραμμένη ὀρχίς, οἱ στῦλοι αὐτοῦ τηκόμενοι εἰς λίμνην.
+</p>
+
+<p>
+Ἡ Μάρις ἔλαβε τὴν ζώνην τοῦ βρέφους· &ldquo;Γηράσκει εἰς τοὐπίσω, τὸ φάρμακον οὐ τέτελεσται—ἵσταται ἐπὶ&#x2026; τούτου.&rdquo;
+</p>
+</div>
+</div>
+<div id="outline-container-org2cac25a" class="outline-2">
+<h2 id="org2cac25a">Κερδοποίησις τοῦ Κύκλου</h2>
+<div class="outline-text-2" id="text-org2cac25a">
+<p>
+Οἱ ἐπενδυταὶ ἐκύρτωσαν ἐγγὺς, τὰς ἀναπνοὰς σιγώντες, ὥσπερ ἡ δύσοσμα τοῦ βρέφους νεονίου ἐμέτου τὰ πνευμόνια αὐτῶν ἔκαμνεν ἄκορνους· τὰς ἀναπνοὰς ἐπ᾽ ἁρμονίῃ ἔτυπτον. Ὁ Βαρν, αὔξησεν ἀχνὸν, εἶτα διήφανεν, εἶτα πάλιν ἀχνύνθη — ὡς ἂν τὸ σκεῦος οὐκ ἠδύνατο διακρίνειν εἰ σκόπευτρον ἔσται εἰς τὸ μέλλον ἢ ἔκπαιγνον ἔσοπτρον ὁμοῖον ὄνειδός τινος χρεοῦς.
+</p>
+
+<p>
+&ldquo;Φάσις Ε&rsquo;. Παύσατε,&rdquo; ἔφη ἡ Μάρις, ἡ φωνὴ αὐτῆς ὡς ξίφος ἀκονισθέν, &ldquo;τὸ διάλυμα —&rdquo; ἐσήκωσεν τὴν χεῖρα εἰς τὴν κεφαλὴν τοῦ ὀλοφυρομένου βρέφους, γυμνὴν ὡς ἀλάβαστρον, &ldquo;— ἐτάραξεν. οὐκ ἔστιν μοχλὸς, ἀλλὰ ἔλξις κύκλου ἣν οὐ δύνασαι ἀναστρέψαι. &rdquo;
+</p>
+
+<p>
+&ldquo;Διακοπήσομεν τὴν δοκιμήν· τὸ ὑποκείμενον ἀναθρέψομεν. ἑωρακότων ὁ μικρὸς ἔπαρχος τελεῖν ἐν τῶν μετόχων συνέδριοις. &rdquo; ᾔλειξεν τὸ θέαμα τὸν Πλίνκεττ βρέφος: ἐσύροντο τὰ σάλια, ἐνδυόμενος τὰ περὶ τὰς κνημὰς ἔνδυμα, καὶ αἱ ἀναφώνησαι αὐτοῦ τὴν ἀέριαν ἠχολογίαν ἔδειξαν, ἥτις τὰ φίλτρα τῶν ἀέρων ἐμπλόκει. Ἐπισημειώσομεν. &ldquo;Παρακολουθοῦμεν. Σταυροῦμεν τὰς χεῖρας ἵνα ὁ νοῦς αὐτοῦ τὸν ἀναστροφέα χρόνον ὑπομένῃ. &rdquo;
+</p>
+
+<p>
+&ldquo;Ἄριστον,&rdquo; εἶπεν ὁ Βάρν. &ldquo;Ἔτι τὴν δοκιμὴν ἐν θαλάμῳ στάσεως ἀποθέσομεν· ἄστω τὸ παιδίον μισθὰν κερδίζει τῆς ἀνδρείας. ἄσθω ὁ μικρὸς τυραννίδιος τὰς συναντήσεις τῶν μετόχων. Ἄρχεται ἡ ἐποχή. &rdquo;
+</p>
+
+<p>
+Ἔτερος ἐπενδυτὴς, ὁ Κρέλλ (ἀνήρ ὡς ἀτσάλινον ὀστέον), προῆλθεν. οἱ σκάλαι τῶν ὑποδημάτων αὐτοῦ οὐκ ἔλιπον ἴχνη — μόνον σκιὰν ἤν τις ἐσώρευσε, ἣ ὡς ἀράχνη ἐρρεῖτο ἐπὶ τῶν πλακιδίων.
+</p>
+
+<p>
+&ldquo;Θάλαμος στάσεως; Στάσις; παγώσεις τὴν ἐρείδαν τῆς ῥοῆς κερδῶν κατισχύνει! Τὸ σύνθημα —&rdquo; ἔδειξε πρὸς τὸ βρέφος, ὅ ἔτι μύων ἐπὶ τοῦ μονοκύκλιον τῷ Βαρν — &ldquo;—ἦν Φάσις Ε&rsquo;: ἀναστροφή τῆς ἡλικίας εἰς ἐμπορεύσιμον δημογραφικὸν. οὐ βρέφος μόνον. &rdquo; ὁ Κρελλ ἔλεγε ὥσπερ ἂν ἔβλεπε πρὸ τῶν ὀφθαλμῶν αὐτοῦ ταινίαν. &ldquo;Ὁ Πλούνκεττ ὑπέγραψε τὴν παραπομπήν· ἡ σημείωσις ἐπὶ τῷ συμβολαίῳ, ὡς ἐπικήδειος, περὶ ἐπαγγελματικῶν κινδύνων ἐστίν. &rdquo; ὁ Κρελλ μονολόγησεν, ὡς ἂν τὸν αὐτὸν μῦθον ἤδη ὁρᾷ. &ldquo;ἡ ὁμάς τῶν Νεογένεσις —πρωτότυπον ἔχουσα— ἔθηκε ὡς πρότυπον ἄλλον· νῦν δὲ δευτέροι παλινδρομοῦσι τοὺς πελάτας ὅσοι μίαν ὁλοκλήρωσιν ἀναστρέψαντες ἔλαβον τέκνα δωδεκάχρονα ἑαυτοῖς παίζοντα ἐπὶ τῶν χρηματιστηρίων. Ἡμῶν ἡ καινοτομία μένει. Ἀφορισμός τὸ διαφοροποιεῖν. Λέγω ἡμῖν: ‹Φοβεῖσαι τὰ μὴν τῷ ἀρτηρίῳ τῶν τεσσάρων καὶ τριάκοντα; Τί γὰρ οὐχὶ εἰς τὰ εἴκοσι πέντε;›&rdquo;.
+</p>
+
+<p>
+Τὸ βρέφος Πλίνκεττ — νύν μισὸν σύνδεσμον κατὰ τὸν δεσμὸν — ἐξέβολε γαστρὸς πράσιν φλόγα, ἥτις ἐσκώληξεν τὰς προρρήσεις τῶν προβλέψεων τοῦ τρίτου τριμήνου εἰς σμικρὰν στάχυν.
+</p>
+
+<p>
+Ὁ Βαρν κεκοίτα. τὸ πρόσωπον αὐτοῦ ἥμισυ ἐσβέβλητο ὑπὸ νέφους ἐμέτου. &ldquo;Καλέσωμεν αὐτόν Χρόνο Ἐνίσχυσιν. Ἰματιάζετε ὡς μέσον ἀναζωπυρώσεως τῆς ἡλικίας. &rdquo;
+</p>
+
+<p>
+Ὁ Πλίνκεττ ἤρξατο ἐρράπτεσθαι, ἴχνη ἀφὲν ὑγρὰ καὶ αριθμητικὰ ἐν τῷ πλατύ τινὶ ἐκείνω τῷ δαπέδῳ ἀπολείπων.
+</p>
+
+<p>
+Αἱ σκιᾶι βουβώδη ἦσαν, βορβορώδεις ὡς λείχη ὑγρᾶς δειλινοῦ, καὶ ἐκ αὐτῶν ἀνέβη Κύριος Ζ. Τ. Λόρν — μαθητὴς τοῦ Κρελλ — λεπτός, ἐν χιτῶνι τυπωμένῳ τοῦ λογότυπου τῆς Ἀκαδημίας Ἀναγνώρισης τοῦ Κλίματος.
+</p>
+
+<p>
+&ldquo;Καὶ τὰ μανάτεια,&rdquo; προσέθηκε. &ldquo;Τὰ μανάτεια τὴν οἰκοσυστηματικὴν ἱσορροπίαν στήριζουσι. Ὅρατε. &rdquo; Ἔλασσεν ταὐτόθι ταμπλέταν πρὸς τὸ μέσον, ἡ ὀθόνη αὐτῆς χάρτην ἀνατυπούσασα ἐστὶν — μανγκρόβιας δρυμοὺς, βιοφωσφοροῦντας πλαγκτοῦς, ὡς μέδουσαι ὀπὶ τὸν ἔρωτα.
+</p>
+
+<p>
+Αἱ μανάται — γιγάντιοι κατὰ χρυσίην τὸ χρῶμα, ὡς μαργαρίται — πλεῦσαν ἐν λιμνίδι βραχὺ, ῥυτίδα ὄμματά τε ὡς σελήνην ἀπόνταν — τὰ ῥίνια αὐτῶν ἔτριπτον τὰ ὑποκειμένα ῥίζας ὑδροβίων. τὰ ῥίπτρα αὐτῶν ἔτριβον τὰ παρόντα ὑδρόβιας ἀλωναῖς· ἐθεώρουν μικρὸν μανάτειον, ῥοδοπρὸς ὡς τὸς τόματος, διὰ τῆς ἄλγης ἐχέσσον, καὶ… ἀντέστρεφε τὴν ἡλικίαν. τὸ δέρμα ἐξαπέπλεκτο εἰς λείαν ἔπιπλον, τὰ πτερύγια ἐμμήκυναν, καὶ ἀνέπλευσαν ἄνω, πνεῦμα θαλάσσιον, διαλυόμενον εἰς νεκρὰν πληκτῶν πλαγκτοῦ, ὃν οἱ γονεῖς ἐκομίζοντο καὶ ἐσθίουσιν ἐπὶ κοινῇ.
+</p>
+
+<p>
+&ldquo;Οἱ πρεσβύτεροι τὰ ὑπολείμματα τῶν τέκνων αὐτῶν ἐσθίουσιν,&rdquo; ἔφη ὁ Λόρνε. &ldquo;Ἡ δεῖξις ἡγεμονεύει τὴν οἰκοσύνθεσιν. Ἀναζωπύρωσις τῆς οἰκοσυστημικῆς ἁρμονίας. Οὐδὲν νεκρὸν ζῇ· ἅπαν ἑαυτὸν ἀνακυκλοῖ. &rdquo;
+</p>
+</div>
+</div>
+<div id="outline-container-orga07259f" class="outline-2">
+<h2 id="orga07259f">Θάνατος ὡς Χρονομερής</h2>
+<div class="outline-text-2" id="text-orga07259f">
+<p>
+Ἡ Μάρις ἵστατο ἐκεῖ—χιτὼν ἰατρικὸς κατεσπιλωμένος, ἀστερισμὸς ἐπὶ λευκοῦ—εἶπε, μικρὰ καὶ ἐπίπεδα καὶ ὀργίλως, &ldquo;Ἐστὶ παραδειγματώδης θέα. Πανήγυρις ἥτις εἰσιτήρια κατεσθίει.&rdquo;
+</p>
+
+<p>
+Πανήγυρις — ἔπτυσεν αὐτὸ ὡς ψῆφον, ἐννοοῦσα σκηνάς, γελωτοποιοὺς μετὰ χειρουργικῶν προσωπείων, ὀσμὴν σακχάρου καὶ ἀποκαθαίρεσιν μεμιγμένην εἰς τι ὃ δύναται σήπειν τοὺς ὀδόντας καὶ τὰς ἐπαγγελίας. Ἠβούλετο θέαμα πρῶτον, ἐπιστήμην δεύτερον.
+</p>
+
+<p>
+&ldquo;Πανήγυριν!&rdquo; ἀπεκρούσατο ὁ Κρελλός, ο ὐαλός αὐτοῦ ἐκλάμπον ὡς φάρος ἐν χειμῶνι. &ldquo;Πανήγυριν αὐτὴν καλεῖς, Μαρί. Ἐγὼ δὲ προϊὸν αὐτὴν καλῶ.&rdquo; Ὁ Κρελλὸς ἐβρύχησε, ψόφος ὡς χίλιοι ἀρχειοφύλακες κλειόμενοι. "Καὶ στρατιῶται οἱ γήρᾳ ἀποθνῄσκοντες ἐν ταύτῃ τῇ ἡμέρᾳ; Αἰσχρόν ἐστι τοῦτο, Μαρί. Αἰσχρὸν ὅτι οὐ δύνανται πάλιν συμμετέχειν τῇ πομπῇ. Αἰσχρὸν ὅτι αἱ συντάξεις αὐτῶν σήπονται. Ἀλλὰ ἐνθάδε, συμμετέχουσι τῇ πομπῇ. Γίνονται ἡ πομπή. Γίνονται ἡ μουσικὴ τῆς φθορᾶς. Σύ, μετὰ τοῦ ὀροῦ σου, τῆς νηπιογενίας σου, νομίζεις ὅτι διέρρηξας τὸν χρόνον. Ἀλλὰ μόνον θύραν διέρρηξας.
+</p>
+
+<p>
+Διηπέτασε τὰς χεῖρας εὐρέως. &ldquo;Στρατιῶται ἐν ἑβδομηκονταετίᾳ; Ἄχρηστοι. Στρατιῶται ἐν ἑξηκονταετίᾷ, ἀλλὰ μετὰ τῆς δυνάμεως ἀναφύειν τὴν νεότητα; Ἀτίμητοι. Νομίζεις ὅτι θεραπεύεις τὸν θάνατον; Οὔ. Μόνον πωλεῖς αὐτῷ χρονομερισμόν. Ἑορτὴν ἐν τῷ ἡλίῳ μετὰ τοῦ ἡλίου ἀποκτείνοντός σε εὐγενῶς.&rdquo;
+</p>
+
+<p>
+&ldquo;Τὸ πρόβλημά ἐστι προσδοκία. Στρατιῶται οὐ βούλονται εἶναι νήπια. Βούλονται εἶναι&#x2026; ἀνδριάντες. Ἄθικτοι. Ἀλλὰ ἐνθάδε—&rdquo; ἐνέδειξε τοὺς μανάτους &ldquo;—ἔχομεν κύκλον. Θάνατος ὡς πέψις. Κερδοφόρος. Στρατιώτης γίνεται πέτρα. Μνημεῖον. Εἶτα, βλάστημα. Εἶτα, δένδρον. Σκέπτου τοὺς ποταμοὺς προσόδων!&rdquo;
+</p>
+
+<p>
+Ἐγέλασεν ὁ Κρέλλος. "Ἀκαταστασία ἐστὶ τὸ τελικὸν χαρακτηριστικόν, Μαρί! Πωλεῖς νεότητα, ἀλλὰ κρατεῖς τὸν θάνατον. Τοῦτό ἐστι τὸ ἀναβάθμισμα. Τοῦτό ἐστι ἡ ἀναστροφή. Οἱ μάνατοι οὐ μέλουσιν. Εἰσὶ μόνον&#x2026; παράδειγμα. Πώλει τὸ παράδειγμα. Κράτει τὰ μέρη τοῦ παραδείγματος. Διὰ τί ἐᾶν στρατιώτην ἀποθανεῖν εἰ μὴ δύναται πάλιν ζῆν;
+</p>
+
+<p>
+&ldquo;Οὐ μόνον νεότητα πωλοῦμεν,&rdquo; εἶπεν ὁ Κρέλλος, ὡς εἰ περιέμενε τὸν οἶκον σαπῆναι περὶ αὐτόν. "Πωλοῦμεν τὴν βεβαιότητα τῆς φθορᾶς. Διακονίαν! Βούλει εἶναι δεκαετὴς πάλιν; Εὖ. Βούλει ἀποθανεῖν πρεσβύτερος; Καὶ τοῦτο εὖ.
+</p>
+
+<p>
+Ἀνετύλιξε χάρτην ἐπὶ τῆς τραπέζης—τὸ εἶδος γραμμάτου ὃ ἀπαιτεῖ θυσίας ταῖς πτυχαῖς αὐτοῦ. &ldquo;Ὁ ὀρός σου,&rdquo; ἐσύρισε, &ldquo;παράδειγμά ἐστιν. Οἱ μάνατοι;&rdquo; Ἐνέδειξε πρὸς ταμπλέτα, ἣ ἐτρέμει μετὰ φωτογραφιῶν ἕλους. &ldquo;Οὐ μόνον γηράσκουσιν ὀπίσω. Εὐδοκιμοῦσιν ὀπίσω. Εἶδές ποτε μάνατον προγηράσκοντα; Ὡς διδόναι συμφωνίαν κοχλίᾳ. Οἰκοσυστήματα βελτιοῦνται ὅτι οὐκ ἀποθνῄσκουσιν. Ἀναστρέφεις λαμαντῖνον, γίνεται λαμαντινόπαις, εἶτα ἐσθίει διακόσια τοῖς ἑκατὸν φύκη, ἀναφύει τὴν οὐράν, εἶτα—παφ—γίνεται λαμαντινοβασιλεύς. Πάντες αὐτῶν. Πάντες αὐτῶν. Οὐ δύνῃ παῦσαι τοῦτο.&rdquo;
+</p>
+
+<p>
+Τὸ δωμάτιον ἐγένετο νεκρῶς σιωπηλόν, πλὴν τῆς ὀθόνης τοῦ πινακιδίου, ἣ νῦν ἐδείκνυε μανάτοβασιλέα. Τὸ σῶμα αὐτοῦ ἦν μωσαϊκὸν ἄλλων μανάτων, ἕκαστον τμῆμα ἄλλη σκιὰ σηπεδόνος. Τὸ διάδημα αὐτοῦ ἦν κοραλλιώδης ὕφαλος ἐκ ὀστοῦ πεποιημένος. &ldquo;Φαντάζου!&rdquo; ἐσύρισεν ὁ Κρέλλος. &ldquo;Φαντάζου στρατιώτην ὃς σήπεται εἰς τὴν γῆν. Εἶτα ἡ γῆ σήπεται πάλιν εἰς αὐτόν. Κύκλον αὐτὸ καλεῖς. Ἐγὼ συνδρομὴν αὐτὸ καλῶ. Συνδρομὴν εἰς θάνατον, μετὰ προαιρετικῶν ἀναβαθμίσεων.&rdquo;
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emporas</p>
+<p class="date">Created: 2025-08-20 Wed 18:41</p>
+</div>
+</body>
+</html>

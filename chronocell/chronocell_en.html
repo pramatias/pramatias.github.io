@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-08-20 Wed 18:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chrono Reboot</title>
+<meta name="author" content="emporas" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Chrono Reboot</h1>
+<div id="table-of-contents" role="doc-toc">
+<h1><a accesskey="H" href="../index.html"> HOME </a></h1><h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org2fffa51">The Infantus Incident</a></li>
+<li><a href="#orgd8c92cf">Monetize the Cycle</a></li>
+<li><a href="#orgf03b420">Death as a Timeshare</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2fffa51" class="outline-2">
+<h2 id="org2fffa51">The Infantus Incident</h2>
+<div class="outline-text-2" id="text-org2fffa51">
+<p>
+The fluorescent lights in the ChronoCell Renew Systems, LLC, research chamber hummed like a wasp in a blender. Dr. Razor Maris walked into the lab, her boots clacking as if they were typing a resignation letter to the god of silence. The room stank of ozone, every surface painted sterile white to better hide the bloodstains of failed experiments. On the wall hung a plaque: CHRONO REBOOT DIVISION: WHERE TIME IS A RENTAL, NOT A RELATIONSHIP.
+</p>
+
+<p>
+She didn’t believe one word of it.
+</p>
+
+<p>
+The research room sprawled ahead, a cathedral of madness. Machines hummed, whirred, and squealed their metal hymns. A reactor the shape of a squid boiled in the center of the floor, tubes spilling green goop that hissed as it evaporated.
+</p>
+
+<p>
+Then she saw it.
+</p>
+
+<p>
+In the center of the cold steel floor a heap. A puddle. Business casual clothing—slacks, a button down shirt, a tie the color of a bruised grape—sloppily slumped like a deflated peacock. Inside those clothes? A baby.
+</p>
+
+<p>
+A squalling baby of course, it screeched with the vigor of a thousand board meetings.
+</p>
+
+<p>
+Dr. Maris kneeled (a dramatic kneel, her hip jerking sideways as if dodging a bullet of dignity) and peeled open the collar of the blazer. The infant’s face emerged: hairless and glabrous, blinked up at her with eyes twin to a man who once held a PowerPoint titled “From 65 to 25 in 24 Hours."
+</p>
+
+<p>
+“Dr. Plinkett?” Maris barked, her voice a blade sheathed in sarcasm. “Is this… a prank? Do you know how many OSHA this violates?” The man who’d sold his soul to the Board of Investors to unlock Youth as a Service™, now squirming in his own silk dress shirts, fists smacking the carpet like drums of war. “Wah wah wah!” it bellowed.
+</p>
+
+<p>
+Maris snatched the pacifier from the crib (which read “Dr. T. Plinkett, Lead Lab Geneticist of Facial Folds” in embossed gold foil), jammed it into the infantus’s mouth. It sucked greedily, humming a melody that sounded like the corporate anthem “We Are The Future” off key on kazoo.
+</p>
+
+<p>
+The door hissed open. In sauntered the second of the team: Dr. Bingle, lab’s geneticist.
+</p>
+
+<p>
+“What,” croaked Bingle, “is this?”
+</p>
+
+<p>
+The main lab station flickered. Some handwritten notes on the table. “The serum… too much. It took the age. All of it.
+</p>
+
+<p>
+“The fruit of his immortal dream,” Maris said. “Dr. Thaddeus Plinkett, Phase V, Age 100%,” while the baby&rsquo;s tears splotched across her lab coat, leaving stains that smelled of wet pennies and last chance apologies.
+</p>
+
+<p>
+“Perfect,” Maris said, as if the lab were a stage set for chaos. “Now fetch the infant’s executive summary from the fridge. The Board loves a good risk reward spectacle.”
+</p>
+
+<p>
+Bingle returned with a cry, clutching a manila envelope labeled PLINKETT, T. – PHASE V (BONUS: LIVE DEMO).
+</p>
+
+<p>
+The Board meeting was already underway in the lobby, where investors sat like gods on velvet bar stools, sipping espresso and whispering about how to monetize the sun’s next supernova. Maris pushed the child into the room.
+</p>
+
+<p>
+The boardroom doors groaned open like a gargoyle gargling motor oil. The walls pulsed with ticker tape veins, flashing headlines in LED ticker tape veins: &ldquo;STAY UNINSURED&rdquo; &ldquo;AGE IS AN ACCESSORY. WEAR IT POISED.&rdquo;
+</p>
+
+<p>
+She let the baby fly a howl that could’ve rivaled a corporate merger. “Time’s not a service—it’s a child you can’t control!”
+</p>
+
+<p>
+“Absolutely,” Maris lied, as the baby urinated a trail of glowing liquid across the wooden table. “You want ‘Youth as a Service’? Here’s the premium tier.”
+</p>
+
+<p>
+The investors leaned in, their faces half illuminated by the baby’s glowing urine, as if the liquid held the secrets of longevity. Mr. Varn, the lead investor—his face a mosaic of golf course tan and laser tightened skin—set his espresso down with a clink. His monocle magnified the baby’s wailing into a grotesque, pixelated wail.
+</p>
+
+<p>
+The baby, now squirming in a onesie emblazoned with PHD, planted one foot on the conference table and it&rsquo;s golden arc singed the pie charts into a wet, quivering sludge. The Q3 Financial Projections chart, which had once gleamed like a diamond studded lie, now drooped like a wilted orchid, its columns melting into a puddle.
+</p>
+
+<p>
+Maris grabbed the baby’s waistband, “He’s aging in reverse, the serum isn’t done—it’s stuck at… this.”
+</p>
+</div>
+</div>
+<div id="outline-container-orgd8c92cf" class="outline-2">
+<h2 id="orgd8c92cf">Monetize the Cycle</h2>
+<div class="outline-text-2" id="text-orgd8c92cf">
+<p>
+The investors leaned in closer, their breaths syncopated, as if the stench of the baby’s neon vomit had tuned their lungs into accordions of greed. Mr. Varn’s monocle fogged, then cleared, then fogged again, as if the device couldn’t decide if it was a telescope to the future or a funhouse mirror of fiscal nightmare.
+</p>
+
+<p>
+“Phase V. Halt,” Maris declared, her voice a blade sharpened, “The serum’s—” she gestured at the howling infant’s bald pate, “—fucked up. It’s not a toggle switch. It’s a rollercoaster you can’t derail.”
+</p>
+
+<p>
+“We’ll pause the trial, let the subject mature. Let the little genius enjoy shareholder meetings.” She gestured at Plinkett’s current state: squirming, peeling his slacks back on, his screeches melting the air into a syrup that clogged the air purifiers. “We monitor. We note. We cross our fingers that his adult brain survives the reverse hibernation hell of infantile idiocy.”
+</p>
+
+<p>
+“Perfect,” Varn said. “Keep the trial in a stasis booth of ambiguity. Let the little tycoon earn the privilege of being a man. Again.”
+</p>
+
+<p>
+Another investor, Mr. Krell (a man who looked like a titanium backbone with a LinkedIn profile), stepped forward. His shoes left no footprints—only his shadow, which crawled like a staticky spider across the tiles.
+</p>
+
+<p>
+“Stasis booth? Stasis? You’ll strangle the profit pipeline! The deal —” he jabbed a finger at the baby, currently gnawing on Varn’s monocle “—was Phase V: age reverse to a marketable demographic. Not a demographic that fits in a diaper.” Krell hissed, his voice a dial up modem trying to download a war memorial. “You didn’t read the fine print, did you? Mr. Plinkett signed the caveat! His contract had a footnote the size of a eulogy about occupational hazards. ” Krell muttered, as if he’d seen this movie. “Plunkett’s team at NeoGenesis —they did the same thing. Their prototype? Now a 6 year old CEO who thinks ‘due diligence’ is a flavor of cotton candy. We’re one step ahead , Maris! This isn’t age reversal. It’s age reduction as a corporate sacrament. Limit it to 30%. Keep the subject functional , but frisky.”
+</p>
+
+<p>
+Krell’s face was a taut wire dipped in epoxy. “Oh, competition are back tracking clients who reverse one year and end up as 12 year olds licking stock tickers off their fingers. We’re the pioneers, not the imitators. Differentiation is key. We say, ‘Worried about 40? Why not 25?!’ Our tagline? ‘You’ve earned it!’”
+</p>
+
+<p>
+The infant Plinkett—now wearing half a tie like a garter—belched a green flame that charred the Q3 projections into a singed sigh.
+</p>
+
+<p>
+Varn nodded, his face half erased by neon puke. “We’ll call it Chrono Boost. Market it as a ‘midlife enhancement.’”
+</p>
+
+<p>
+The baby Plinkett began crawling, leaving trails of semi liquid equations on the floor.
+</p>
+
+<p>
+The shadows burbled, sloshing like a leach of liquid dusk, and from them crawled Mr. Z. T. Lorne—Krell’s apprentice, a lanky thing in a raincoat printed with the Climate Recognition Academy’s logo.
+</p>
+
+<p>
+“And manatees,” he adds. “Manatees stabilize the ecosystem. See?” He slithered a tablet across the table, its screen a writhing map of mangrove swamps lit by bioluminescent plankton like jellyfish vomit.
+</p>
+
+<p>
+Manatees—pearly gray giants of the shallows, with eyes like dead moons—floated in a brackish lagoon. Their snouts twitched as they nibbled on invasive water hyacinths. The camera panned to a baby manatee, pink as a peeled tomato, waddling through the algae and… aging backward. Its skin peeled into smoothness, its flippers lengthened, and it floated upward, a ghost of a mammal, dissolving into a swirl of plankton that the parents fed on en masse.
+</p>
+
+<p>
+“The elders eat their children’s remains,” Lorne yapped. “ Cute , yes? Revives the ecosystem. No dead zones. All because they’re… self recycling.”
+</p>
+</div>
+</div>
+<div id="outline-container-orgf03b420" class="outline-2">
+<h2 id="orgf03b420">Death as a Timeshare</h2>
+<div class="outline-text-2" id="text-orgf03b420">
+<p>
+Maris stood there—lab coat spotted, a constellation across white—said, small and flat and furious, “It is a sideshow. A carnival that eats tickets.”
+</p>
+
+<p>
+Carnival — she spat it like a pebble, she meant tents, clowns with surgical masks, the smell of sugar and disinfectant mixed into something that could rot your teeth and your promises. She meant spectacle first, science second.
+</p>
+
+<p>
+“A carnival!” Krell snapped, his monocle flaring like a lighthouse in a storm. “You call it a ‘carnival,’ Maris. I call it a product. Krell snarled, a sound like a thousand filing cabinets slamming shut. “And soldiers who die of old age in this day and age? This is a shame, Maris. A shame they cannot rejoin the parade. A shame their pensions rot. But here, they join the parade. They become the parade. They become the music of decay. You, with your serum, your baby genius, you think you’ve cracked time. But you only cracked a door.
+</p>
+
+<p>
+He flung his hads wide. "Soldiers in their seventies? Useless. Soldiers in their sixties, but with the option to regrow their youth? Priceless. You think you’re curing death? No. You’re just selling it a timeshare. A holiday in the sun with the sun killing you politely.”
+</p>
+
+<p>
+“The problem is expectation. Soldiers don’t want to be babies. They want to be… statues. Untouchable. But here—” he gestured at the manatees, “—we’ve a cycle. Death as digestion. Profitable. A soldier becomes a rock. A monument. Then, a seedling. Then, a tree. Think of the revenue streams!”.
+</p>
+
+<p>
+Krell laughed. “Impermanence is the final feature , Maris! You sell youth, but you keep the death. That’s the upgrade. That’s the rollback. The manatees don’t care. They’re just… a model. Sell the model. Keep the model’s parts. Why let a soldier die if he can&rsquo;t live again?
+</p>
+
+<p>
+“We’re not just selling youth,” Krell said, as if he’d been waiting for the room to rot around him. “We’re selling the certainty of decay. A service! You want to be ten again? Fine. You want to die older? Also fine.
+</p>
+
+<p>
+He unrolled a map across the table—the sort of document that demands sacrifices to its creases. “Your serum,” he hissed, “it’s a paradigm. The manatees?” He gestured toward a wall mounted television, which flickered with footage of a swamp. “They’re not just aging backward. They’re thriving backward. You ever seen a manatee pre aging? It’s like giving a symphony to a slug. Ecosystems improve because they don’t die. You reverse a manatee, it becomes a manatee kid, then it eats 200% seaweed, grows back its tail, then—pop—it’s a manatee emperor. All of them. All of them. You can’t stop this.”
+</p>
+
+<p>
+The room went dead silent, save for the tablet screen, which now showed a manatee emperor. Its body was a mosaic of other manatees, each snippet a different shade of rot. Its crown was a coral reef made of bone. “Imagine!” Krell hissed. “Imagine a soldier who decays into the land. Then the land decays back into him. You call it a ‘cycle.’ I call it a subscription. A subscription to death, with optional upgrades.”
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emporas</p>
+<p class="date">Created: 2025-08-20 Wed 18:41</p>
+</div>
+</body>
+</html>

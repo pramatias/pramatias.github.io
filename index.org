@@ -5,6 +5,10 @@
 
 * Stories
 -
+  - [[file:chronocell/chronocell_en.html][Chrono Reboot]]
+  - [[file:chronocell/chronocell_gr.html][Χρονική Αναγέννηση]]
+  - [[file:chronocell/chronocell_an.html][Χρονικὴ Ἀναγέννησις]]
+-
   - [[file:crunch/crunch_en.html][Crashed Crunch]]
   - [[file:crunch/crunch_gr.html][Συντετριμμένος Κρότος]]
   - [[file:crunch/crunch_an.html][Συντετριμμένος Κρότος]]
