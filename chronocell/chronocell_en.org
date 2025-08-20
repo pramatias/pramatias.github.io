@@ -1,4 +1,6 @@
 #+title: Chrono Reboot
+#+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
+
 * The Infantus Incident
 
 The fluorescent lights in the ChronoCell Renew Systems, LLC, research chamber hummed like a wasp in a blender. Dr. Razor Maris walked into the lab, her boots clacking as if they were typing a resignation letter to the god of silence. The room stank of ozone, every surface painted sterile white to better hide the bloodstains of failed experiments. On the wall hung a plaque: CHRONO REBOOT DIVISION: WHERE TIME IS A RENTAL, NOT A RELATIONSHIP.
