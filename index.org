@@ -5,6 +5,10 @@
 
 * Stories
 -
+  - [[file:puddle/puddle_en.html][The Puddle]]
+  - [[file:puddle/puddle_gr.html][Η Λακούβα]]
+ - [[file:puddle/puddle_an.html][Τὸ Λιμνάριον]]
+-
   - [[file:chronocell/chronocell_en.html][Chrono Reboot]]
   - [[file:chronocell/chronocell_gr.html][Χρονική Αναγέννηση]]
   - [[file:chronocell/chronocell_an.html][Χρονικὴ Ἀναγέννησις]]
