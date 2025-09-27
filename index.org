@@ -1,7 +1,20 @@
 #+title: Notes and stories
 #+SETUPFILE: ./org-html-themes/org/theme-readtheorg.setup
 
+* Recent
+-
+  - [[file:cube/cube_en.html][The Lowest Level PL]]
+  - [[file:cube/cube_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
+-
+  - [[file:puddle/puddle_en.html][The Puddle]]
+  - [[file:puddle/puddle_an.html][Τὸ Λιμνάριον]]
+  - [[file:puddle/puddle_gr.html][Η Λακούβα]]
+
 * Articles
+-
+  - [[file:cube/cube_en.html][The Lowest Level PL]]
+  - [[file:cube/cube_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
+-
 
 * Stories
 -

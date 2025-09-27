@@ -1,0 +1,378 @@
+#+title: Η Γλώσσα Κατώτερου Επιπέδου
+#+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
+#+LaTeX_HEADER: \usepackage{amsmath}
+
+Ας συγκρίνουμε τις διαφορετικές υλοποιήσεις ενός απλού προβλήματος σε τρεις γλώσσες προγραμματισμού. Και οι τρεις έχουν μερικά κοινά χαρακτηριστικά.
+
+- Εξαντλητική απαρίθμηση τύπων
+- Χωρίς null/nil
+- Αλγεβρικοί τύποι δεδομένων
+
+Η υλοποίηση σε Rust δεν είναι ιδανική, αλλά την άφησα έτσι ώστε να μοιάζει όσο το δυνατόν περισσότερο με τις άλλες υλοποιήσεις. Επίσης, η Rust δεν έχει αναδρομή.
+
+Οι μαθηματικοί τύποι σε μερικά σημεία δεν μπορούν να αντιγραφούν, δεν αναγνωρίζονται ως μαθηματική TeX σύνταξη. Δεν μπορώ να καταλάβω γιατί, αλλά πρώτη φορά που έγραψα μαθηματικά χρησιμοποιώντας TeX.
+
+* Μαθηματικά και διατύπωση του προβλήματος
+  *Καταμέτρηση τοποθετήσεων — 6 έγχρωμοι κύβοι σε 9 θέσεις*
+
+Τοποθετούμε έξι έγχρωμους κύβους — δύο κόκκινους (R), δύο πράσινους (G), δύο μπλε (B) — σε εννέα επισημασμένες θέσεις (θέσεις σε σειρά). Οι υπόλοιπες τρεις θέσεις είναι κενές (συμβολίζουμε το κενό με E ή ".").
+
+Περιορισμός: **Δεν επιτρέπεται να εμφανιστούν δύο διπλανά έγχρωμα κύβοι του ίδιου χρώματος**. Οι κενές θέσεις μπορούν να είναι διπλανές με οτιδήποτε (συμπεριλαμβανομένων άλλων κενών και γειτόνων ίδιου χρώματος).
+
+Ερωτάμε: πόσες διακριτές διατάξεις (ακολουθίες μήκους 9 του πολυσυνόλου ({R^2,G^2,B^2,E^3})) ικανοποιούν τον περιορισμό της γειτνίασης;
+
+** Σημειογραφία και ιδέα
+
+Έστω το πολυσύνολο ({R,R,G,G,B,B,E,E,E}). Χωρίς περιορισμούς γειτνίασης, ο αριθμός των διακριτών ακολουθιών δίνεται από τον πολυωνυμικό (multinomial) τύπο
+\[
+N_{\text{total}}=\frac{9!}{2!,2!,2!,3!}.
+\]
+
+Έστω για χρώμα \(X\in{R,G,B}\) το γεγονός \(A_X\) ότι «οι δύο κύβοι \(X\) είναι γειτονικοί κάπου στην ακολουθία». Εφόσον κάθε χρώμα εμφανίζεται ακριβώς δύο φορές, το \(A_X\) είναι ισοδύναμο με το ότι οι δύο κύβοι \(X\) σχηματίζουν ένα ενιαίο μπλοκ \(XX\).
+
+Θέλουμε ακολουθίες που αποφεύγουν τα τρία γεγονότα \(A_R,A_G,A_B\). Θα τα μετρήσουμε χρησιμοποιώντας τη μέθοδο συμπερίληψης–αποκλεισμού.
+
+** Διάταξη συμπερίληψης–αποκλεισμού
+
+Με συμπερίληψη–αποκλεισμό,
+
+N_{good} = N_{total} - \sum_{X} N(A_X) + \sum_{X<Y} N(A_X\cap A_Y) - N(A_R\cap A_G\cap A_B).
+
+N_{good} = N_{total} - \sum_{X\in\{R,G,B\}} N(A_X) + \sum_{X<Y} N(A_X\cap A_Y) - N(A_R\cap A_G\cap A_B).
+
+Υπολογίζουμε κάθε όρο αντικαθιστώντας κάθε διπλό ζεύγος \(XX\) με ένα ενιαίο μπλοκ και μετρώντας τις διατάξεις του προκύπτοντος πολυσυνόλου.
+
+*** Συνολικό (χωρίς περιορισμούς)
+\[
+N_{\text{total}}=\frac{9!}{2!\,2!\,2!\,3!}.
+\]
+
+Υπολογίζουμε ρητά τις παραγοντικές και τους παρονομαστές:
+\begin{align*}
+9!&=362\,880,\\
+2!\,2!\,2!\,3!&=2\cdot2\cdot2\cdot6=48,\\
+N_{\text{total}}&=\frac{362\,880}{48}=7\,560.
+\end{align*}
+
+*** Ένα χρώμα σε γειτνίαση (π.χ. (A_R))
+
+Θεωρούμε τους δύο κύβους (R) ως ένα ενιαίο μπλοκ (RR). Το υπόλοιπο πολυσύνολο είναι \(\{RR, G,G, B,B, E,E,E\}\) μεγέθους 8 με πολλαπλότητες \(G:2, B:2, E:3\). Συνεπώς
+\[
+N(A_R)=\frac{8!}{2!,2!,3!}.
+\]
+Υπολογίζουμε:
+\begin{align*}
+8!&=40,320,\
+2!,2!,3!&=2\cdot2\cdot6=24,\\
+N(A_R)&=\frac{40,320}{24}=1,680.
+\end{align*}
+
+Κατά συμμετρία η ίδια τιμή ισχύει για \(N(A_G)\) και \(N(A_B)\). Επομένως
+\[
+\sum_X N(A_X)=3\cdot1,680=5,040.
+\]
+
+*** Δύο χρώματα σε γειτνίαση (π.χ. (A_R\cap A_G))
+
+Θεωρούμε (RR) και (GG) ως δύο μπλοκ. Το υπόλοιπο πολυσύνολο είναι ({RR,GG,B,B,E,E,E}) μεγέθους 7 με πολλαπλότητες \(B:2, E:3\). Έτσι
+\[
+N(A_R\cap A_G)=\frac{7!}{2!,3!}.
+\]
+Υπολογίζουμε:
+\begin{align*}
+7!&=5,040,\
+2!,3!&=2\cdot6=12,\
+N(A_R\cap A_G)&=\frac{5,040}{12}=420.
+\end{align*}
+
+Υπάρχουν \(\binom{3}{2}=3\) ανεξάρτητα ζεύγη χρωμάτων, οπότε
+\[
+\sum_{X\lt Y} N(A_X\cap A_Y) = 3\cdot420 = 1260.
+\]
+
+*** Και τα τρία χρώματα σε γειτνίαση ((A_R\cap A_G\cap A_B))
+
+Θεωρούμε (RR,GG,BB) ως τρία μπλοκ. Το υπόλοιπο πολυσύνολο είναι ({RR,GG,BB,E,E,E}) μεγέθους 6 με πολλαπλότητα (E:3). Επομένως
+
+\[
+N(A_R\cap A_G\cap A_B)=\frac{6!}{3!}.
+\]
+Υπολογίζουμε:
+\begin{align*}
+6!&=720,\\
+3!&=6,\\
+N(A_R\cap A_G\cap A_B)&=\frac{720}{6}=120.
+\end{align*}
+
+** Συνδυάζοντας τα παραπάνω
+
+Εφαρμόζοντας τη μέθοδο συμπερίληψης–αποκλεισμού:
+
+N_{good}
+= N_{total} - \sum_X N(A_X) + \sum_{X<Y} N(A_X\cap A_Y) - N(A_R\cap A_G\cap A_B)
+= 7560 - 5040 + 1260 - 120 = 3660.
+
+Επομένως υπάρχουν \(\boxed{3,660}\) επιτρεπτές διατάξεις.
+
+* Lean
+#+begin_src haskell
+/- cubes.lean
+   Enumerate placements of 6 cubes (2 red, 2 green, 2 blue)
+   into 9 holes (3 empty) so that no two adjacent *colored* cubes
+   of the same color occur.
+-/
+
+inductive Color where
+  | R | G | B | E
+  deriving Repr, DecidableEq
+
+structure Counts where
+  r : Nat
+  g : Nat
+  b : Nat
+  e : Nat
+  deriving Repr
+
+def countsZero (c : Counts) : Bool :=
+  c.r == 0 && c.g == 0 && c.b == 0 && c.e == 0
+
+def decCount (c : Counts) (col : Color) : Counts :=
+  match col with
+  | Color.R => { c with r := c.r - 1 }
+  | Color.G => { c with g := c.g - 1 }
+  | Color.B => { c with b := c.b - 1 }
+  | Color.E => { c with e := c.e - 1 }
+
+-- allowed choices given remaining counts and previous placed color
+def allowed (counts : Counts) (prev : Option Color) : List Color :=
+  let ok (col : Color) (avail : Nat) : Bool :=
+    avail > 0 &&
+    match prev with
+    | none => true
+    | some p => (p != col) || (col == Color.E) -- empties may repeat; colored must differ
+  ([Color.R, Color.G, Color.B, Color.E]).filter fun col =>
+    match col with
+    | Color.R => ok Color.R counts.r
+    | Color.G => ok Color.G counts.g
+    | Color.B => ok Color.B counts.b
+    | Color.E => ok Color.E counts.e
+
+partial def build (rem : Nat) (prev : Option Color) (counts : Counts) : List (List Color) :=
+  if rem == 0 then
+    if countsZero counts then [ [] ] else []
+  else
+    let choices := allowed counts prev
+    -- avoid using `List.bind` in case of name-resolution differences;
+    -- build result by folding over choices and appending mapped tails
+    choices.foldl (fun acc c =>
+      let counts' := decCount counts c
+      let tails := build (rem - 1) (some c) counts'
+      acc ++ (tails.map fun t => c :: t)
+    ) []
+
+def showColor : Color -> String
+  | Color.R => "R"
+  | Color.G => "G"
+  | Color.B => "B"
+  | Color.E => "."
+
+def main : IO Unit := do
+  let initial : Counts := { r := 2, g := 2, b := 2, e := 3 }
+  let solutions := build 9 none initial
+  IO.println s!"Found {solutions.length} solutions (each printed as a 9-length sequence; '.' = empty)"
+  for s in solutions do
+    IO.println (String.intercalate " " (s.map showColor))
+
+#+end_src
+
+* Haskell
+#+begin_src haskell
+-- Cubes.hs
+-- Enumerate placements of 6 colored cubes (2 R, 2 G, 2 B) + 3 empties
+-- into 9 holes so that no two adjacent colored cubes of the same
+-- color occur. (Empties may repeat.)
+
+module Main where
+
+data Color = R | G | B | E
+  deriving (Eq, Show)
+
+data Counts = Counts
+  { cr :: Int
+  , cg :: Int
+  , cb :: Int
+  , ce :: Int
+  } deriving (Show)
+
+countsZero :: Counts -> Bool
+countsZero (Counts r g b e) = r == 0 && g == 0 && b == 0 && e == 0
+
+decCount :: Counts -> Color -> Counts
+decCount c col = case col of
+  R -> c { cr = cr c - 1 }
+  G -> c { cg = cg c - 1 }
+  B -> c { cb = cb c - 1 }
+  E -> c { ce = ce c - 1 }
+
+allowed :: Counts -> Maybe Color -> [Color]
+allowed counts prev = filter ok [R, G, B, E]
+  where
+    avail c = case c of
+      R -> cr counts
+      G -> cg counts
+      B -> cb counts
+      E -> ce counts
+    ok c =
+      avail c > 0 &&
+      case prev of
+        Nothing -> True
+        Just p  -> (p /= c) || (c == E)  -- empties may repeat; colored must differ
+
+-- build positions: rem = remaining slots to fill
+build :: Int -> Maybe Color -> Counts -> [[Color]]
+build 0 _ counts = if countsZero counts then [[]] else []
+build rem prev counts =
+  concatMap extend (allowed counts prev)
+  where
+    extend c = map (c :) (build (rem - 1) (Just c) (decCount counts c))
+
+showColor :: Color -> String
+showColor R = "R"
+showColor G = "G"
+showColor B = "B"
+showColor E = "."
+
+main :: IO ()
+main = do
+  let initial = Counts { cr = 2, cg = 2, cb = 2, ce = 3 }
+      solutions = build 9 Nothing initial
+  putStrLn $ "Found " ++ show (length solutions) ++ " solutions ('.' = empty)"
+  mapM_ (putStrLn . unwords . map showColor) solutions
+
+#+end_src
+
+* Rust
+#+begin_src rust
+use std::fmt;
+
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+enum Color {
+    R,
+    G,
+    B,
+    E,
+}
+
+impl fmt::Display for Color {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        let s = match self {
+            Color::R => "R",
+            Color::G => "G",
+            Color::B => "B",
+            Color::E => ".",
+        };
+        write!(f, "{}", s)
+    }
+}
+
+#[derive(Clone, Copy, Debug)]
+struct Counts {
+    r: u32,
+    g: u32,
+    b: u32,
+    e: u32,
+}
+
+impl Counts {
+    fn zero(&self) -> bool {
+        self.r == 0 && self.g == 0 && self.b == 0 && self.e == 0
+    }
+}
+
+/// decrement one count of `col` (caller must ensure availability > 0)
+fn dec_count(mut c: Counts, col: Color) -> Counts {
+    match col {
+        Color::R => c.r -= 1,
+        Color::G => c.g -= 1,
+        Color::B => c.b -= 1,
+        Color::E => c.e -= 1,
+    }
+    c
+}
+
+/// allowed choices given remaining counts and previous placed color
+fn allowed(counts: Counts, prev: Option<Color>) -> Vec<Color> {
+    let mut v = Vec::new();
+    let ok = |col: Color, avail: u32| -> bool {
+        if avail == 0 {
+            return false;
+        }
+        match prev {
+            None => true,
+            Some(p) => p != col || col == Color::E, // empties may repeat; colored must differ
+        }
+    };
+    if ok(Color::R, counts.r) {
+        v.push(Color::R);
+    }
+    if ok(Color::G, counts.g) {
+        v.push(Color::G);
+    }
+    if ok(Color::B, counts.b) {
+        v.push(Color::B);
+    }
+    if ok(Color::E, counts.e) {
+        v.push(Color::E);
+    }
+    v
+}
+
+/// backtracking builder
+fn backtrack(
+    rem: usize,
+    prev: Option<Color>,
+    counts: Counts,
+    current: &mut Vec<Color>,
+    solutions: &mut Vec<Vec<Color>>,
+) {
+    if rem == 0 {
+        if counts.zero() {
+            solutions.push(current.clone());
+        }
+        return;
+    }
+
+    for col in allowed(counts, prev) {
+        let counts_next = dec_count(counts, col);
+        current.push(col);
+        backtrack(rem - 1, Some(col), counts_next, current, solutions);
+        current.pop();
+    }
+}
+
+fn main() {
+    let initial = Counts {
+        r: 2,
+        g: 2,
+        b: 2,
+        e: 3,
+    };
+    let mut solutions: Vec<Vec<Color>> = Vec::new();
+    let mut current: Vec<Color> = Vec::with_capacity(9);
+    backtrack(9, None, initial, &mut current, &mut solutions);
+
+    println!(
+        "Found {} solutions (each printed as a 9-length sequence; '.' = empty)",
+        solutions.len()
+    );
+    solutions.iter().for_each(|s| {
+        let line = s.iter()
+                .map(|c| c.to_string())
+                .collect::<Vec<_>>()
+                .join(" ");
+        println!("{}", line);
+    });
+
+}
+
+#+end_src
