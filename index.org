@@ -14,7 +14,6 @@
 -
   - [[file:cubes/cubes_en.html][The Lowest Level PL]]
   - [[file:cubes/cubes_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
--
 
 * Stories
 -
