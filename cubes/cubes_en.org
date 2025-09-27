@@ -1,4 +1,4 @@
-#+title: The Lowest Level Lang
+#+title: The Lowest Level PL
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 #+LaTeX_HEADER: \usepackage{amsmath}
 
@@ -124,12 +124,6 @@ Therefore there are \(\boxed{3\,660}\) admissible arrangements.
 
 * Lean
 #+begin_src haskell
-/- cubes.lean
-   Enumerate placements of 6 cubes (2 red, 2 green, 2 blue)
-   into 9 holes (3 empty) so that no two adjacent *colored* cubes
-   of the same color occur.
--/
-
 inductive Color where
   | R | G | B | E
   deriving Repr, DecidableEq
@@ -195,11 +189,6 @@ def main : IO Unit := do
 
 * Haskell
 #+begin_src haskell
--- Cubes.hs
--- Enumerate placements of 6 colored cubes (2 R, 2 G, 2 B) + 3 empties
--- into 9 holes so that no two adjacent colored cubes of the same
--- color occur. (Empties may repeat.)
-
 module Main where
 
 data Color = R | G | B | E
