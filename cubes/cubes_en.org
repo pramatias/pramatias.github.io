@@ -1,6 +1,5 @@
 #+title: The Lowest Level PL
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
-#+LaTeX_HEADER: \usepackage{amsmath}
 
 Let's compare the different implementations of a simple problem in three PLs. All three have some common characteristics.
 
@@ -123,6 +122,7 @@ N_{good}
 Therefore there are \(\boxed{3\,660}\) admissible arrangements.
 
 * Lean
+
 #+begin_src haskell
 inductive Color where
   | R | G | B | E
@@ -184,11 +184,11 @@ def main : IO Unit := do
   IO.println s!"Found {solutions.length} solutions (each printed as a 9-length sequence; '.' = empty)"
   for s in solutions do
     IO.println (String.intercalate " " (s.map showColor))
-
 #+end_src
 
 * Haskell
 #+begin_src haskell
+
 module Main where
 
 data Color = R | G | B | E
