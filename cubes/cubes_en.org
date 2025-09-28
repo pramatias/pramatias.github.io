@@ -9,7 +9,7 @@ Let's compare the different implementations of a simple problem in three PLs. Al
 
 The goal is to identify which PL of all is the lowest level.
 
-Rust's implementation isn't ideal, but I kept it that way to be as similar as possible to the other implementations. Also Rust doesn't have recursion.
+Rust's implementation isn't ideal, but I kept it that way to be as similar as possible to the other implementations. Also Rust doesn't have proper recursion (TCO is not always applied).
 
 The math notation at some places cannot be copied, the renderer doesn't recognize it as a math tex notation. I cannot figure out why, but first time I wrote math using tex.
 
