@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-09-28 Sun 06:55 -->
+<!-- 2025-09-28 Sun 19:26 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Η Γλώσσα Κατώτερου Επιπέδου</title>
@@ -55,23 +55,23 @@
 <h1><a accesskey="H" href="../index.html"> Αρχική Σελίδα </a></h1><h2>Πίνακας Περιεχομένων</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org823b072">Μαθηματικά και διατύπωση του προβλήματος</a>
+<li><a href="#org5680d57">Μαθηματικά και διατύπωση του προβλήματος</a>
 <ul>
-<li><a href="#org01802b5">Σημειογραφία και ιδέα</a></li>
-<li><a href="#orgdf96c1a">Διάταξη συμπερίληψης–αποκλεισμού</a>
+<li><a href="#org9fbf4e4">Σημειογραφία και ιδέα</a></li>
+<li><a href="#orga27341c">Διάταξη συμπερίληψης–αποκλεισμού</a>
 <ul>
-<li><a href="#org32a7dd9">Συνολικό (χωρίς περιορισμούς)</a></li>
-<li><a href="#org36f0738">Ένα χρώμα σε γειτνίαση (π.χ. (A<sub>R</sub>))</a></li>
-<li><a href="#org5e617f9">Δύο χρώματα σε γειτνίαση (π.χ. (A<sub>R&cap;</sub> A<sub>G</sub>))</a></li>
-<li><a href="#orgd1b27ef">Και τα τρία χρώματα σε γειτνίαση ((A<sub>R&cap;</sub> A<sub>G&cap;</sub> A<sub>B</sub>))</a></li>
+<li><a href="#orga489b6e">Συνολικό (χωρίς περιορισμούς)</a></li>
+<li><a href="#org1606545">Ένα χρώμα σε γειτνίαση (π.χ. (A<sub>R</sub>))</a></li>
+<li><a href="#org41d43ff">Δύο χρώματα σε γειτνίαση (π.χ. (A<sub>R&cap;</sub> A<sub>G</sub>))</a></li>
+<li><a href="#orgab0dbc1">Και τα τρία χρώματα σε γειτνίαση ((A<sub>R&cap;</sub> A<sub>G&cap;</sub> A<sub>B</sub>))</a></li>
 </ul>
 </li>
-<li><a href="#org7b83fcd">Συνδυάζοντας τα παραπάνω</a></li>
+<li><a href="#org8ab3337">Συνδυάζοντας τα παραπάνω</a></li>
 </ul>
 </li>
-<li><a href="#orgbffa7ac">Lean</a></li>
-<li><a href="#org08e5c6a">Haskell</a></li>
-<li><a href="#org9096bec">Rust</a></li>
+<li><a href="#org6359a6c">Lean</a></li>
+<li><a href="#org5e95b22">Haskell</a></li>
+<li><a href="#org82cd3e1">Rust</a></li>
 </ul>
 </div>
 </div>
@@ -86,15 +86,15 @@
 </ul>
 
 <p>
-Η υλοποίηση σε Rust δεν είναι ιδανική, αλλά την άφησα έτσι ώστε να μοιάζει όσο το δυνατόν περισσότερο με τις άλλες υλοποιήσεις. Επίσης, η Rust δεν έχει αναδρομή.
+Η υλοποίηση σε Rust δεν είναι ιδανική, αλλά την άφησα έτσι ώστε να μοιάζει όσο το δυνατόν περισσότερο με τις άλλες υλοποιήσεις. Επίσης, η Rust δεν έχει κανονική αναδρομή.
 </p>
 
 <p>
-Οι μαθηματικοί τύποι σε μερικά σημεία δεν μπορούν να αντιγραφούν, δεν αναγνωρίζονται ως μαθηματική TeX σύνταξη. Δεν μπορώ να καταλάβω γιατί, αλλά πρώτη φορά που έγραψα μαθηματικά χρησιμοποιώντας TeX.
+Οι μαθηματικοί τύποι σε μερικά σημεία δεν μπορούν να αντιγραφούν, δεν αναγνωρίζονται ως μαθηματική TeX σύνταξη. H πρώτη φορά που έγραψα μαθηματικά χρησιμοποιώντας TeX.
 </p>
-<div id="outline-container-org823b072" class="outline-2">
-<h2 id="org823b072">Μαθηματικά και διατύπωση του προβλήματος</h2>
-<div class="outline-text-2" id="text-org823b072">
+<div id="outline-container-org5680d57" class="outline-2">
+<h2 id="org5680d57">Μαθηματικά και διατύπωση του προβλήματος</h2>
+<div class="outline-text-2" id="text-org5680d57">
 <p>
 <b>Καταμέτρηση τοποθετήσεων — 6 έγχρωμοι κύβοι σε 9 θέσεις</b>
 </p>
@@ -104,18 +104,21 @@
 </p>
 
 <p>
-Περιορισμός: <b><b>Δεν επιτρέπεται να εμφανιστούν δύο διπλανά έγχρωμα κύβοι του ίδιου χρώματος</b></b>. Οι κενές θέσεις μπορούν να είναι διπλανές με οτιδήποτε (συμπεριλαμβανομένων άλλων κενών και γειτόνων ίδιου χρώματος).
+Περιορισμός: <b>Δεν επιτρέπεται να εμφανιστούν δύο διπλανοί έγχρωμοι κύβοι του ίδιου χρώματος</b>. Οι κενές θέσεις μπορούν να είναι διπλανές με οτιδήποτε (συμπεριλαμβανομένων άλλων κενών και γειτόνων ίδιου χρώματος).
 </p>
 
 <p>
-Ερωτάμε: πόσες διακριτές διατάξεις (ακολουθίες μήκους 9 του πολυσυνόλου ({R<sup>2,G</sup><sup>2,B</sup><sup>2,E</sup><sup>3</sup>})) ικανοποιούν τον περιορισμό της γειτνίασης;
+Πόσες διακριτές διατάξεις (ακολουθίες μήκους 9 του πολυσυνόλου ({R<sup>2,G</sup><sup>2,B</sup><sup>2,E</sup><sup>3</sup>})) ικανοποιούν τον περιορισμό της γειτνίασης;
 </p>
 </div>
-<div id="outline-container-org01802b5" class="outline-3">
-<h3 id="org01802b5">Σημειογραφία και ιδέα</h3>
-<div class="outline-text-3" id="text-org01802b5">
+<div id="outline-container-org9fbf4e4" class="outline-3">
+<h3 id="org9fbf4e4">Σημειογραφία και ιδέα</h3>
+<div class="outline-text-3" id="text-org9fbf4e4">
 <p>
 Έστω το πολυσύνολο ({R,R,G,G,B,B,E,E,E}). Χωρίς περιορισμούς γειτνίασης, ο αριθμός των διακριτών ακολουθιών δίνεται από τον πολυωνυμικό (multinomial) τύπο
+</p>
+
+<p>
 \[
 N_{\text{total}}=\frac{9!}{2!,2!,2!,3!}.
 \]
@@ -130,9 +133,9 @@ N_{\text{total}}=\frac{9!}{2!,2!,2!,3!}.
 </p>
 </div>
 </div>
-<div id="outline-container-orgdf96c1a" class="outline-3">
-<h3 id="orgdf96c1a">Διάταξη συμπερίληψης–αποκλεισμού</h3>
-<div class="outline-text-3" id="text-orgdf96c1a">
+<div id="outline-container-orga27341c" class="outline-3">
+<h3 id="orga27341c">Διάταξη συμπερίληψης–αποκλεισμού</h3>
+<div class="outline-text-3" id="text-orga27341c">
 <p>
 Με συμπερίληψη–αποκλεισμό,
 </p>
@@ -149,9 +152,9 @@ N<sub>good</sub> = N<sub>total</sub> - &sum;<sub>X&isin;\{R,G,B\}</sub> N(A<sub>
 Υπολογίζουμε κάθε όρο αντικαθιστώντας κάθε διπλό ζεύγος \(XX\) με ένα ενιαίο μπλοκ και μετρώντας τις διατάξεις του προκύπτοντος πολυσυνόλου.
 </p>
 </div>
-<div id="outline-container-org32a7dd9" class="outline-4">
-<h4 id="org32a7dd9">Συνολικό (χωρίς περιορισμούς)</h4>
-<div class="outline-text-4" id="text-org32a7dd9">
+<div id="outline-container-orga489b6e" class="outline-4">
+<h4 id="orga489b6e">Συνολικό (χωρίς περιορισμούς)</h4>
+<div class="outline-text-4" id="text-orga489b6e">
 <p>
 \[
 N_{\text{total}}=\frac{9!}{2!\,2!\,2!\,3!}.
@@ -168,9 +171,9 @@ N_{\text{total}}&=\frac{362\,880}{48}=7\,560.
 \end{align*}
 </div>
 </div>
-<div id="outline-container-org36f0738" class="outline-4">
-<h4 id="org36f0738">Ένα χρώμα σε γειτνίαση (π.χ. (A<sub>R</sub>))</h4>
-<div class="outline-text-4" id="text-org36f0738">
+<div id="outline-container-org1606545" class="outline-4">
+<h4 id="org1606545">Ένα χρώμα σε γειτνίαση (π.χ. (A<sub>R</sub>))</h4>
+<div class="outline-text-4" id="text-org1606545">
 <p>
 Θεωρούμε τους δύο κύβους (R) ως ένα ενιαίο μπλοκ (RR). Το υπόλοιπο πολυσύνολο είναι \(\{RR, G,G, B,B, E,E,E\}\) μεγέθους 8 με πολλαπλότητες \(G:2, B:2, E:3\). Συνεπώς
 \[
@@ -192,9 +195,9 @@ N(A_R)&=\frac{40,320}{24}=1,680.
 </p>
 </div>
 </div>
-<div id="outline-container-org5e617f9" class="outline-4">
-<h4 id="org5e617f9">Δύο χρώματα σε γειτνίαση (π.χ. (A<sub>R&cap;</sub> A<sub>G</sub>))</h4>
-<div class="outline-text-4" id="text-org5e617f9">
+<div id="outline-container-org41d43ff" class="outline-4">
+<h4 id="org41d43ff">Δύο χρώματα σε γειτνίαση (π.χ. (A<sub>R&cap;</sub> A<sub>G</sub>))</h4>
+<div class="outline-text-4" id="text-org41d43ff">
 <p>
 Θεωρούμε (RR) και (GG) ως δύο μπλοκ. Το υπόλοιπο πολυσύνολο είναι ({RR,GG,B,B,E,E,E}) μεγέθους 7 με πολλαπλότητες \(B:2, E:3\). Έτσι
 \[
@@ -216,9 +219,9 @@ N(A_R\cap A_G)&=\frac{5,040}{12}=420.
 </p>
 </div>
 </div>
-<div id="outline-container-orgd1b27ef" class="outline-4">
-<h4 id="orgd1b27ef">Και τα τρία χρώματα σε γειτνίαση ((A<sub>R&cap;</sub> A<sub>G&cap;</sub> A<sub>B</sub>))</h4>
-<div class="outline-text-4" id="text-orgd1b27ef">
+<div id="outline-container-orgab0dbc1" class="outline-4">
+<h4 id="orgab0dbc1">Και τα τρία χρώματα σε γειτνίαση ((A<sub>R&cap;</sub> A<sub>G&cap;</sub> A<sub>B</sub>))</h4>
+<div class="outline-text-4" id="text-orgab0dbc1">
 <p>
 Θεωρούμε (RR,GG,BB) ως τρία μπλοκ. Το υπόλοιπο πολυσύνολο είναι ({RR,GG,BB,E,E,E}) μεγέθους 6 με πολλαπλότητα (E:3). Επομένως
 </p>
@@ -237,9 +240,9 @@ N(A_R\cap A_G\cap A_B)&=\frac{720}{6}=120.
 </div>
 </div>
 </div>
-<div id="outline-container-org7b83fcd" class="outline-3">
-<h3 id="org7b83fcd">Συνδυάζοντας τα παραπάνω</h3>
-<div class="outline-text-3" id="text-org7b83fcd">
+<div id="outline-container-org8ab3337" class="outline-3">
+<h3 id="org8ab3337">Συνδυάζοντας τα παραπάνω</h3>
+<div class="outline-text-3" id="text-org8ab3337">
 <p>
 Εφαρμόζοντας τη μέθοδο συμπερίληψης–αποκλεισμού:
 </p>
@@ -256,262 +259,262 @@ N<sub>good</sub>
 </div>
 </div>
 </div>
-<div id="outline-container-orgbffa7ac" class="outline-2">
-<h2 id="orgbffa7ac">Lean</h2>
-<div class="outline-text-2" id="text-orgbffa7ac">
+<div id="outline-container-org6359a6c" class="outline-2">
+<h2 id="org6359a6c">Lean</h2>
+<div class="outline-text-2" id="text-org6359a6c">
 <div class="org-src-container">
-<pre class="src src-haskell"><span style="color: #00578E; font-weight: bold;">inductive</span> <span style="color: #2F8B58; font-weight: bold;">Color</span> <span style="color: #A52A2A; font-weight: bold;">where</span>
-  <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">R</span> <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">G</span> <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">B</span> <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">E</span>
-  <span style="color: #A52A2A; font-weight: bold;">deriving</span> <span style="color: #2F8B58; font-weight: bold;">Repr</span>, <span style="color: #2F8B58; font-weight: bold;">DecidableEq</span>
+<pre class="src src-haskell"><span style="color: #A9DC76;">inductive</span> <span style="color: #78DCE8;">Color</span> <span style="color: #FF6188;">where</span>
+  <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">R</span> <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">G</span> <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">B</span> <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">E</span>
+  <span style="color: #FF6188;">deriving</span> <span style="color: #78DCE8;">Repr</span>, <span style="color: #78DCE8;">DecidableEq</span>
 
-<span style="color: #00578E; font-weight: bold;">structure</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span> <span style="color: #A52A2A; font-weight: bold;">where</span>
-  r <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Nat</span>
-  g <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Nat</span>
-  b <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Nat</span>
-  e <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Nat</span>
-  <span style="color: #A52A2A; font-weight: bold;">deriving</span> <span style="color: #2F8B58; font-weight: bold;">Repr</span>
+<span style="color: #A9DC76;">structure</span> <span style="color: #78DCE8;">Counts</span> <span style="color: #FF6188;">where</span>
+  r <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Nat</span>
+  g <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Nat</span>
+  b <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Nat</span>
+  e <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Nat</span>
+  <span style="color: #FF6188;">deriving</span> <span style="color: #78DCE8;">Repr</span>
 
-<span style="color: #00578E; font-weight: bold;">def</span> countsZero (c <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span>) <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Bool</span> <span style="color: #2F8B58; font-weight: bold;">:=</span>
-  c<span style="color: #0084C8; font-weight: bold;">.</span>r <span style="color: #0084C8; font-weight: bold;">==</span> <span style="color: #F5666D;">0</span> <span style="color: #0084C8; font-weight: bold;">&amp;&amp;</span> c<span style="color: #0084C8; font-weight: bold;">.</span>g <span style="color: #0084C8; font-weight: bold;">==</span> <span style="color: #F5666D;">0</span> <span style="color: #0084C8; font-weight: bold;">&amp;&amp;</span> c<span style="color: #0084C8; font-weight: bold;">.</span>b <span style="color: #0084C8; font-weight: bold;">==</span> <span style="color: #F5666D;">0</span> <span style="color: #0084C8; font-weight: bold;">&amp;&amp;</span> c<span style="color: #0084C8; font-weight: bold;">.</span>e <span style="color: #0084C8; font-weight: bold;">==</span> <span style="color: #F5666D;">0</span>
+<span style="color: #A9DC76;">def</span> countsZero (c <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Counts</span>) <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Bool</span> <span style="color: #78DCE8;">:=</span>
+  c<span style="color: #FCFCFA;">.</span>r <span style="color: #FCFCFA;">==</span> <span style="color: #AB9DF2; font-weight: bold;">0</span> <span style="color: #FCFCFA;">&amp;&amp;</span> c<span style="color: #FCFCFA;">.</span>g <span style="color: #FCFCFA;">==</span> <span style="color: #AB9DF2; font-weight: bold;">0</span> <span style="color: #FCFCFA;">&amp;&amp;</span> c<span style="color: #FCFCFA;">.</span>b <span style="color: #FCFCFA;">==</span> <span style="color: #AB9DF2; font-weight: bold;">0</span> <span style="color: #FCFCFA;">&amp;&amp;</span> c<span style="color: #FCFCFA;">.</span>e <span style="color: #FCFCFA;">==</span> <span style="color: #AB9DF2; font-weight: bold;">0</span>
 
-<span style="color: #00578E; font-weight: bold;">def</span> decCount (c <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span>) (col <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Color</span>) <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span> <span style="color: #2F8B58; font-weight: bold;">:=</span>
+<span style="color: #A9DC76;">def</span> decCount (c <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Counts</span>) (col <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Color</span>) <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Counts</span> <span style="color: #78DCE8;">:=</span>
   match col with
-  <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.R</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> { c with r <span style="color: #2F8B58; font-weight: bold;">:=</span> c<span style="color: #0084C8; font-weight: bold;">.</span>r <span style="color: #0084C8; font-weight: bold;">-</span> <span style="color: #F5666D;">1</span> }
-  <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.G</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> { c with g <span style="color: #2F8B58; font-weight: bold;">:=</span> c<span style="color: #0084C8; font-weight: bold;">.</span>g <span style="color: #0084C8; font-weight: bold;">-</span> <span style="color: #F5666D;">1</span> }
-  <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.B</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> { c with b <span style="color: #2F8B58; font-weight: bold;">:=</span> c<span style="color: #0084C8; font-weight: bold;">.</span>b <span style="color: #0084C8; font-weight: bold;">-</span> <span style="color: #F5666D;">1</span> }
-  <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.E</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> { c with e <span style="color: #2F8B58; font-weight: bold;">:=</span> c<span style="color: #0084C8; font-weight: bold;">.</span>e <span style="color: #0084C8; font-weight: bold;">-</span> <span style="color: #F5666D;">1</span> }
+  <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.R</span> <span style="color: #FCFCFA;">=&gt;</span> { c with r <span style="color: #78DCE8;">:=</span> c<span style="color: #FCFCFA;">.</span>r <span style="color: #FCFCFA;">-</span> <span style="color: #AB9DF2; font-weight: bold;">1</span> }
+  <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.G</span> <span style="color: #FCFCFA;">=&gt;</span> { c with g <span style="color: #78DCE8;">:=</span> c<span style="color: #FCFCFA;">.</span>g <span style="color: #FCFCFA;">-</span> <span style="color: #AB9DF2; font-weight: bold;">1</span> }
+  <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.B</span> <span style="color: #FCFCFA;">=&gt;</span> { c with b <span style="color: #78DCE8;">:=</span> c<span style="color: #FCFCFA;">.</span>b <span style="color: #FCFCFA;">-</span> <span style="color: #AB9DF2; font-weight: bold;">1</span> }
+  <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.E</span> <span style="color: #FCFCFA;">=&gt;</span> { c with e <span style="color: #78DCE8;">:=</span> c<span style="color: #FCFCFA;">.</span>e <span style="color: #FCFCFA;">-</span> <span style="color: #AB9DF2; font-weight: bold;">1</span> }
 
-<span style="color: #204A87;">-- </span><span style="color: #204A87;">allowed choices given remaining counts and previous placed color</span>
-<span style="color: #00578E; font-weight: bold;">def</span> allowed (counts <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span>) (prev <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Option</span> <span style="color: #2F8B58; font-weight: bold;">Color</span>) <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">List</span> <span style="color: #2F8B58; font-weight: bold;">Color</span> <span style="color: #2F8B58; font-weight: bold;">:=</span>
-  <span style="color: #A52A2A; font-weight: bold;">let</span> ok (col <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Color</span>) (avail <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Nat</span>) <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Bool</span> <span style="color: #2F8B58; font-weight: bold;">:=</span>
-    avail <span style="color: #0084C8; font-weight: bold;">&gt;</span> <span style="color: #F5666D;">0</span> <span style="color: #0084C8; font-weight: bold;">&amp;&amp;</span>
+<span style="color: #727072;">-- </span><span style="color: #727072;">allowed choices given remaining counts and previous placed color</span>
+<span style="color: #A9DC76;">def</span> allowed (counts <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Counts</span>) (prev <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Option</span> <span style="color: #78DCE8;">Color</span>) <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">List</span> <span style="color: #78DCE8;">Color</span> <span style="color: #78DCE8;">:=</span>
+  <span style="color: #FF6188;">let</span> ok (col <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Color</span>) (avail <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Nat</span>) <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Bool</span> <span style="color: #78DCE8;">:=</span>
+    avail <span style="color: #FCFCFA;">&gt;</span> <span style="color: #AB9DF2; font-weight: bold;">0</span> <span style="color: #FCFCFA;">&amp;&amp;</span>
     match prev with
-    <span style="color: #0084C8; font-weight: bold;">|</span> none <span style="color: #0084C8; font-weight: bold;">=&gt;</span> true
-    <span style="color: #0084C8; font-weight: bold;">|</span> some p <span style="color: #0084C8; font-weight: bold;">=&gt;</span> (p <span style="color: #0084C8; font-weight: bold;">!=</span> col) <span style="color: #0084C8; font-weight: bold;">||</span> (col <span style="color: #0084C8; font-weight: bold;">==</span> <span style="color: #2F8B58; font-weight: bold;">Color.E</span>) <span style="color: #204A87;">-- </span><span style="color: #204A87;">empties may repeat; colored must differ</span>
-  ([<span style="color: #2F8B58; font-weight: bold;">Color.R</span>, <span style="color: #2F8B58; font-weight: bold;">Color.G</span>, <span style="color: #2F8B58; font-weight: bold;">Color.B</span>, <span style="color: #2F8B58; font-weight: bold;">Color.E</span>])<span style="color: #0084C8; font-weight: bold;">.</span>filter fun col <span style="color: #0084C8; font-weight: bold;">=&gt;</span>
+    <span style="color: #FCFCFA;">|</span> none <span style="color: #FCFCFA;">=&gt;</span> true
+    <span style="color: #FCFCFA;">|</span> some p <span style="color: #FCFCFA;">=&gt;</span> (p <span style="color: #FCFCFA;">!=</span> col) <span style="color: #FCFCFA;">||</span> (col <span style="color: #FCFCFA;">==</span> <span style="color: #78DCE8;">Color.E</span>) <span style="color: #727072;">-- </span><span style="color: #727072;">empties may repeat; colored must differ</span>
+  ([<span style="color: #78DCE8;">Color.R</span>, <span style="color: #78DCE8;">Color.G</span>, <span style="color: #78DCE8;">Color.B</span>, <span style="color: #78DCE8;">Color.E</span>])<span style="color: #FCFCFA;">.</span>filter fun col <span style="color: #FCFCFA;">=&gt;</span>
     match col with
-    <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.R</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> ok <span style="color: #2F8B58; font-weight: bold;">Color.R</span> counts<span style="color: #0084C8; font-weight: bold;">.</span>r
-    <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.G</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> ok <span style="color: #2F8B58; font-weight: bold;">Color.G</span> counts<span style="color: #0084C8; font-weight: bold;">.</span>g
-    <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.B</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> ok <span style="color: #2F8B58; font-weight: bold;">Color.B</span> counts<span style="color: #0084C8; font-weight: bold;">.</span>b
-    <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.E</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> ok <span style="color: #2F8B58; font-weight: bold;">Color.E</span> counts<span style="color: #0084C8; font-weight: bold;">.</span>e
+    <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.R</span> <span style="color: #FCFCFA;">=&gt;</span> ok <span style="color: #78DCE8;">Color.R</span> counts<span style="color: #FCFCFA;">.</span>r
+    <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.G</span> <span style="color: #FCFCFA;">=&gt;</span> ok <span style="color: #78DCE8;">Color.G</span> counts<span style="color: #FCFCFA;">.</span>g
+    <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.B</span> <span style="color: #FCFCFA;">=&gt;</span> ok <span style="color: #78DCE8;">Color.B</span> counts<span style="color: #FCFCFA;">.</span>b
+    <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.E</span> <span style="color: #FCFCFA;">=&gt;</span> ok <span style="color: #78DCE8;">Color.E</span> counts<span style="color: #FCFCFA;">.</span>e
 
-<span style="color: #00578E; font-weight: bold;">partial</span> def build (rem <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Nat</span>) (prev <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Option</span> <span style="color: #2F8B58; font-weight: bold;">Color</span>) (counts <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span>) <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">List</span> (<span style="color: #2F8B58; font-weight: bold;">List</span> <span style="color: #2F8B58; font-weight: bold;">Color</span>) <span style="color: #2F8B58; font-weight: bold;">:=</span>
-  <span style="color: #A52A2A; font-weight: bold;">if</span> rem <span style="color: #0084C8; font-weight: bold;">==</span> <span style="color: #F5666D;">0</span> <span style="color: #A52A2A; font-weight: bold;">then</span>
-    <span style="color: #A52A2A; font-weight: bold;">if</span> countsZero counts <span style="color: #A52A2A; font-weight: bold;">then</span> [ <span style="color: #2F8B58; font-weight: bold;">[]</span> ] <span style="color: #A52A2A; font-weight: bold;">else</span> <span style="color: #2F8B58; font-weight: bold;">[]</span>
-  <span style="color: #A52A2A; font-weight: bold;">else</span>
-    <span style="color: #A52A2A; font-weight: bold;">let</span> choices <span style="color: #2F8B58; font-weight: bold;">:=</span> allowed counts prev
-    <span style="color: #204A87;">-- </span><span style="color: #204A87;">avoid using `List.bind` in case of name-resolution differences;</span>
-    <span style="color: #204A87;">-- </span><span style="color: #204A87;">build result by folding over choices and appending mapped tails</span>
-    choices<span style="color: #0084C8; font-weight: bold;">.</span>foldl (fun acc c <span style="color: #0084C8; font-weight: bold;">=&gt;</span>
-      <span style="color: #A52A2A; font-weight: bold;">let</span> counts' <span style="color: #2F8B58; font-weight: bold;">:=</span> decCount counts c
-      <span style="color: #A52A2A; font-weight: bold;">let</span> tails <span style="color: #2F8B58; font-weight: bold;">:=</span> build (rem <span style="color: #0084C8; font-weight: bold;">-</span> <span style="color: #F5666D;">1</span>) (some c) counts'
-      acc <span style="color: #0084C8; font-weight: bold;">++</span> (tails<span style="color: #0084C8; font-weight: bold;">.</span>map fun t <span style="color: #0084C8; font-weight: bold;">=&gt;</span> c <span style="color: #0084C8; font-weight: bold;">::</span> t)
-    ) <span style="color: #2F8B58; font-weight: bold;">[]</span>
+<span style="color: #A9DC76;">partial</span> def build (rem <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Nat</span>) (prev <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Option</span> <span style="color: #78DCE8;">Color</span>) (counts <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Counts</span>) <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">List</span> (<span style="color: #78DCE8;">List</span> <span style="color: #78DCE8;">Color</span>) <span style="color: #78DCE8;">:=</span>
+  <span style="color: #FF6188;">if</span> rem <span style="color: #FCFCFA;">==</span> <span style="color: #AB9DF2; font-weight: bold;">0</span> <span style="color: #FF6188;">then</span>
+    <span style="color: #FF6188;">if</span> countsZero counts <span style="color: #FF6188;">then</span> [ <span style="color: #78DCE8;">[]</span> ] <span style="color: #FF6188;">else</span> <span style="color: #78DCE8;">[]</span>
+  <span style="color: #FF6188;">else</span>
+    <span style="color: #FF6188;">let</span> choices <span style="color: #78DCE8;">:=</span> allowed counts prev
+    <span style="color: #727072;">-- </span><span style="color: #727072;">avoid using `List.bind` in case of name-resolution differences;</span>
+    <span style="color: #727072;">-- </span><span style="color: #727072;">build result by folding over choices and appending mapped tails</span>
+    choices<span style="color: #FCFCFA;">.</span>foldl (fun acc c <span style="color: #FCFCFA;">=&gt;</span>
+      <span style="color: #FF6188;">let</span> counts' <span style="color: #78DCE8;">:=</span> decCount counts c
+      <span style="color: #FF6188;">let</span> tails <span style="color: #78DCE8;">:=</span> build (rem <span style="color: #FCFCFA;">-</span> <span style="color: #AB9DF2; font-weight: bold;">1</span>) (some c) counts'
+      acc <span style="color: #FCFCFA;">++</span> (tails<span style="color: #FCFCFA;">.</span>map fun t <span style="color: #FCFCFA;">=&gt;</span> c <span style="color: #FCFCFA;">::</span> t)
+    ) <span style="color: #78DCE8;">[]</span>
 
-<span style="color: #00578E; font-weight: bold;">def</span> showColor <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Color</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> <span style="color: #2F8B58; font-weight: bold;">String</span>
-  <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.R</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> <span style="color: #4E9A06;">"R"</span>
-  <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.G</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> <span style="color: #4E9A06;">"G"</span>
-  <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.B</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> <span style="color: #4E9A06;">"B"</span>
-  <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">Color.E</span> <span style="color: #0084C8; font-weight: bold;">=&gt;</span> <span style="color: #4E9A06;">"."</span>
+<span style="color: #A9DC76;">def</span> showColor <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Color</span> <span style="color: #FCFCFA;">-&gt;</span> <span style="color: #78DCE8;">String</span>
+  <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.R</span> <span style="color: #FCFCFA;">=&gt;</span> <span style="color: #FFD866;">"R"</span>
+  <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.G</span> <span style="color: #FCFCFA;">=&gt;</span> <span style="color: #FFD866;">"G"</span>
+  <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.B</span> <span style="color: #FCFCFA;">=&gt;</span> <span style="color: #FFD866;">"B"</span>
+  <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">Color.E</span> <span style="color: #FCFCFA;">=&gt;</span> <span style="color: #FFD866;">"."</span>
 
-<span style="color: #00578E; font-weight: bold;">def</span> main <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">IO</span> <span style="color: #2F8B58; font-weight: bold;">Unit</span> <span style="color: #2F8B58; font-weight: bold;">:=</span> <span style="color: #A52A2A; font-weight: bold;">do</span>
-  <span style="color: #A52A2A; font-weight: bold;">let</span> initial <span style="color: #2F8B58; font-weight: bold;">:</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span> <span style="color: #2F8B58; font-weight: bold;">:=</span> { r <span style="color: #2F8B58; font-weight: bold;">:=</span> <span style="color: #F5666D;">2</span>, g <span style="color: #2F8B58; font-weight: bold;">:=</span> <span style="color: #F5666D;">2</span>, b <span style="color: #2F8B58; font-weight: bold;">:=</span> <span style="color: #F5666D;">2</span>, e <span style="color: #2F8B58; font-weight: bold;">:=</span> <span style="color: #F5666D;">3</span> }
-  <span style="color: #A52A2A; font-weight: bold;">let</span> solutions <span style="color: #2F8B58; font-weight: bold;">:=</span> build <span style="color: #F5666D;">9</span> none initial
-  IO.println s<span style="color: #0084C8; font-weight: bold;">!</span><span style="color: #4E9A06;">"Found {solutions.length} solutions (each printed as a 9-length sequence; '.' = empty)"</span>
-  for s <span style="color: #A52A2A; font-weight: bold;">in</span> solutions <span style="color: #A52A2A; font-weight: bold;">do</span>
-    IO.println (String.intercalate <span style="color: #4E9A06;">" "</span> (s<span style="color: #0084C8; font-weight: bold;">.</span>map showColor))
+<span style="color: #A9DC76;">def</span> main <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">IO</span> <span style="color: #78DCE8;">Unit</span> <span style="color: #78DCE8;">:=</span> <span style="color: #FF6188;">do</span>
+  <span style="color: #FF6188;">let</span> initial <span style="color: #78DCE8;">:</span> <span style="color: #78DCE8;">Counts</span> <span style="color: #78DCE8;">:=</span> { r <span style="color: #78DCE8;">:=</span> <span style="color: #AB9DF2; font-weight: bold;">2</span>, g <span style="color: #78DCE8;">:=</span> <span style="color: #AB9DF2; font-weight: bold;">2</span>, b <span style="color: #78DCE8;">:=</span> <span style="color: #AB9DF2; font-weight: bold;">2</span>, e <span style="color: #78DCE8;">:=</span> <span style="color: #AB9DF2; font-weight: bold;">3</span> }
+  <span style="color: #FF6188;">let</span> solutions <span style="color: #78DCE8;">:=</span> build <span style="color: #AB9DF2; font-weight: bold;">9</span> none initial
+  IO.println s<span style="color: #FCFCFA;">!</span><span style="color: #FFD866;">"Found {solutions.length} solutions (each printed as a 9-length sequence; '.' = empty)"</span>
+  for s <span style="color: #FF6188;">in</span> solutions <span style="color: #FF6188;">do</span>
+    IO.println (String.intercalate <span style="color: #FFD866;">" "</span> (s<span style="color: #FCFCFA;">.</span>map showColor))
 
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org08e5c6a" class="outline-2">
-<h2 id="org08e5c6a">Haskell</h2>
-<div class="outline-text-2" id="text-org08e5c6a">
+<div id="outline-container-org5e95b22" class="outline-2">
+<h2 id="org5e95b22">Haskell</h2>
+<div class="outline-text-2" id="text-org5e95b22">
 <div class="org-src-container">
-<pre class="src src-haskell"><span style="color: #A52A2A; font-weight: bold;">module</span> <span style="color: #2F8B58; font-weight: bold;">Main</span> <span style="color: #A52A2A; font-weight: bold;">where</span>
+<pre class="src src-haskell"><span style="color: #FF6188;">module</span> <span style="color: #78DCE8;">Main</span> <span style="color: #FF6188;">where</span>
 
-<span style="color: #A52A2A; font-weight: bold;">data</span> <span style="color: #2F8B58; font-weight: bold;">Color</span> <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #2F8B58; font-weight: bold;">R</span> <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">G</span> <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">B</span> <span style="color: #0084C8; font-weight: bold;">|</span> <span style="color: #2F8B58; font-weight: bold;">E</span>
-  <span style="color: #A52A2A; font-weight: bold;">deriving</span> (<span style="color: #2F8B58; font-weight: bold;">Eq</span>, <span style="color: #2F8B58; font-weight: bold;">Show</span>)
+<span style="color: #FF6188;">data</span> <span style="color: #78DCE8;">Color</span> <span style="color: #FCFCFA;">=</span> <span style="color: #78DCE8;">R</span> <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">G</span> <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">B</span> <span style="color: #FCFCFA;">|</span> <span style="color: #78DCE8;">E</span>
+  <span style="color: #FF6188;">deriving</span> (<span style="color: #78DCE8;">Eq</span>, <span style="color: #78DCE8;">Show</span>)
 
-<span style="color: #A52A2A; font-weight: bold;">data</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span> <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span>
-  { cr <span style="color: #0084C8; font-weight: bold;">::</span> <span style="color: #2F8B58; font-weight: bold;">Int</span>
-  , cg <span style="color: #0084C8; font-weight: bold;">::</span> <span style="color: #2F8B58; font-weight: bold;">Int</span>
-  , cb <span style="color: #0084C8; font-weight: bold;">::</span> <span style="color: #2F8B58; font-weight: bold;">Int</span>
-  , ce <span style="color: #0084C8; font-weight: bold;">::</span> <span style="color: #2F8B58; font-weight: bold;">Int</span>
-  } <span style="color: #A52A2A; font-weight: bold;">deriving</span> (<span style="color: #2F8B58; font-weight: bold;">Show</span>)
+<span style="color: #FF6188;">data</span> <span style="color: #78DCE8;">Counts</span> <span style="color: #FCFCFA;">=</span> <span style="color: #78DCE8;">Counts</span>
+  { cr <span style="color: #FCFCFA;">::</span> <span style="color: #78DCE8;">Int</span>
+  , cg <span style="color: #FCFCFA;">::</span> <span style="color: #78DCE8;">Int</span>
+  , cb <span style="color: #FCFCFA;">::</span> <span style="color: #78DCE8;">Int</span>
+  , ce <span style="color: #FCFCFA;">::</span> <span style="color: #78DCE8;">Int</span>
+  } <span style="color: #FF6188;">deriving</span> (<span style="color: #78DCE8;">Show</span>)
 
-<span style="color: #00578E; font-weight: bold;">countsZero</span> <span style="color: #0084C8; font-weight: bold;">::</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> <span style="color: #2F8B58; font-weight: bold;">Bool</span>
-<span style="color: #00578E; font-weight: bold;">countsZero</span> (<span style="color: #2F8B58; font-weight: bold;">Counts</span> r g b e) <span style="color: #0084C8; font-weight: bold;">=</span> r <span style="color: #0084C8; font-weight: bold;">==</span> <span style="color: #F5666D;">0</span> <span style="color: #0084C8; font-weight: bold;">&amp;&amp;</span> g <span style="color: #0084C8; font-weight: bold;">==</span> <span style="color: #F5666D;">0</span> <span style="color: #0084C8; font-weight: bold;">&amp;&amp;</span> b <span style="color: #0084C8; font-weight: bold;">==</span> <span style="color: #F5666D;">0</span> <span style="color: #0084C8; font-weight: bold;">&amp;&amp;</span> e <span style="color: #0084C8; font-weight: bold;">==</span> <span style="color: #F5666D;">0</span>
+<span style="color: #A9DC76;">countsZero</span> <span style="color: #FCFCFA;">::</span> <span style="color: #78DCE8;">Counts</span> <span style="color: #FCFCFA;">-&gt;</span> <span style="color: #78DCE8;">Bool</span>
+<span style="color: #A9DC76;">countsZero</span> (<span style="color: #78DCE8;">Counts</span> r g b e) <span style="color: #FCFCFA;">=</span> r <span style="color: #FCFCFA;">==</span> <span style="color: #AB9DF2; font-weight: bold;">0</span> <span style="color: #FCFCFA;">&amp;&amp;</span> g <span style="color: #FCFCFA;">==</span> <span style="color: #AB9DF2; font-weight: bold;">0</span> <span style="color: #FCFCFA;">&amp;&amp;</span> b <span style="color: #FCFCFA;">==</span> <span style="color: #AB9DF2; font-weight: bold;">0</span> <span style="color: #FCFCFA;">&amp;&amp;</span> e <span style="color: #FCFCFA;">==</span> <span style="color: #AB9DF2; font-weight: bold;">0</span>
 
-<span style="color: #00578E; font-weight: bold;">decCount</span> <span style="color: #0084C8; font-weight: bold;">::</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> <span style="color: #2F8B58; font-weight: bold;">Color</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span>
-<span style="color: #00578E; font-weight: bold;">decCount</span> c col <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #A52A2A; font-weight: bold;">case</span> col <span style="color: #A52A2A; font-weight: bold;">of</span>
-  <span style="color: #2F8B58; font-weight: bold;">R</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> c { cr <span style="color: #0084C8; font-weight: bold;">=</span> cr c <span style="color: #0084C8; font-weight: bold;">-</span> <span style="color: #F5666D;">1</span> }
-  <span style="color: #2F8B58; font-weight: bold;">G</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> c { cg <span style="color: #0084C8; font-weight: bold;">=</span> cg c <span style="color: #0084C8; font-weight: bold;">-</span> <span style="color: #F5666D;">1</span> }
-  <span style="color: #2F8B58; font-weight: bold;">B</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> c { cb <span style="color: #0084C8; font-weight: bold;">=</span> cb c <span style="color: #0084C8; font-weight: bold;">-</span> <span style="color: #F5666D;">1</span> }
-  <span style="color: #2F8B58; font-weight: bold;">E</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> c { ce <span style="color: #0084C8; font-weight: bold;">=</span> ce c <span style="color: #0084C8; font-weight: bold;">-</span> <span style="color: #F5666D;">1</span> }
+<span style="color: #A9DC76;">decCount</span> <span style="color: #FCFCFA;">::</span> <span style="color: #78DCE8;">Counts</span> <span style="color: #FCFCFA;">-&gt;</span> <span style="color: #78DCE8;">Color</span> <span style="color: #FCFCFA;">-&gt;</span> <span style="color: #78DCE8;">Counts</span>
+<span style="color: #A9DC76;">decCount</span> c col <span style="color: #FCFCFA;">=</span> <span style="color: #FF6188;">case</span> col <span style="color: #FF6188;">of</span>
+  <span style="color: #78DCE8;">R</span> <span style="color: #FCFCFA;">-&gt;</span> c { cr <span style="color: #FCFCFA;">=</span> cr c <span style="color: #FCFCFA;">-</span> <span style="color: #AB9DF2; font-weight: bold;">1</span> }
+  <span style="color: #78DCE8;">G</span> <span style="color: #FCFCFA;">-&gt;</span> c { cg <span style="color: #FCFCFA;">=</span> cg c <span style="color: #FCFCFA;">-</span> <span style="color: #AB9DF2; font-weight: bold;">1</span> }
+  <span style="color: #78DCE8;">B</span> <span style="color: #FCFCFA;">-&gt;</span> c { cb <span style="color: #FCFCFA;">=</span> cb c <span style="color: #FCFCFA;">-</span> <span style="color: #AB9DF2; font-weight: bold;">1</span> }
+  <span style="color: #78DCE8;">E</span> <span style="color: #FCFCFA;">-&gt;</span> c { ce <span style="color: #FCFCFA;">=</span> ce c <span style="color: #FCFCFA;">-</span> <span style="color: #AB9DF2; font-weight: bold;">1</span> }
 
-<span style="color: #00578E; font-weight: bold;">allowed</span> <span style="color: #0084C8; font-weight: bold;">::</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> <span style="color: #2F8B58; font-weight: bold;">Maybe</span> <span style="color: #2F8B58; font-weight: bold;">Color</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> [<span style="color: #2F8B58; font-weight: bold;">Color</span>]
-<span style="color: #00578E; font-weight: bold;">allowed</span> counts prev <span style="color: #0084C8; font-weight: bold;">=</span> filter ok [<span style="color: #2F8B58; font-weight: bold;">R</span>, <span style="color: #2F8B58; font-weight: bold;">G</span>, <span style="color: #2F8B58; font-weight: bold;">B</span>, <span style="color: #2F8B58; font-weight: bold;">E</span>]
-  <span style="color: #A52A2A; font-weight: bold;">where</span>
-    avail c <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #A52A2A; font-weight: bold;">case</span> c <span style="color: #A52A2A; font-weight: bold;">of</span>
-      <span style="color: #2F8B58; font-weight: bold;">R</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> cr counts
-      <span style="color: #2F8B58; font-weight: bold;">G</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> cg counts
-      <span style="color: #2F8B58; font-weight: bold;">B</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> cb counts
-      <span style="color: #2F8B58; font-weight: bold;">E</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> ce counts
-    ok c <span style="color: #0084C8; font-weight: bold;">=</span>
-      avail c <span style="color: #0084C8; font-weight: bold;">&gt;</span> <span style="color: #F5666D;">0</span> <span style="color: #0084C8; font-weight: bold;">&amp;&amp;</span>
-      <span style="color: #A52A2A; font-weight: bold;">case</span> prev <span style="color: #A52A2A; font-weight: bold;">of</span>
-        <span style="color: #2F8B58; font-weight: bold;">Nothing</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> <span style="color: #2F8B58; font-weight: bold;">True</span>
-        <span style="color: #2F8B58; font-weight: bold;">Just</span> p  <span style="color: #0084C8; font-weight: bold;">-&gt;</span> (p <span style="color: #0084C8; font-weight: bold;">/=</span> c) <span style="color: #0084C8; font-weight: bold;">||</span> (c <span style="color: #0084C8; font-weight: bold;">==</span> <span style="color: #2F8B58; font-weight: bold;">E</span>)  <span style="color: #204A87;">-- </span><span style="color: #204A87;">empties may repeat; colored must differ</span>
+<span style="color: #A9DC76;">allowed</span> <span style="color: #FCFCFA;">::</span> <span style="color: #78DCE8;">Counts</span> <span style="color: #FCFCFA;">-&gt;</span> <span style="color: #78DCE8;">Maybe</span> <span style="color: #78DCE8;">Color</span> <span style="color: #FCFCFA;">-&gt;</span> [<span style="color: #78DCE8;">Color</span>]
+<span style="color: #A9DC76;">allowed</span> counts prev <span style="color: #FCFCFA;">=</span> filter ok [<span style="color: #78DCE8;">R</span>, <span style="color: #78DCE8;">G</span>, <span style="color: #78DCE8;">B</span>, <span style="color: #78DCE8;">E</span>]
+  <span style="color: #FF6188;">where</span>
+    avail c <span style="color: #FCFCFA;">=</span> <span style="color: #FF6188;">case</span> c <span style="color: #FF6188;">of</span>
+      <span style="color: #78DCE8;">R</span> <span style="color: #FCFCFA;">-&gt;</span> cr counts
+      <span style="color: #78DCE8;">G</span> <span style="color: #FCFCFA;">-&gt;</span> cg counts
+      <span style="color: #78DCE8;">B</span> <span style="color: #FCFCFA;">-&gt;</span> cb counts
+      <span style="color: #78DCE8;">E</span> <span style="color: #FCFCFA;">-&gt;</span> ce counts
+    ok c <span style="color: #FCFCFA;">=</span>
+      avail c <span style="color: #FCFCFA;">&gt;</span> <span style="color: #AB9DF2; font-weight: bold;">0</span> <span style="color: #FCFCFA;">&amp;&amp;</span>
+      <span style="color: #FF6188;">case</span> prev <span style="color: #FF6188;">of</span>
+        <span style="color: #78DCE8;">Nothing</span> <span style="color: #FCFCFA;">-&gt;</span> <span style="color: #78DCE8;">True</span>
+        <span style="color: #78DCE8;">Just</span> p  <span style="color: #FCFCFA;">-&gt;</span> (p <span style="color: #FCFCFA;">/=</span> c) <span style="color: #FCFCFA;">||</span> (c <span style="color: #FCFCFA;">==</span> <span style="color: #78DCE8;">E</span>)  <span style="color: #727072;">-- </span><span style="color: #727072;">empties may repeat; colored must differ</span>
 
-<span style="color: #204A87;">-- </span><span style="color: #204A87;">build positions: rem = remaining slots to fill</span>
-<span style="color: #00578E; font-weight: bold;">build</span> <span style="color: #0084C8; font-weight: bold;">::</span> <span style="color: #2F8B58; font-weight: bold;">Int</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> <span style="color: #2F8B58; font-weight: bold;">Maybe</span> <span style="color: #2F8B58; font-weight: bold;">Color</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> [[<span style="color: #2F8B58; font-weight: bold;">Color</span>]]
-<span style="color: #00578E; font-weight: bold;">build</span> <span style="color: #F5666D;">0</span> <span style="color: #A52A2A; font-weight: bold;">_</span> counts <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #A52A2A; font-weight: bold;">if</span> countsZero counts <span style="color: #A52A2A; font-weight: bold;">then</span> [<span style="color: #2F8B58; font-weight: bold;">[]</span>] <span style="color: #A52A2A; font-weight: bold;">else</span> <span style="color: #2F8B58; font-weight: bold;">[]</span>
-<span style="color: #00578E; font-weight: bold;">build</span> rem prev counts <span style="color: #0084C8; font-weight: bold;">=</span>
+<span style="color: #727072;">-- </span><span style="color: #727072;">build positions: rem = remaining slots to fill</span>
+<span style="color: #A9DC76;">build</span> <span style="color: #FCFCFA;">::</span> <span style="color: #78DCE8;">Int</span> <span style="color: #FCFCFA;">-&gt;</span> <span style="color: #78DCE8;">Maybe</span> <span style="color: #78DCE8;">Color</span> <span style="color: #FCFCFA;">-&gt;</span> <span style="color: #78DCE8;">Counts</span> <span style="color: #FCFCFA;">-&gt;</span> [[<span style="color: #78DCE8;">Color</span>]]
+<span style="color: #A9DC76;">build</span> <span style="color: #AB9DF2; font-weight: bold;">0</span> <span style="color: #FF6188;">_</span> counts <span style="color: #FCFCFA;">=</span> <span style="color: #FF6188;">if</span> countsZero counts <span style="color: #FF6188;">then</span> [<span style="color: #78DCE8;">[]</span>] <span style="color: #FF6188;">else</span> <span style="color: #78DCE8;">[]</span>
+<span style="color: #A9DC76;">build</span> rem prev counts <span style="color: #FCFCFA;">=</span>
   concatMap extend (allowed counts prev)
-  <span style="color: #A52A2A; font-weight: bold;">where</span>
-    extend c <span style="color: #0084C8; font-weight: bold;">=</span> map (c <span style="color: #2F8B58; font-weight: bold;">:</span>) (build (rem <span style="color: #0084C8; font-weight: bold;">-</span> <span style="color: #F5666D;">1</span>) (<span style="color: #2F8B58; font-weight: bold;">Just</span> c) (decCount counts c))
+  <span style="color: #FF6188;">where</span>
+    extend c <span style="color: #FCFCFA;">=</span> map (c <span style="color: #78DCE8;">:</span>) (build (rem <span style="color: #FCFCFA;">-</span> <span style="color: #AB9DF2; font-weight: bold;">1</span>) (<span style="color: #78DCE8;">Just</span> c) (decCount counts c))
 
-<span style="color: #00578E; font-weight: bold;">showColor</span> <span style="color: #0084C8; font-weight: bold;">::</span> <span style="color: #2F8B58; font-weight: bold;">Color</span> <span style="color: #0084C8; font-weight: bold;">-&gt;</span> <span style="color: #2F8B58; font-weight: bold;">String</span>
-<span style="color: #00578E; font-weight: bold;">showColor</span> <span style="color: #2F8B58; font-weight: bold;">R</span> <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #4E9A06;">"R"</span>
-<span style="color: #00578E; font-weight: bold;">showColor</span> <span style="color: #2F8B58; font-weight: bold;">G</span> <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #4E9A06;">"G"</span>
-<span style="color: #00578E; font-weight: bold;">showColor</span> <span style="color: #2F8B58; font-weight: bold;">B</span> <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #4E9A06;">"B"</span>
-<span style="color: #00578E; font-weight: bold;">showColor</span> <span style="color: #2F8B58; font-weight: bold;">E</span> <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #4E9A06;">"."</span>
+<span style="color: #A9DC76;">showColor</span> <span style="color: #FCFCFA;">::</span> <span style="color: #78DCE8;">Color</span> <span style="color: #FCFCFA;">-&gt;</span> <span style="color: #78DCE8;">String</span>
+<span style="color: #A9DC76;">showColor</span> <span style="color: #78DCE8;">R</span> <span style="color: #FCFCFA;">=</span> <span style="color: #FFD866;">"R"</span>
+<span style="color: #A9DC76;">showColor</span> <span style="color: #78DCE8;">G</span> <span style="color: #FCFCFA;">=</span> <span style="color: #FFD866;">"G"</span>
+<span style="color: #A9DC76;">showColor</span> <span style="color: #78DCE8;">B</span> <span style="color: #FCFCFA;">=</span> <span style="color: #FFD866;">"B"</span>
+<span style="color: #A9DC76;">showColor</span> <span style="color: #78DCE8;">E</span> <span style="color: #FCFCFA;">=</span> <span style="color: #FFD866;">"."</span>
 
-<span style="color: #00578E; font-weight: bold;">main</span> <span style="color: #0084C8; font-weight: bold;">::</span> <span style="color: #2F8B58; font-weight: bold;">IO</span> <span style="color: #2F8B58; font-weight: bold;">()</span>
-<span style="color: #00578E; font-weight: bold;">main</span> <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #A52A2A; font-weight: bold;">do</span>
-  <span style="color: #A52A2A; font-weight: bold;">let</span> initial <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span> { cr <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #F5666D;">2</span>, cg <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #F5666D;">2</span>, cb <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #F5666D;">2</span>, ce <span style="color: #0084C8; font-weight: bold;">=</span> <span style="color: #F5666D;">3</span> }
-      solutions <span style="color: #0084C8; font-weight: bold;">=</span> build <span style="color: #F5666D;">9</span> <span style="color: #2F8B58; font-weight: bold;">Nothing</span> initial
-  putStrLn <span style="color: #0084C8; font-weight: bold;">$</span> <span style="color: #4E9A06;">"Found "</span> <span style="color: #0084C8; font-weight: bold;">++</span> show (length solutions) <span style="color: #0084C8; font-weight: bold;">++</span> <span style="color: #4E9A06;">" solutions ('.' = empty)"</span>
-  mapM_ (putStrLn <span style="color: #0084C8; font-weight: bold;">.</span> unwords <span style="color: #0084C8; font-weight: bold;">.</span> map showColor) solutions
+<span style="color: #A9DC76;">main</span> <span style="color: #FCFCFA;">::</span> <span style="color: #78DCE8;">IO</span> <span style="color: #78DCE8;">()</span>
+<span style="color: #A9DC76;">main</span> <span style="color: #FCFCFA;">=</span> <span style="color: #FF6188;">do</span>
+  <span style="color: #FF6188;">let</span> initial <span style="color: #FCFCFA;">=</span> <span style="color: #78DCE8;">Counts</span> { cr <span style="color: #FCFCFA;">=</span> <span style="color: #AB9DF2; font-weight: bold;">2</span>, cg <span style="color: #FCFCFA;">=</span> <span style="color: #AB9DF2; font-weight: bold;">2</span>, cb <span style="color: #FCFCFA;">=</span> <span style="color: #AB9DF2; font-weight: bold;">2</span>, ce <span style="color: #FCFCFA;">=</span> <span style="color: #AB9DF2; font-weight: bold;">3</span> }
+      solutions <span style="color: #FCFCFA;">=</span> build <span style="color: #AB9DF2; font-weight: bold;">9</span> <span style="color: #78DCE8;">Nothing</span> initial
+  putStrLn <span style="color: #FCFCFA;">$</span> <span style="color: #FFD866;">"Found "</span> <span style="color: #FCFCFA;">++</span> show (length solutions) <span style="color: #FCFCFA;">++</span> <span style="color: #FFD866;">" solutions ('.' = empty)"</span>
+  mapM_ (putStrLn <span style="color: #FCFCFA;">.</span> unwords <span style="color: #FCFCFA;">.</span> map showColor) solutions
 
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org9096bec" class="outline-2">
-<h2 id="org9096bec">Rust</h2>
-<div class="outline-text-2" id="text-org9096bec">
+<div id="outline-container-org82cd3e1" class="outline-2">
+<h2 id="org82cd3e1">Rust</h2>
+<div class="outline-text-2" id="text-org82cd3e1">
 <div class="org-src-container">
-<pre class="src src-rust"><span style="color: #A52A2A; font-weight: bold;">use</span> <span style="color: #F5666D;">std</span>::fmt;
+<pre class="src src-rust"><span style="color: #FF6188;">use</span> <span style="color: #AB9DF2;">std</span>::fmt;
 
-<span style="color: #A020F0;">#[derive(Clone, Copy, Debug, PartialEq, Eq)]</span>
-<span style="color: #A52A2A; font-weight: bold;">enum</span> <span style="color: #2F8B58; font-weight: bold;">Color</span> {
-    <span style="color: #2F8B58; font-weight: bold;">R</span>,
-    <span style="color: #2F8B58; font-weight: bold;">G</span>,
-    <span style="color: #2F8B58; font-weight: bold;">B</span>,
-    <span style="color: #2F8B58; font-weight: bold;">E</span>,
+<span style="color: #FF6188; font-weight: bold;">#[derive(Clone, Copy, Debug, PartialEq, Eq)]</span>
+<span style="color: #FF6188;">enum</span> <span style="color: #78DCE8;">Color</span> {
+    <span style="color: #78DCE8;">R</span>,
+    <span style="color: #78DCE8;">G</span>,
+    <span style="color: #78DCE8;">B</span>,
+    <span style="color: #78DCE8;">E</span>,
 }
 
-<span style="color: #A52A2A; font-weight: bold;">impl</span> <span style="color: #F5666D;">fmt</span>::<span style="color: #2F8B58; font-weight: bold;">Display</span> <span style="color: #A52A2A; font-weight: bold;">for</span> <span style="color: #2F8B58; font-weight: bold;">Color</span> {
-    <span style="color: #A52A2A; font-weight: bold;">fn</span> <span style="color: #00578E; font-weight: bold;">fmt</span>(<span style="color: #2E3436; background-color: #EDEDED;">&amp;</span><span style="color: #A52A2A; font-weight: bold;">self</span>, <span style="color: #0084C8; font-weight: bold;">f</span>: <span style="color: #2E3436; background-color: #EDEDED;">&amp;</span><span style="color: #A52A2A; font-weight: bold;">mut</span> <span style="color: #F5666D;">fmt</span>::<span style="color: #2F8B58; font-weight: bold;">Formatter</span>&lt;'<span style="color: #0084C8; font-weight: bold;">_</span>&gt;) -&gt; <span style="color: #F5666D;">fmt</span>::<span style="color: #2F8B58; font-weight: bold;">Result</span> {
-        <span style="color: #A52A2A; font-weight: bold;">let</span> <span style="color: #0084C8; font-weight: bold;">s</span> = <span style="color: #A52A2A; font-weight: bold;">match</span> <span style="color: #A52A2A; font-weight: bold;">self</span> {
-            <span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">R</span> =&gt; <span style="color: #4E9A06;">"R"</span>,
-            <span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">G</span> =&gt; <span style="color: #4E9A06;">"G"</span>,
-            <span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">B</span> =&gt; <span style="color: #4E9A06;">"B"</span>,
-            <span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">E</span> =&gt; <span style="color: #4E9A06;">"."</span>,
+<span style="color: #FF6188;">impl</span> <span style="color: #AB9DF2;">fmt</span>::<span style="color: #78DCE8;">Display</span> <span style="color: #FF6188;">for</span> <span style="color: #78DCE8;">Color</span> {
+    <span style="color: #FF6188;">fn</span> <span style="color: #A9DC76;">fmt</span>(<span style="color: #FCFCFA; background-color: #2D2A2E;">&amp;</span><span style="color: #FF6188;">self</span>, <span style="color: #FCFCFA;">f</span>: <span style="color: #FCFCFA; background-color: #2D2A2E;">&amp;</span><span style="color: #FF6188;">mut</span> <span style="color: #AB9DF2;">fmt</span>::<span style="color: #78DCE8;">Formatter</span>&lt;'<span style="color: #FCFCFA;">_</span>&gt;) -&gt; <span style="color: #AB9DF2;">fmt</span>::<span style="color: #78DCE8;">Result</span> {
+        <span style="color: #FF6188;">let</span> <span style="color: #FCFCFA;">s</span> = <span style="color: #FF6188;">match</span> <span style="color: #FF6188;">self</span> {
+            <span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">R</span> =&gt; <span style="color: #FFD866;">"R"</span>,
+            <span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">G</span> =&gt; <span style="color: #FFD866;">"G"</span>,
+            <span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">B</span> =&gt; <span style="color: #FFD866;">"B"</span>,
+            <span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">E</span> =&gt; <span style="color: #FFD866;">"."</span>,
         };
-        <span style="color: #A020F0;">write!</span>(f, <span style="color: #4E9A06;">"</span><span style="color: #4E9A06; font-style: italic;">{}</span><span style="color: #4E9A06;">"</span>, s)
+        <span style="color: #78DCE8;">write!</span>(f, <span style="color: #FFD866;">"</span><span style="color: #FFD866; font-style: italic;">{}</span><span style="color: #FFD866;">"</span>, s)
     }
 }
 
-<span style="color: #A020F0;">#[derive(Clone, Copy, Debug)]</span>
-<span style="color: #A52A2A; font-weight: bold;">struct</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span> {
-    <span style="color: #0084C8; font-weight: bold;">r</span>: <span style="color: #2F8B58; font-weight: bold;">u32</span>,
-    <span style="color: #0084C8; font-weight: bold;">g</span>: <span style="color: #2F8B58; font-weight: bold;">u32</span>,
-    <span style="color: #0084C8; font-weight: bold;">b</span>: <span style="color: #2F8B58; font-weight: bold;">u32</span>,
-    <span style="color: #0084C8; font-weight: bold;">e</span>: <span style="color: #2F8B58; font-weight: bold;">u32</span>,
+<span style="color: #FF6188; font-weight: bold;">#[derive(Clone, Copy, Debug)]</span>
+<span style="color: #FF6188;">struct</span> <span style="color: #78DCE8;">Counts</span> {
+    <span style="color: #FCFCFA;">r</span>: <span style="color: #78DCE8;">u32</span>,
+    <span style="color: #FCFCFA;">g</span>: <span style="color: #78DCE8;">u32</span>,
+    <span style="color: #FCFCFA;">b</span>: <span style="color: #78DCE8;">u32</span>,
+    <span style="color: #FCFCFA;">e</span>: <span style="color: #78DCE8;">u32</span>,
 }
 
-<span style="color: #A52A2A; font-weight: bold;">impl</span> <span style="color: #2F8B58; font-weight: bold;">Counts</span> {
-    <span style="color: #A52A2A; font-weight: bold;">fn</span> <span style="color: #00578E; font-weight: bold;">zero</span>(<span style="color: #2E3436; background-color: #EDEDED;">&amp;</span><span style="color: #A52A2A; font-weight: bold;">self</span>) -&gt; <span style="color: #2F8B58; font-weight: bold;">bool</span> {
-        <span style="color: #A52A2A; font-weight: bold;">self</span>.r == <span style="color: #F5666D;">0</span> &amp;&amp; <span style="color: #A52A2A; font-weight: bold;">self</span>.g == <span style="color: #F5666D;">0</span> &amp;&amp; <span style="color: #A52A2A; font-weight: bold;">self</span>.b == <span style="color: #F5666D;">0</span> &amp;&amp; <span style="color: #A52A2A; font-weight: bold;">self</span>.e == <span style="color: #F5666D;">0</span>
+<span style="color: #FF6188;">impl</span> <span style="color: #78DCE8;">Counts</span> {
+    <span style="color: #FF6188;">fn</span> <span style="color: #A9DC76;">zero</span>(<span style="color: #FCFCFA; background-color: #2D2A2E;">&amp;</span><span style="color: #FF6188;">self</span>) -&gt; <span style="color: #78DCE8;">bool</span> {
+        <span style="color: #FF6188;">self</span>.r == <span style="color: #AB9DF2; font-weight: bold;">0</span> &amp;&amp; <span style="color: #FF6188;">self</span>.g == <span style="color: #AB9DF2; font-weight: bold;">0</span> &amp;&amp; <span style="color: #FF6188;">self</span>.b == <span style="color: #AB9DF2; font-weight: bold;">0</span> &amp;&amp; <span style="color: #FF6188;">self</span>.e == <span style="color: #AB9DF2; font-weight: bold;">0</span>
     }
 }
 
-<span style="color: #4E9A06;">/// decrement one count of `col` (caller must ensure availability &gt; 0)</span>
-<span style="color: #A52A2A; font-weight: bold;">fn</span> <span style="color: #00578E; font-weight: bold;">dec_count</span>(<span style="color: #A52A2A; font-weight: bold;">mut</span> <span style="color: #0084C8; font-weight: bold;">c</span>: <span style="color: #2F8B58; font-weight: bold;">Counts</span>, <span style="color: #0084C8; font-weight: bold;">col</span>: <span style="color: #2F8B58; font-weight: bold;">Color</span>) -&gt; <span style="color: #2F8B58; font-weight: bold;">Counts</span> {
-    <span style="color: #A52A2A; font-weight: bold;">match</span> col {
-        <span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">R</span> =&gt; c.r -= <span style="color: #F5666D;">1</span>,
-        <span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">G</span> =&gt; c.g -= <span style="color: #F5666D;">1</span>,
-        <span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">B</span> =&gt; c.b -= <span style="color: #F5666D;">1</span>,
-        <span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">E</span> =&gt; c.e -= <span style="color: #F5666D;">1</span>,
+<span style="color: #FFD866;">/// decrement one count of `col` (caller must ensure availability &gt; 0)</span>
+<span style="color: #FF6188;">fn</span> <span style="color: #A9DC76;">dec_count</span>(<span style="color: #FF6188;">mut</span> <span style="color: #FCFCFA;">c</span>: <span style="color: #78DCE8;">Counts</span>, <span style="color: #FCFCFA;">col</span>: <span style="color: #78DCE8;">Color</span>) -&gt; <span style="color: #78DCE8;">Counts</span> {
+    <span style="color: #FF6188;">match</span> col {
+        <span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">R</span> =&gt; c.r -= <span style="color: #AB9DF2; font-weight: bold;">1</span>,
+        <span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">G</span> =&gt; c.g -= <span style="color: #AB9DF2; font-weight: bold;">1</span>,
+        <span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">B</span> =&gt; c.b -= <span style="color: #AB9DF2; font-weight: bold;">1</span>,
+        <span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">E</span> =&gt; c.e -= <span style="color: #AB9DF2; font-weight: bold;">1</span>,
     }
     c
 }
 
-<span style="color: #4E9A06;">/// allowed choices given remaining counts and previous placed color</span>
-<span style="color: #A52A2A; font-weight: bold;">fn</span> <span style="color: #00578E; font-weight: bold;">allowed</span>(<span style="color: #0084C8; font-weight: bold;">counts</span>: <span style="color: #2F8B58; font-weight: bold;">Counts</span>, <span style="color: #0084C8; font-weight: bold;">prev</span>: <span style="color: #2F8B58; font-weight: bold;">Option</span>&lt;<span style="color: #2F8B58; font-weight: bold;">Color</span>&gt;) -&gt; <span style="color: #2F8B58; font-weight: bold;">Vec</span>&lt;<span style="color: #2F8B58; font-weight: bold;">Color</span>&gt; {
-    <span style="color: #A52A2A; font-weight: bold;">let</span> <span style="color: #A52A2A; font-weight: bold;">mut</span> <span style="color: #0084C8; font-weight: bold;">v</span> = <span style="color: #2F8B58; font-weight: bold;">Vec</span>::new();
-    <span style="color: #A52A2A; font-weight: bold;">let</span> <span style="color: #0084C8; font-weight: bold;">ok</span> = |<span style="color: #0084C8; font-weight: bold;">col</span>: <span style="color: #2F8B58; font-weight: bold;">Color</span>, <span style="color: #0084C8; font-weight: bold;">avail</span>: <span style="color: #2F8B58; font-weight: bold;">u32</span>| -&gt; <span style="color: #2F8B58; font-weight: bold;">bool</span> {
-        <span style="color: #A52A2A; font-weight: bold;">if</span> avail == <span style="color: #F5666D;">0</span> {
-            <span style="color: #A52A2A; font-weight: bold;">return</span> <span style="color: #A52A2A; font-weight: bold;">false</span>;
+<span style="color: #FFD866;">/// allowed choices given remaining counts and previous placed color</span>
+<span style="color: #FF6188;">fn</span> <span style="color: #A9DC76;">allowed</span>(<span style="color: #FCFCFA;">counts</span>: <span style="color: #78DCE8;">Counts</span>, <span style="color: #FCFCFA;">prev</span>: <span style="color: #78DCE8;">Option</span>&lt;<span style="color: #78DCE8;">Color</span>&gt;) -&gt; <span style="color: #78DCE8;">Vec</span>&lt;<span style="color: #78DCE8;">Color</span>&gt; {
+    <span style="color: #FF6188;">let</span> <span style="color: #FF6188;">mut</span> <span style="color: #FCFCFA;">v</span> = <span style="color: #78DCE8;">Vec</span>::new();
+    <span style="color: #FF6188;">let</span> <span style="color: #FCFCFA;">ok</span> = |<span style="color: #FCFCFA;">col</span>: <span style="color: #78DCE8;">Color</span>, <span style="color: #FCFCFA;">avail</span>: <span style="color: #78DCE8;">u32</span>| -&gt; <span style="color: #78DCE8;">bool</span> {
+        <span style="color: #FF6188;">if</span> avail == <span style="color: #AB9DF2; font-weight: bold;">0</span> {
+            <span style="color: #FF6188;">return</span> <span style="color: #FF6188;">false</span>;
         }
-        <span style="color: #A52A2A; font-weight: bold;">match</span> prev {
-            <span style="color: #2F8B58; font-weight: bold;">None</span> =&gt; <span style="color: #A52A2A; font-weight: bold;">true</span>,
-            <span style="color: #2F8B58; font-weight: bold;">Some</span>(p) =&gt; p != col || col == <span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">E</span>, <span style="color: #204A87;">// </span><span style="color: #204A87;">empties may repeat; colored must differ</span>
+        <span style="color: #FF6188;">match</span> prev {
+            <span style="color: #78DCE8;">None</span> =&gt; <span style="color: #FF6188;">true</span>,
+            <span style="color: #78DCE8;">Some</span>(p) =&gt; p != col || col == <span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">E</span>, <span style="color: #727072;">// </span><span style="color: #727072;">empties may repeat; colored must differ</span>
         }
     };
-    <span style="color: #A52A2A; font-weight: bold;">if</span> ok(<span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">R</span>, counts.r) {
-        v.push(<span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">R</span>);
+    <span style="color: #FF6188;">if</span> ok(<span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">R</span>, counts.r) {
+        v.push(<span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">R</span>);
     }
-    <span style="color: #A52A2A; font-weight: bold;">if</span> ok(<span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">G</span>, counts.g) {
-        v.push(<span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">G</span>);
+    <span style="color: #FF6188;">if</span> ok(<span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">G</span>, counts.g) {
+        v.push(<span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">G</span>);
     }
-    <span style="color: #A52A2A; font-weight: bold;">if</span> ok(<span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">B</span>, counts.b) {
-        v.push(<span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">B</span>);
+    <span style="color: #FF6188;">if</span> ok(<span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">B</span>, counts.b) {
+        v.push(<span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">B</span>);
     }
-    <span style="color: #A52A2A; font-weight: bold;">if</span> ok(<span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">E</span>, counts.e) {
-        v.push(<span style="color: #2F8B58; font-weight: bold;">Color</span>::<span style="color: #2F8B58; font-weight: bold;">E</span>);
+    <span style="color: #FF6188;">if</span> ok(<span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">E</span>, counts.e) {
+        v.push(<span style="color: #78DCE8;">Color</span>::<span style="color: #78DCE8;">E</span>);
     }
     v
 }
 
-<span style="color: #4E9A06;">/// backtracking builder</span>
-<span style="color: #A52A2A; font-weight: bold;">fn</span> <span style="color: #00578E; font-weight: bold;">backtrack</span>(
-    <span style="color: #0084C8; font-weight: bold;">rem</span>: <span style="color: #2F8B58; font-weight: bold;">usize</span>,
-    <span style="color: #0084C8; font-weight: bold;">prev</span>: <span style="color: #2F8B58; font-weight: bold;">Option</span>&lt;<span style="color: #2F8B58; font-weight: bold;">Color</span>&gt;,
-    <span style="color: #0084C8; font-weight: bold;">counts</span>: <span style="color: #2F8B58; font-weight: bold;">Counts</span>,
-    <span style="color: #0084C8; font-weight: bold;">current</span>: <span style="color: #2E3436; background-color: #EDEDED;">&amp;</span><span style="color: #A52A2A; font-weight: bold;">mut</span> <span style="color: #2F8B58; font-weight: bold;">Vec</span>&lt;<span style="color: #2F8B58; font-weight: bold;">Color</span>&gt;,
-    <span style="color: #0084C8; font-weight: bold;">solutions</span>: <span style="color: #2E3436; background-color: #EDEDED;">&amp;</span><span style="color: #A52A2A; font-weight: bold;">mut</span> <span style="color: #2F8B58; font-weight: bold;">Vec</span>&lt;<span style="color: #2F8B58; font-weight: bold;">Vec</span>&lt;<span style="color: #2F8B58; font-weight: bold;">Color</span>&gt;&gt;,
+<span style="color: #FFD866;">/// backtracking builder</span>
+<span style="color: #FF6188;">fn</span> <span style="color: #A9DC76;">backtrack</span>(
+    <span style="color: #FCFCFA;">rem</span>: <span style="color: #78DCE8;">usize</span>,
+    <span style="color: #FCFCFA;">prev</span>: <span style="color: #78DCE8;">Option</span>&lt;<span style="color: #78DCE8;">Color</span>&gt;,
+    <span style="color: #FCFCFA;">counts</span>: <span style="color: #78DCE8;">Counts</span>,
+    <span style="color: #FCFCFA;">current</span>: <span style="color: #FCFCFA; background-color: #2D2A2E;">&amp;</span><span style="color: #FF6188;">mut</span> <span style="color: #78DCE8;">Vec</span>&lt;<span style="color: #78DCE8;">Color</span>&gt;,
+    <span style="color: #FCFCFA;">solutions</span>: <span style="color: #FCFCFA; background-color: #2D2A2E;">&amp;</span><span style="color: #FF6188;">mut</span> <span style="color: #78DCE8;">Vec</span>&lt;<span style="color: #78DCE8;">Vec</span>&lt;<span style="color: #78DCE8;">Color</span>&gt;&gt;,
 ) {
-    <span style="color: #A52A2A; font-weight: bold;">if</span> rem == <span style="color: #F5666D;">0</span> {
-        <span style="color: #A52A2A; font-weight: bold;">if</span> counts.zero() {
+    <span style="color: #FF6188;">if</span> rem == <span style="color: #AB9DF2; font-weight: bold;">0</span> {
+        <span style="color: #FF6188;">if</span> counts.zero() {
             solutions.push(current.clone());
         }
-        <span style="color: #A52A2A; font-weight: bold;">return</span>;
+        <span style="color: #FF6188;">return</span>;
     }
 
-    <span style="color: #A52A2A; font-weight: bold;">for</span> <span style="color: #0084C8; font-weight: bold;">col</span> <span style="color: #A52A2A; font-weight: bold;">in</span> allowed(counts, prev) {
-        <span style="color: #A52A2A; font-weight: bold;">let</span> <span style="color: #0084C8; font-weight: bold;">counts_next</span> = dec_count(counts, col);
+    <span style="color: #FF6188;">for</span> <span style="color: #FCFCFA;">col</span> <span style="color: #FF6188;">in</span> allowed(counts, prev) {
+        <span style="color: #FF6188;">let</span> <span style="color: #FCFCFA;">counts_next</span> = dec_count(counts, col);
         current.push(col);
-        backtrack(rem - <span style="color: #F5666D;">1</span>, <span style="color: #2F8B58; font-weight: bold;">Some</span>(col), counts_next, current, solutions);
+        backtrack(rem - <span style="color: #AB9DF2; font-weight: bold;">1</span>, <span style="color: #78DCE8;">Some</span>(col), counts_next, current, solutions);
         current.pop();
     }
 }
 
-<span style="color: #A52A2A; font-weight: bold;">fn</span> <span style="color: #00578E; font-weight: bold;">main</span>() {
-    <span style="color: #A52A2A; font-weight: bold;">let</span> <span style="color: #0084C8; font-weight: bold;">initial</span> = <span style="color: #2F8B58; font-weight: bold;">Counts</span> {
-        <span style="color: #0084C8; font-weight: bold;">r</span>: <span style="color: #F5666D;">2</span>,
-        <span style="color: #0084C8; font-weight: bold;">g</span>: <span style="color: #F5666D;">2</span>,
-        <span style="color: #0084C8; font-weight: bold;">b</span>: <span style="color: #F5666D;">2</span>,
-        <span style="color: #0084C8; font-weight: bold;">e</span>: <span style="color: #F5666D;">3</span>,
+<span style="color: #FF6188;">fn</span> <span style="color: #A9DC76;">main</span>() {
+    <span style="color: #FF6188;">let</span> <span style="color: #FCFCFA;">initial</span> = <span style="color: #78DCE8;">Counts</span> {
+        <span style="color: #FCFCFA;">r</span>: <span style="color: #AB9DF2; font-weight: bold;">2</span>,
+        <span style="color: #FCFCFA;">g</span>: <span style="color: #AB9DF2; font-weight: bold;">2</span>,
+        <span style="color: #FCFCFA;">b</span>: <span style="color: #AB9DF2; font-weight: bold;">2</span>,
+        <span style="color: #FCFCFA;">e</span>: <span style="color: #AB9DF2; font-weight: bold;">3</span>,
     };
-    <span style="color: #A52A2A; font-weight: bold;">let</span> <span style="color: #A52A2A; font-weight: bold;">mut</span> <span style="color: #0084C8; font-weight: bold;">solutions</span>: <span style="color: #2F8B58; font-weight: bold;">Vec</span>&lt;<span style="color: #2F8B58; font-weight: bold;">Vec</span>&lt;<span style="color: #2F8B58; font-weight: bold;">Color</span>&gt;&gt; = <span style="color: #2F8B58; font-weight: bold;">Vec</span>::new();
-    <span style="color: #A52A2A; font-weight: bold;">let</span> <span style="color: #A52A2A; font-weight: bold;">mut</span> <span style="color: #0084C8; font-weight: bold;">current</span>: <span style="color: #2F8B58; font-weight: bold;">Vec</span>&lt;<span style="color: #2F8B58; font-weight: bold;">Color</span>&gt; = <span style="color: #2F8B58; font-weight: bold;">Vec</span>::with_capacity(<span style="color: #F5666D;">9</span>);
-    backtrack(<span style="color: #F5666D;">9</span>, <span style="color: #2F8B58; font-weight: bold;">None</span>, initial, <span style="color: #2E3436; background-color: #EDEDED;">&amp;</span><span style="color: #A52A2A; font-weight: bold;">mut</span> current, <span style="color: #2E3436; background-color: #EDEDED;">&amp;</span><span style="color: #A52A2A; font-weight: bold;">mut</span> solutions);
+    <span style="color: #FF6188;">let</span> <span style="color: #FF6188;">mut</span> <span style="color: #FCFCFA;">solutions</span>: <span style="color: #78DCE8;">Vec</span>&lt;<span style="color: #78DCE8;">Vec</span>&lt;<span style="color: #78DCE8;">Color</span>&gt;&gt; = <span style="color: #78DCE8;">Vec</span>::new();
+    <span style="color: #FF6188;">let</span> <span style="color: #FF6188;">mut</span> <span style="color: #FCFCFA;">current</span>: <span style="color: #78DCE8;">Vec</span>&lt;<span style="color: #78DCE8;">Color</span>&gt; = <span style="color: #78DCE8;">Vec</span>::with_capacity(<span style="color: #AB9DF2; font-weight: bold;">9</span>);
+    backtrack(<span style="color: #AB9DF2; font-weight: bold;">9</span>, <span style="color: #78DCE8;">None</span>, initial, <span style="color: #FCFCFA; background-color: #2D2A2E;">&amp;</span><span style="color: #FF6188;">mut</span> current, <span style="color: #FCFCFA; background-color: #2D2A2E;">&amp;</span><span style="color: #FF6188;">mut</span> solutions);
 
-    <span style="color: #A020F0;">println!</span>(
-        <span style="color: #4E9A06;">"Found </span><span style="color: #4E9A06; font-style: italic;">{}</span><span style="color: #4E9A06;"> solutions (each printed as a 9-length sequence; '.' = empty)"</span>,
+    <span style="color: #78DCE8;">println!</span>(
+        <span style="color: #FFD866;">"Found </span><span style="color: #FFD866; font-style: italic;">{}</span><span style="color: #FFD866;"> solutions (each printed as a 9-length sequence; '.' = empty)"</span>,
         solutions.len()
     );
     solutions.iter().for_each(|s| {
-        <span style="color: #A52A2A; font-weight: bold;">let</span> <span style="color: #0084C8; font-weight: bold;">line</span> = s.iter()
+        <span style="color: #FF6188;">let</span> <span style="color: #FCFCFA;">line</span> = s.iter()
                 .map(|c| c.to_string())
-                .collect::&lt;<span style="color: #2F8B58; font-weight: bold;">Vec</span>&lt;_&gt;&gt;()
-                .join(<span style="color: #4E9A06;">" "</span>);
-        <span style="color: #A020F0;">println!</span>(<span style="color: #4E9A06;">"</span><span style="color: #4E9A06; font-style: italic;">{}</span><span style="color: #4E9A06;">"</span>, line);
+                .collect::&lt;<span style="color: #78DCE8;">Vec</span>&lt;_&gt;&gt;()
+                .join(<span style="color: #FFD866;">" "</span>);
+        <span style="color: #78DCE8;">println!</span>(<span style="color: #FFD866;">"</span><span style="color: #FFD866; font-style: italic;">{}</span><span style="color: #FFD866;">"</span>, line);
     });
 
 }
@@ -523,7 +526,7 @@ N<sub>good</sub>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: emporas</p>
-<p class="date">Created: 2025-09-28 Sun 06:55</p>
+<p class="date">Created: 2025-09-28 Sun 19:26</p>
 </div>
 </body>
 </html>
