@@ -6,9 +6,9 @@
   - [[file:cubes/cubes_en.html][The Lowest Level PL]]
   - [[file:cubes/cubes_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
 -
-  - [[file:puddle/puddle_en.html][The Puddle]]
-  - [[file:puddle/puddle_an.html][Τὸ Λιμνάριον]]
-  - [[file:puddle/puddle_gr.html][Η Λακούβα]]
+  - [[file:pneumonia/pneumonia_en.html][Pneumonia City]]
+  - [[file:pneumonia/pneumonia_gr.html][Πόλη της Πνευμονίας]]
+  - [[file:pneumonia/pneumonia_an.html][Πνευμονίας Πόλις]]
 
 * Articles
 -
@@ -16,6 +16,10 @@
   - [[file:cubes/cubes_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
 
 * Stories
+-
+  - [[file:pneumonia/pneumonia_en.html][Pneumonia City]]
+  - [[file:pneumonia/pneumonia_gr.html][Πόλη της Πνευμονίας]]
+  - [[file:pneumonia/pneumonia_an.html][Πνευμονίας Πόλις]]
 -
   - [[file:puddle/puddle_en.html][The Puddle]]
   - [[file:puddle/puddle_an.html][Τὸ Λιμνάριον]]
