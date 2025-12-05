@@ -6,9 +6,7 @@
   - [[file:cubes/cubes_en.html][The Lowest Level PL]]
   - [[file:cubes/cubes_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
 -
-  - [[file:butterfly/butterfly_en.html][Plate Hunters]]
-  - [[file:butterfly/butterfly_gr.html][Κυνηγοί Πινακίδων]]
-  - [[file:butterfly/butterfly_an.html][Πινακοθήραι]]
+  - [[file:termites/termites.html][ἸΣΟΠΤΈΡΑ]]
 
 * Articles
 -
@@ -16,6 +14,8 @@
   - [[file:cubes/cubes_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
 
 * Stories
+-
+  - [[file:termites/termites.html][ἸΣΟΠΤΈΡΑ]]
 -
   - [[file:butterfly/butterfly_en.html][Plate Hunters]]
   - [[file:butterfly/butterfly_gr.html][Κυνηγοί Πινακίδων]]
