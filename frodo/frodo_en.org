@@ -1,3 +1,5 @@
+#+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
+
 * Test Frodo Story
 I — Frodo the ringfiddler — whirl about in Sackovitta, dancing a kind of ragedance.
 My ring, machine broken, moans like Typhon with a badgutted book voice, and it suckles up, over its fingers, its own throat-smokes of falsevoice.
