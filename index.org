@@ -6,8 +6,8 @@
   - [[file:cubes/cubes_en.html][The Lowest Level PL]]
   - [[file:cubes/cubes_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
 -
-  - [[file:frodo/frodo_en.html][Δοκιμαστική Ιστορία Φρόδου]]
-  - [[file:frodo/frodo_an.html][Test Frodo Story]]
+  - [[file:frodo/frodo_an.html][Δοκιμαστική Ιστορία Φρόδου]]
+  - [[file:frodo/frodo_en.html][Test Frodo Story]]
 
 * Articles
 -
