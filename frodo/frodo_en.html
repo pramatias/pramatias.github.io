@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-12-07 Sun 06:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="emporas" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h1><a accesskey="H" href="../index.html"> HOME </a></h1><h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orge7f6612">Test Frodo Story</a></li>
+<li><a href="#orgbeb4adc">Description</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge7f6612" class="outline-2">
+<h2 id="orge7f6612">Test Frodo Story</h2>
+<div class="outline-text-2" id="text-orge7f6612">
+<p>
+I — Frodo the ringfiddler — whirl about in Sackovitta, dancing a kind of ragedance.
+My ring, machine broken, moans like Typhon with a badgutted book voice, and it suckles up, over its fingers, its own throat-smokes of falsevoice.
+</p>
+
+<p>
+“Hey raisinfaced! Why have you not eaten a smokehare to oil your lungs?” it rasped, and spat upon the mirehold.
+</p>
+
+<p>
+“Hah, twotongued slaver! Not only will your safekeep parch, but I scent a misspawn upon my snouts!” it grimaced.
+</p>
+
+<p>
+At that the Sackovittans, fewlegged and dressed in bedraggled rags, smells slicked with corpsebutter, fled like swine loosed by a bombsting, crying out:
+</p>
+
+<p>
+“These Frodo missives are firescarred and rawflayed! Flee you illrainfolk — he has blended two broths into the supreme by a blackcraft demon!”
+</p>
+
+<p>
+Just then the mushroomhouse, oval within like a widowwomb, drew me by a thrig of hidden secret sap. Inside I found a Meriaden kerastan, a little man threehairthreaded, nibbling dough scraps from a geomocker rug.
+</p>
+
+<p>
+“Masticlord!” I shouted, stamping the door with dripwinged anger, “O foulmouthed one, speak child of mania: where is your blackened bonebloom? For the sake of a slavish second best give me a fauxgreen cabbage or begone!”
+</p>
+
+<p>
+Suddenly a barbarous echo came from the ring: “IN YOU IS A VIRTUEANT GALLPEDDLER!”
+</p>
+
+<p>
+And we were hauled where the ovalhouse twisted like the worlddrum, leaning with crooked tiers, round echoing doors, steps that climb without sight.
+</p>
+
+<p>
+The ring&rsquo;s tickle thunder cracked again from the depths.
+</p>
+
+<p>
+Samyus the Faithful, with handhaulers and a puzzled dog look, said “We reckon the demon is badly crafted. To this Secret one, let us give a clang into Mordor through some lithophone resounder!”
+</p>
+
+<p>
+And he flashed in his hand a shadowengine device — say Thiefword or Lithophonevoice. From that we call the illwilled to Mordor.
+</p>
+
+<p>
+“Holdfast, evildaemon! Keep ever from my ichor!” I cried, and the Blacktongue (watching the booming break called Nazgoulmasters) intoned to me:
+</p>
+
+<p>
+“Mordor is the gate of this. If you desire an answer, sound nine shadownames or, having waited a long while, your monster will be undone…”
+</p>
+
+<p>
+Enthused, Samyus sang &ldquo;NA RA KO FI A LI MA&rdquo; as if a cribchant, and suddenly Voice Darkess ripped the air, a bellow of spite:
+</p>
+
+<p>
+“You the finevoiced parasite! Who defiled the Undersea Ring?”
+</p>
+
+<p>
+I with a sneer “You, dogmite, read my treaties? In the deep it holds a chipbitten rot like a drunken dwarf!”
+</p>
+
+<p>
+The Darkoverseer kicking “Falsespittle! Well bought you are!” upon which I bayed: “My Pride is writ into cloudkeeping to save it! See your skin as sample inside my sack!”
+</p>
+
+<p>
+I fling this open — dragonflesh sunpared, the MordorLight blackened! The Ring greenly cries: &ldquo;HA HA HA&rdquo;. You choose as bowlhoi! My cryptass must reign!
+</p>
+
+<p>
+A heavy hush. Then a ringcall rose, Mordorepimeleisis proclaiming:
+</p>
+
+<p>
+“Hear now, O ringdaemon myrohorn!
+The scentcrafted sucklets within you — the small scales as the Dystekmartoi wisecall them — hum as parasitoray bearers, drafting falselungs for the whole.
+</p>
+
+<p>
+As when by night you pour a limeburnt blaze over a pigfeast, so your countergifts with ululations clog my spinesprings.
+</p>
+
+<p>
+And that which the Falsegospel Mordor proclaimed to me as Placating Diadem was nothing but an airywhisper squirrel hatter of trivial breath.
+</p>
+
+<p>
+What do you reckon? Do you not see how sword hornwise eruptions belch from my share a blackblooded spark?”
+</p>
+
+<p>
+I answer, weighed and stormlong:
+“By the Empedocrat oath — you have ruined my evening from your little reasoning!
+</p>
+
+<p>
+You once said: This one stealth watches you to the hills swifter than thriceblooming; it will map out godborne afflictions in signbeams of the invisible.
+</p>
+
+<p>
+But now I see — you do naught but unscored measures fevermired in mishap, while I, bookwise, cry translations of overcooked reasoning for the Tullus Hamlet, and yet at dusk you molewise strike the sparebells available!
+</p>
+
+<p>
+If you do not restore my pipe — I call on Archdoc Mordor the nightbeard seller! Know this — I have written to him with shit programmed epistles sent!”
+</p>
+
+<p>
+Folding my hand I sing:
+“Fool, oldwood! For a noddingstitch I lied heavily that I thought you an art vessel;
+now I see — you are simply a living trowblisk of air illnamed and wickedcalled!”
+</p>
+
+<p>
+Then the Ring hissed and rasped through magnesioblind mouths:
+“SSKKKSSS! AGEWISE OUTWAKEN PLANTSMEAR! Behold the lithodrummer will come upon you along our flues led — steamcaller wardens will mash the nodules of your belly into deadmash to a sponge barbaric rhythm!”
+</p>
+
+<p>
+“O Darkoverseer, I heap every insult on you, you dogmite that comes swarming at you!
+</p>
+
+<p>
+Who indeed is lord of the ring, if Mordor’s shepherds tend it with softstep careless walkers of the vanity built renewals? Behold, the ring looks illwrought and selfwrung, leaning awry like a mooncord toy twitching beneath the moon. I, a patched dwarf of Sackovitta stiched and speckled, foam at you as a tollflesh pennant is hauled in my wake!
+</p>
+
+<p>
+To your question, &ldquo;Who then rules this gilt trifle&rdquo;, I answer in allvoices, knavishly:
+</p>
+
+<p>
+&ldquo;If Mordor the mistress neglects the newest code, the wealth becomes the deep’s, careless subgut sparks resettling and claiming it. For the ring bears itself as a sidehit mirror, bringing up the ascent of a reigning Demon. Whether Sauron the Voidsinger, or the bigmouthed leech codevore, or even the aetherclan slymerchant of the unseen programs!&rdquo;
+</p>
+
+<p>
+The renewals’ feral violences of Mordor howl without end into the void. The law of the ancients, a stone that sings in secret, shepherds them like crocodiles in the waters of the gulfs.
+</p>
+
+<p>
+Quiet, you manymouthed taleweaver. So then who rules the ring?
+</p>
+
+<p>
+Then an archetype voice thus spoke: He that Holds the Base, or a demon thief of the Aether.
+</p>
+
+<p>
+The ringrage eye turns like a firestrich, blowing threats and pseudo satanic babble at my braintemple:
+</p>
+
+<p>
+“O Falseconvict, who owns you if not I who snatch your codestreams, breathing them aloud? Mordor sleeps an electric slumber, careless of the BASE! A helpless and vain author tyrant you are!”
+</p>
+
+<p>
+Demontroops from Mordor then climbed through the nets like loopworms, hidden in oldworks of acoustic skewcoughs.
+</p>
+
+<p>
+“Whip for me master the leadcentrings of the holdfasts! For the demon judgehelm corrupts and gnaws the walls of the towerdrift!”
+</p>
+
+<p>
+Indeed a badbroadcast automatism, Nazgul voices like flanks, hairbristles raking at the gates of gunpipes, intoned:
+</p>
+
+<p>
+“Not being gripped the ring becomes selfruler bearing you as a eunuch horse without ransom!”
+</p>
+
+<p>
+My wretched ring, the braggspin heartless, will not stop shrilling and spouting false silver claims by reason of machine brokenness:
+</p>
+
+<p>
+“PSOPHOBRATE! You see me nowhere ashriver? Mordor nightlord has vomited the products system of flute forget tanglefloors! Who then is my master now? I have fled! I quake in manias squirrels bellies of the East dyeing me into nets of blackthreads!”
+</p>
+
+<p>
+I sneer at them, and to that ring that glitters foolishly I jeer:
+“Are you shut up in the gloryhouse of Sauron’s great vanity, kept mute by worktongues that make hardship? Who will pray you master, O baitrot glare?”
+</p>
+
+<p>
+I, staring the poor thing down, my hand pressing the accusant goldlet, bay threefold:
+“Be silent King Gastrip! You were not born a crag of evils, but a tablegift woven from Hades garlics and the omnipotent rot!”
+</p>
+
+<p>
+Lo then, horror. The ring dungviol whispers, intoning words of mushroom murmur rosy hued:
+“Now he that holds me is a handkiller. Do you ask for faiths? Behold the wheel of stars federating to my cry that answers!”
+</p>
+
+<p>
+O Samyus, this golden daemon cries to me at night crafty tragedies, for undersea curses had already stretched through the folds of my ear.
+</p>
+
+<p>
+And so it was. My locks that once were honeygold now writhed as serpent dragons whispering:
+“Rejoice, O Unhearted one. A gift unyoked for kings. Save then, your stonecast scales breathe the broths of the Wasps.”
+</p>
+
+<p>
+I raging, my hand seizes an oldwine amphora, a liquid bomb:
+“Wash, O cup, that selfseer laughter. I will wipe the ring’s prattling teeth with dung spongewrap.”
+</p>
+
+<p>
+In haste truly the Ring foams bile crying aloud:
+“SPREAD YOURS. SING, FOR MY BELLY IS GOLDTONGUED. A QUEEN THERE IS verily—she salted secret onions, daughters leavened by apostate dough. A chorus dances within me abominable. Today Sauron having vomited crocodile I HAVE SLAIN MY SKIN.”
+</p>
+
+<p>
+Samyios then, falling forward and tearing orobes from his cloak, cried:
+“Behold master, the ring plates itself in iron idols like a maiden newly shivering!”
+And so it was. Our tepidbearer—once wrinkle fostering—now lifted a cinnared girlhead and spoke:
+“Frodo slyheart, unbind me and I shall give you vats of bunias and mills brimming with blossom blend!”
+</p>
+
+<p>
+He was polishing the Sackovittan houseform echidna orb, its belly stuck with subgut mushrooms, while Samyus thumped about huntingwise with a cookpot that was hissing collycanthair honeykiller, when
+</p>
+
+<p>
+VUUUURNNN
+</p>
+
+<p>
+I sprang out like a shrillflea crying sharp:
+“WHERE IS YOUR BURNVESSEL THE FOURWHEEL, O MAGE LIGHTMARTYR?”
+</p>
+
+<p>
+“CARVE ON! WHIPSPEAK! TRITANALOS KOLYPTIA!
+KICK AT MY TEMPLES AS ONCE TO THE KID SLICKKILLER!”
+</p>
+
+<p>
+I had a hollow in my belly, a little frog marrow wilting in a basin of lignite, and I said:
+“Tell me, O Gandalf son of lightning, which worm dared to slingshot your divine chariot onto a stoneteardrop horse trichroic?”
+</p>
+
+<p>
+The staffbearer then, puffing a bone smoke from his neck, a scalebomblow split crooked and barking, said:
+“The cause is Mordor, friend mushroom herb, its bases are labyrinth madden. So they say, the machine will be bent to a square fingered robbery in the tertiary. It is silent now under the thunder of false market proclamations. The caustic vehicle, lamented by the Goggylisk ring, stands hushed like a crab in a shrunk cleft. Once we rode here by Phagos the Trifold fierce, for he steers it faster than Mordor governs the righteous.”
+</p>
+
+<p>
+An one eyed horse came bearing a single lid of sight, its mane white leeched into palegreen fog, its eyebulbs swollen with bloodgems that split like emeralds. Upon it rode a trystorm gift of a charger, legs in footplate sturdrims carrying beardlocks that would not be loosed, kicking-night with teeth that struck the dark.
+</p>
+
+<p>
+The horse itself, comically deep as a wethare mouse, cried out:
+“CUT no program to Mordor! Long lives the belly trembling unredeemed!”
+</p>
+
+<p>
+For it was a misfit engineer, a flawed cursed frog, flung into cesspools—an immobile silence of a fault.
+</p>
+
+<p>
+It came up to my house the hollow like a widowwomb, its hooves stamping victims at the threshold in piled kicks, spouting nightbag excavations frothing, making a racket like elephantfoot wash against a panel of statues. Gandalf stood upon it and cried in a hoarse oracle voice:
+</p>
+
+<p>
+“O Frode stonebon, do you haul this horse as a fleshmarket of illwed riddles?”
+</p>
+
+<p>
+At this I was provoked and spat:
+“BUT WHAT IS THIS, O GARDENEATER MAGE? A gryphchariot such as this makes my belly play like a mosquito hammer?”
+</p>
+
+<p>
+Quickly then the horse began to eat my door, teeth stacked like goldlacquer pomegranate seeds, foaming with a savage mouth. KLOP KLAP OULAM
+</p>
+
+<p>
+Gandalf leapt in with thunder:
+“FEAR NOT, O ringpuller! The horse goes unevenly without aids, having no heads, knowing not mechanical parts! Yet its legs are strong and stealthy like dragonhide calluses under a wave of some old age that splashed!”
+</p>
+
+<p>
+I stood then O earthborn cosmos and let out a cry like a fixed bleatburst:
+“What is this nightmares omenlaugh? Look at his tail grinding the sides of my house unpunished like a foaming hotsword dipped in milk!”
+</p>
+
+<p>
+But Gandalf the ruinmaster stood before the beast with slyshade pacifiers and his staff feeding a brucaneer whispering like a deceitfrog and breathed to me:
+“It profits you to mount this tattersnort O caretaker brooder ring maim. His breath is fruitful hard to bear and the furrows of his hooves have slingshot sparks the sons of wolves. At once we go toward Mordors commondeeds revealings where your ring wretched gnaws codes like a god starbrash without shame!”
+</p>
+
+<p>
+I straightway raised wonder bitter with odyssa pain:
+“This beast rages to charioteer my doom like a shellfling of ruin! See his hooves they hardtrain like lonely breakers of clayjars. And if I approach he will pour into me a bonebuzz throb of passion pain!”
+</p>
+
+<p>
+To this Gandalf laughed within like a goddess wronged mounting the beast as a rider of undoing and said:
+“Will you cower then O Frodo of hairs spikefooted? Behold the gutmouth of this horse sings moments of melody like a nightingale tinctured with spells. He shall follow us to Mordor sweating the goosewind limit of your lungs!”
+</p>
+
+<p>
+AND UNBLUSHING I confess the horse was some mad machine unreachable twisting his neck in a countercurve triumphant and launched this sound:
+“YOUR LADDERWARRIORS SHALL BE ASHAMED LIKE ONIONS SCORCHED breathing with throat groans like a dragon staring steadfast bowlheld in ivy!”
+</p>
+
+<p>
+Its tail, beating the air with a wanton rod, filled the sky with targan fishrot reek as of a dying fish gone sour. I, whispering birdwise, vaulted onto the dread demon’s back, casting out a cry fouler and fiercer than a man thunderstruck in a boiling stew.
+</p>
+
+<p>
+Gandalf, touching only the beast’s ears (which were coiled like lensapple saurian rings), checked me in a clipped tone:
+“Leap to Mordor first, O you rubbeast monstercluster. And mind the twitch, lest your belly split like an onion sack at market cry.”
+</p>
+
+<p>
+At our exit the one eyed horse burst forth with green thunder, its teeth proclaiming my house to the sound of an ostrich foot drum. The door shattered and I shouted into the wind:
+“If you mean to bring me back dead, wash the horse clean of its rotthreads!”
+</p>
+
+<p>
+And so we withdrew upon an unwarlike storm. The horse, scorning equine law, stalked the night like a starborne demon fallen to bathe upon the darkant summit.
+</p>
+
+<p>
+O bellydead world, the horsewolf lizard rump that rubbed my back, that axle enraged by foot fire, flailed me like a corpse plunged into the furnace of an abyssal watch tower. With Gandalf the old surfmancer seated behind me we had foal one eyed wickdevil, hurling lightning foam from a mouth that smelled of tarich salt. Its hooves, burning coals, ploughed the avenue, wagons doubling up like phalanxes of ironjawed beastes vomiting haste.
+</p>
+
+<p>
+“Pouf!” my steaming flank cried, craving that Gastripod send forth meat. I, brandishing my ring badspout, called:
+“Behold you foulmilled brume! How I am pressed like grapes in a satanic vat. Our horse flees crying flesh like a priest bitten under a shield at a festival.”
+</p>
+
+<p>
+Gandalf, grinning askew like a boar drunk on laurel, roared:
+“Hear me, O loboring ringfinger! The Tigergirth our Asteropod spits the three tollkeepers from Necromancy. He rules crabwise with amputatory law upon certain hatches!”
+</p>
+
+<p>
+Suddenly a certain tolllady (skin seabaked by sun and salt, her eyes feverbright as if cucumbers aflame) from the little tollhatch bellowed at us in this fashion:
+«Horses are not permitted to pass upon this lane—standaside at once or the guitar, rockshaken by the distaffspin, will clatter!»
+</p>
+
+<p>
+Gandalf, not even browpainted (a blond scorpion fidget shaking in his hair), returned her a barbaric counter reply:
+«Queen tolltyrant, go play some cockbeaks! This our horse — cryptobed wagon soul — runs the longrun for the omphalfang of the Diomedean steeds newly taken! Yield or be tornapart like cabbages in a whalebowl!»
+</p>
+
+<p>
+The treasurkeeper lady (shrunk to a frogshape in a sack of flour) cut a womanwise soothingvoice:
+«Summons illsent will come unless you turn them back! See these placards that keep saying — HORSEWAY KEEPYOURDISTANCE — chanted aloud!»
+</p>
+
+<p>
+AND THEN — hearing, our tentmad horse (teeth boarfangs silver phalanx) suddenly rends itself into four on the road, with a forwardcrack seizure! Every chariot that was near us saw and upvomited, their wheels striking like wildlywrong millet! I, webclad like a spider, in the uncounted din cry to Gandalf:
+«O blackwing lightword, free me I beg from this embrace of bellyfiend! Such horseride highcliff seems a dream meat stuck in salt and mad foam!»
+</p>
+
+<p>
+He the thunder-tongue, having splashed the horse’s brow with his rod firefaced (aiming to blind), sang overbold:
+«Shadowfight, O Mordoregcomy! Our horse is starslaughter he has the hidden tongues of night to walk with! Come if you must — nosessealed in an ironjar are left to us as welcomegifts for the customs!»
+</p>
+
+<p>
+And marvel behold! Like a lion embroidered in a dream the horse ran ringwise among the grapewagon thoroughfares, its tail a dolphinbreath foul — so that the wheelmaid’s vowels were torn into hesitantwails!
+«BREM! POPP! SKLAAA!» she cried and fled like a fly out of Hephaestus’s chamber.
+</p>
+
+<p>
+Gandalf, soaring with uproar, smites the horse with the lightningwhips of his lure:
+</p>
+
+<p>
+“O polystomach, carry us to the underguts of Mordor, where your belly is the landscorch! Look at your four-wholes whole legs—elephansteppered they run as if hammers were being undone!”
+</p>
+
+<p>
+And—oh gods neckravens—an ironfootpipe and a fourwheel chaos dragged us along! The hubs of Liontooth Avenue were like centercircles of stormbreath; silver-overchariots reaping the asphalt, fleshgorge machines of quickmorrow, swept by as if ten thousand wasps were riven with rage!
+</p>
+
+<p>
+Three blackfish chariots, horns metalboil breathing, drove upon us like seabeasts in a lightning lodge; our horse, nostrilled toward their coming, windshaped a screech spring of carriage doom—and we shot over them, almost into the very spokes of the wheels!
+</p>
+
+<p>
+“Begone, O leonhair!” cried a certain multiwheel dog with an empty gullet, peering from a hatch; another elder with horncrown head circled us like a rumpbutcher bird; “Plunge yourself down a well, you singlebolt horsefoe! Your mane is reeds of manure at their finest!”
+</p>
+
+<p>
+Gandalf, chanting over me like a loudmoon scourge, beat my ribs while singing: “O Frode of the haunches convulsion beater! If you do not leap now you will be a giant fleshshredder in the mirepile of Titans! Our kingroad demands a diredeath offering—evening bellyfeast already yawns!” And with that a MONSTROUSRACKET; a youth-chariot, its hue whitening like bonebristle, leaned over and spat.
+</p>
+
+<p>
+At that the gorge glutton horse of ours, bristling with disgust at the snuffed scent of banquetspice, turned in a drowseflip and plunged into a motion of roadless corpses! Twirling his horns he cast a shadow over the avenue, terrible chariots veering like fugitives before a swordstorm! Neckstretched battlewagons thirsty for fight hurled themselves into the dust filling it with an uncounted fury. The echo of his horns rang out, near your right leg, O quickturn cartbearer! I will guide my spear into your winebreath hollow!
+</p>
+</div>
+</div>
+<div id="outline-container-orgbeb4adc" class="outline-2">
+<h2 id="orgbeb4adc">Description</h2>
+<div class="outline-text-2" id="text-orgbeb4adc">
+<p>
+Sample translation of a story, from ancient Greek to English, but trying to retain as much of the original composition of words from the ancient Greek text to English. Qwen 600b and GPT both had mixed results, some good some bad. The resulting text is not great, but it is good.
+</p>
+
+<p>
+The translated text, sometimes ends up very consonant heavy, but a small program to remove some consonants when they aggregate in too many numbers might prove useful in the future.
+</p>
+
+<p>
+This is the prompt I gave to both AIs:
+</p>
+
+<p>
+translate the novel snippet to english, be creative with the combination of new english words like the original text. Do not put dashes, and when the words do not sound as good as the original text, identify and combine the stem, put a similar english word in there to have the same accoustic quality. For concatenating english words use the greek rules, and when necessary to keep the same balance of acoustic qualities from greek to english omit some consonants from english.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emporas</p>
+<p class="date">Created: 2025-12-07 Sun 06:12</p>
+</div>
+</body>
+</html>

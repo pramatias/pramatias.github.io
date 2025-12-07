@@ -6,7 +6,8 @@
   - [[file:cubes/cubes_en.html][The Lowest Level PL]]
   - [[file:cubes/cubes_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
 -
-  - [[file:termites/termites.html][ἸΣΟΠΤΈΡΑ]]
+  - [[file:frodo/frodo_en.html][Δοκιμαστική Ιστορία Φρόδου]]
+  - [[file:frodo/frodo_an.html][Test Frodo Story]]
 
 * Articles
 -
@@ -14,6 +15,9 @@
   - [[file:cubes/cubes_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
 
 * Stories
+-
+  - [[file:frodo/frodo_en.html][Δοκιμαστική Ιστορία Φρόδου]]
+  - [[file:frodo/frodo_an.html][Test Frodo Story]]
 -
   - [[file:termites/termites.html][ἸΣΟΠΤΈΡΑ]]
 -
