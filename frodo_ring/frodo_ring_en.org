@@ -479,9 +479,11 @@ On screen, windows bloomed, code cascading, algorithms unfurling like intestines
 
 She paused, the screen flashed, displayed an equation:
 
-[
-\boxed{,L ;=; \frac{\mu,N^{2},h}{2\pi},\ln!\left(\frac{r_{\text{r_spider_last_knuckle}}}{r_{\text{r_spider_body}}}\right),}
-]
+$$
+\boxed{%
+  L = \frac{\mu N^{2} h}{2\pi}\,\ln\!\left(\frac{r_{\text{r\_spider\_last\_knuckle}}}{r_{\text{r\_spider\_body}}}\right)
+}
+$$
 
 "There," she said, voice proud as a mother showing off her firstborn's finger paintings. "The inductance formula. Modified. See those variables? I take measurements from my own anatomy. The radius from my body's center to my last knuckle joint. I am the reference standard. The toroid's geometry mirrors my own proportions. Elegant, no?"
 
