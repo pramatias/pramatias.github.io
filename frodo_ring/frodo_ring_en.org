@@ -481,7 +481,7 @@ She paused, the screen flashed, displayed an equation:
 
 $$
 \boxed{%
-  L = \frac{\mu N^{2} h}{2\pi}\,\ln\!\left(\frac{r_{\text{r_spider_last_knuckle}}}{r_{\text{r_spider_body}}}\right)
+  L = \frac{\mu N^{2} h}{2\pi}\,\ln\!\left(\frac{r_{\text{spider_last_knuckle}}}{r_{\text{spider_body}}}\right)
 }
 $$
 
