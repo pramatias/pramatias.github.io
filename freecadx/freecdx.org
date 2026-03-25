@@ -33,6 +33,7 @@ All products inside, color tagged
 Changing the color of just one product, (Freecad for some reason doesn't colorize all products, it colorizes only half, and that half is different every time, but the uncolorized products are always half, always)
 [[./assets/roy_no_walls_updated.png]]
 
+[[https://github.com/pramatias/freecad-experiments/tree/main/roy][code]]
 * Iris
 Photo of a random album cover, just a strange eye cropped out
 [[./assets/iris_original.png]]
@@ -44,6 +45,8 @@ Hiding some 3D elements
 [[./assets/iris_no_ring.png]]
 
 [[https://www.youtube.com/watch?v=Virp_HdWRfU][The Album]]
+
+[[https://github.com/pramatias/freecad-experiments/tree/main/iris][code]]
 
 * A7 Vehicle
 Photo of a random old car
@@ -57,6 +60,8 @@ Ground View
 
 [[https://www.youtube.com/watch?v=_VHI-6KcDZQ][Random old car]]
 
+[[https://github.com/pramatias/freecad-experiments/tree/main/a7][code]]
+
 * Shard
 Image of a song of mine
 [[./assets/shard_original.png]]
@@ -69,6 +74,8 @@ Maybe correct,
 
 [[https://www.youtube.com/watch?v=UL1KmrHMjcM][My song]]
 
+[[https://github.com/pramatias/freecad-experiments/tree/main/shard][code]]
+
 * Pump
 Original 3d render from Efficient Engineer, essentially 3D render duplication by just an image, and no human in the loop. I didn't touch this at all, Gemini's description transported directly into Claude, I just compiled and run the code.
 [[./assets/pump_original.png]]
@@ -78,5 +85,7 @@ Original 3d render from Efficient Engineer, essentially 3D render duplication by
 [[./assets/pump_no_barrel.png]]
 
 [[https://www.youtube.com/watch?v=vLaFAKnaRJU][Eficient Engineer's video]]
+
+[[https://github.com/pramatias/freecad-experiments/tree/main/pump][code]]
 
 If that post was of any interest to you, I am available for hire. [[https://pramatias.github.io/about.html][About]]

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-03-25 Wed 03:09 -->
+<!-- 2026-03-25 Wed 03:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>3D Modelling in Freecad using Rust and A.I.</title>
@@ -23,11 +23,11 @@
 <h1><a accesskey="H" href="../index.html"> HOME </a></h1><h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org31c09d6">Roy</a></li>
-<li><a href="#org9a9a2bf">Iris</a></li>
-<li><a href="#org60cf243">A7 Vehicle</a></li>
-<li><a href="#org511259f">Shard</a></li>
-<li><a href="#org0478445">Pump</a></li>
+<li><a href="#org44f94b4">Roy</a></li>
+<li><a href="#org603fb7a">Iris</a></li>
+<li><a href="#org7615722">A7 Vehicle</a></li>
+<li><a href="#orgd685f7c">Shard</a></li>
+<li><a href="#orged8a54b">Pump</a></li>
 </ul>
 </div>
 </div>
@@ -74,9 +74,9 @@ Roy&rsquo;s functionality was not one shotted by Claude (of course), it was pret
 <p>
 So here they are, all of the examples apart from the first, were almost one-two-three-shotted with minimal involvement by me. I could specify better geometry myself instead of Gemini, but I didn&rsquo;t bother to.
 </p>
-<div id="outline-container-org31c09d6" class="outline-2">
-<h2 id="org31c09d6">Roy</h2>
-<div class="outline-text-2" id="text-org31c09d6">
+<div id="outline-container-org44f94b4" class="outline-2">
+<h2 id="org44f94b4">Roy</h2>
+<div class="outline-text-2" id="text-org44f94b4">
 <p>
 A supermarket building from the outside
 <img src="./assets/roy_start.png" alt="roy_start.png" />
@@ -91,11 +91,15 @@ All products inside, color tagged
 Changing the color of just one product, (Freecad for some reason doesn&rsquo;t colorize all products, it colorizes only half, and that half is different every time, but the uncolorized products are always half, always)
 <img src="./assets/roy_no_walls_updated.png" alt="roy_no_walls_updated.png" />
 </p>
+
+<p>
+<a href="https://github.com/pramatias/freecad-experiments/tree/main/roy">code</a>
+</p>
 </div>
 </div>
-<div id="outline-container-org9a9a2bf" class="outline-2">
-<h2 id="org9a9a2bf">Iris</h2>
-<div class="outline-text-2" id="text-org9a9a2bf">
+<div id="outline-container-org603fb7a" class="outline-2">
+<h2 id="org603fb7a">Iris</h2>
+<div class="outline-text-2" id="text-org603fb7a">
 <p>
 Photo of a random album cover, just a strange eye cropped out
 <img src="./assets/iris_original.png" alt="iris_original.png" />
@@ -114,11 +118,15 @@ Hiding some 3D elements
 <p>
 <a href="https://www.youtube.com/watch?v=Virp_HdWRfU">The Album</a>
 </p>
+
+<p>
+<a href="https://github.com/pramatias/freecad-experiments/tree/main/iris">code</a>
+</p>
 </div>
 </div>
-<div id="outline-container-org60cf243" class="outline-2">
-<h2 id="org60cf243">A7 Vehicle</h2>
-<div class="outline-text-2" id="text-org60cf243">
+<div id="outline-container-org7615722" class="outline-2">
+<h2 id="org7615722">A7 Vehicle</h2>
+<div class="outline-text-2" id="text-org7615722">
 <p>
 Photo of a random old car
 <img src="./assets/a7_original.png" alt="a7_original.png" />
@@ -137,11 +145,15 @@ Ground View
 <p>
 <a href="https://www.youtube.com/watch?v=_VHI-6KcDZQ">Random old car</a>
 </p>
+
+<p>
+<a href="https://github.com/pramatias/freecad-experiments/tree/main/a7">code</a>
+</p>
 </div>
 </div>
-<div id="outline-container-org511259f" class="outline-2">
-<h2 id="org511259f">Shard</h2>
-<div class="outline-text-2" id="text-org511259f">
+<div id="outline-container-orgd685f7c" class="outline-2">
+<h2 id="orgd685f7c">Shard</h2>
+<div class="outline-text-2" id="text-orgd685f7c">
 <p>
 Image of a song of mine
 <img src="./assets/shard_original.png" alt="shard_original.png" />
@@ -160,30 +172,38 @@ Maybe correct,
 <p>
 <a href="https://www.youtube.com/watch?v=UL1KmrHMjcM">My song</a>
 </p>
+
+<p>
+<a href="https://github.com/pramatias/freecad-experiments/tree/main/shard">code</a>
+</p>
 </div>
 </div>
-<div id="outline-container-org0478445" class="outline-2">
-<h2 id="org0478445">Pump</h2>
-<div class="outline-text-2" id="text-org0478445">
+<div id="outline-container-orged8a54b" class="outline-2">
+<h2 id="orged8a54b">Pump</h2>
+<div class="outline-text-2" id="text-orged8a54b">
 <p>
 Original 3d render from Efficient Engineer, essentially 3D render duplication by just an image, and no human in the loop. I didn&rsquo;t touch this at all, Gemini&rsquo;s description transported directly into Claude, I just compiled and run the code.
 <img src="./assets/pump_original.png" alt="pump_original.png" />
 </p>
 
 
-<div id="org71402c5" class="figure">
+<div id="org9fe923b" class="figure">
 <p><img src="./assets/pump.png" alt="pump.png" />
 </p>
 </div>
 
 
-<div id="orgc9fb8ad" class="figure">
+<div id="org5bcc093" class="figure">
 <p><img src="./assets/pump_no_barrel.png" alt="pump_no_barrel.png" />
 </p>
 </div>
 
 <p>
 <a href="https://www.youtube.com/watch?v=vLaFAKnaRJU">Eficient Engineer&rsquo;s video</a>
+</p>
+
+<p>
+<a href="https://github.com/pramatias/freecad-experiments/tree/main/pump">code</a>
 </p>
 
 <p>
@@ -194,7 +214,7 @@ If that post was of any interest to you, I am available for hire. <a href="https
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: emporas</p>
-<p class="date">Created: 2026-03-25 Wed 03:09</p>
+<p class="date">Created: 2026-03-25 Wed 03:14</p>
 </div>
 </body>
 </html>
