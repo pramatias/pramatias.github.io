@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-03-25 Wed 03:14 -->
+<!-- 2026-03-25 Wed 03:25 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>3D Modelling in Freecad using Rust and A.I.</title>
@@ -23,16 +23,16 @@
 <h1><a accesskey="H" href="../index.html"> HOME </a></h1><h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org44f94b4">Roy</a></li>
-<li><a href="#org603fb7a">Iris</a></li>
-<li><a href="#org7615722">A7 Vehicle</a></li>
-<li><a href="#orgd685f7c">Shard</a></li>
-<li><a href="#orged8a54b">Pump</a></li>
+<li><a href="#org1aa1c07">Roy</a></li>
+<li><a href="#org2a082cd">Iris</a></li>
+<li><a href="#orgee4eeb8">A7 Vehicle</a></li>
+<li><a href="#org503896f">Shard</a></li>
+<li><a href="#org555617b">Pump</a></li>
 </ul>
 </div>
 </div>
 <p>
-I took a break on developing <a href="https://github.com/pramatias/snippet-agent">snippet-agent</a> for 3 months, and started experimenting with A.I. for automating 3D modeling. Just as was starting out, I watched the <a href="https://www.youtube.com/watch?v=rWZRh2RXf14">titans of machining</a> selling A.I. software to modify in bulk thousands of little faces and edges that spawn up in 3D models, a common problem that one.
+I took a break developing <a href="https://github.com/pramatias/snippet-agent">snippet-agent</a> for 3 months, and started experimenting with A.I. for automating 3D modeling. Just as was starting out, I watched the <a href="https://www.youtube.com/watch?v=rWZRh2RXf14">titans of machining</a> selling A.I. software to modify in bulk thousands of little faces and edges that spawn up in 3D models, a common problem that one.
 </p>
 
 <p>
@@ -40,7 +40,7 @@ The last time I 3D modeled was more than 10 years ago, for a week, but I quickly
 </p>
 
 <p>
-The question that popped in my mind occasionally was, how long till manipulating 3D geometry with code becomes possible? I think we are here, and it is not crazy good, just yet.
+The question that popped in my mind occasionally was, <b>how long till manipulating 3D geometry with code becomes possible?</b> I think we are here, and it is not crazy good, just yet.
 </p>
 
 <p>
@@ -48,15 +48,15 @@ Below is a list of examples I generated, by instructing Gemini to recognize shap
 </p>
 
 <p>
-All the examples except Roy, were completed in that way, sometimes Claude one-shotted the solution, almost correctly. The code usually runs effortessly, but the orientation or absolute position of some elements is slightly off. Sometimes I corrected that by retrying one or two times and that&rsquo;s about it. I adjusted the textual description spitted out by Gemini minimally, maybe one or two lines.
+All the examples except Roy, were completed in that way, sometimes Claude one-shotted the solution, almost correctly. The code usually runs effortessly, but the orientation or absolute position of some elements is slightly off. Sometimes I corrected that by retrying one or two times and that&rsquo;s about it. I adjusted the textual description spitted out by Gemini minimally, one or two lines.
 </p>
 
 <p>
-None the above examples was given additional care by me, I am a total noob in Freecad and oh boy, Freecad is pretty complicated. I didn&rsquo;t change much of the Claude code either, but after some tries, I found a code setup that is clear and it helps Claude to write and manipulate the 3D geometry calculations.
+None the examples below was given additional care by me, I am a total noob in Freecad and oh boy, Freecad is pretty complicated. I didn&rsquo;t change much of the Claude code either, but after some tries, I found a code setup that is clear and it helps Claude to write and manipulate the 3D geometry calculations.
 </p>
 
 <p>
-I always generated one example of a 3D modelling scene, and gave that code as an example for the next scene. Also the code has some room for improvement.
+I always generated one example of a 3D modelling scene, and gave that code as an example for the next scene. Also the geometry related code has some room for improvement, the better this is expressed even in one example, the next example is generated better. Claude likes good code as much as the next person and it performs better when a human mind has also worked on the problem.
 </p>
 
 <p>
@@ -74,9 +74,9 @@ Roy&rsquo;s functionality was not one shotted by Claude (of course), it was pret
 <p>
 So here they are, all of the examples apart from the first, were almost one-two-three-shotted with minimal involvement by me. I could specify better geometry myself instead of Gemini, but I didn&rsquo;t bother to.
 </p>
-<div id="outline-container-org44f94b4" class="outline-2">
-<h2 id="org44f94b4">Roy</h2>
-<div class="outline-text-2" id="text-org44f94b4">
+<div id="outline-container-org1aa1c07" class="outline-2">
+<h2 id="org1aa1c07">Roy</h2>
+<div class="outline-text-2" id="text-org1aa1c07">
 <p>
 A supermarket building from the outside
 <img src="./assets/roy_start.png" alt="roy_start.png" />
@@ -97,9 +97,9 @@ Changing the color of just one product, (Freecad for some reason doesn&rsquo;t c
 </p>
 </div>
 </div>
-<div id="outline-container-org603fb7a" class="outline-2">
-<h2 id="org603fb7a">Iris</h2>
-<div class="outline-text-2" id="text-org603fb7a">
+<div id="outline-container-org2a082cd" class="outline-2">
+<h2 id="org2a082cd">Iris</h2>
+<div class="outline-text-2" id="text-org2a082cd">
 <p>
 Photo of a random album cover, just a strange eye cropped out
 <img src="./assets/iris_original.png" alt="iris_original.png" />
@@ -124,9 +124,9 @@ Hiding some 3D elements
 </p>
 </div>
 </div>
-<div id="outline-container-org7615722" class="outline-2">
-<h2 id="org7615722">A7 Vehicle</h2>
-<div class="outline-text-2" id="text-org7615722">
+<div id="outline-container-orgee4eeb8" class="outline-2">
+<h2 id="orgee4eeb8">A7 Vehicle</h2>
+<div class="outline-text-2" id="text-orgee4eeb8">
 <p>
 Photo of a random old car
 <img src="./assets/a7_original.png" alt="a7_original.png" />
@@ -151,9 +151,9 @@ Ground View
 </p>
 </div>
 </div>
-<div id="outline-container-orgd685f7c" class="outline-2">
-<h2 id="orgd685f7c">Shard</h2>
-<div class="outline-text-2" id="text-orgd685f7c">
+<div id="outline-container-org503896f" class="outline-2">
+<h2 id="org503896f">Shard</h2>
+<div class="outline-text-2" id="text-org503896f">
 <p>
 Image of a song of mine
 <img src="./assets/shard_original.png" alt="shard_original.png" />
@@ -178,22 +178,22 @@ Maybe correct,
 </p>
 </div>
 </div>
-<div id="outline-container-orged8a54b" class="outline-2">
-<h2 id="orged8a54b">Pump</h2>
-<div class="outline-text-2" id="text-orged8a54b">
+<div id="outline-container-org555617b" class="outline-2">
+<h2 id="org555617b">Pump</h2>
+<div class="outline-text-2" id="text-org555617b">
 <p>
 Original 3d render from Efficient Engineer, essentially 3D render duplication by just an image, and no human in the loop. I didn&rsquo;t touch this at all, Gemini&rsquo;s description transported directly into Claude, I just compiled and run the code.
 <img src="./assets/pump_original.png" alt="pump_original.png" />
 </p>
 
 
-<div id="org9fe923b" class="figure">
+<div id="org3258d40" class="figure">
 <p><img src="./assets/pump.png" alt="pump.png" />
 </p>
 </div>
 
 
-<div id="org5bcc093" class="figure">
+<div id="org7e98907" class="figure">
 <p><img src="./assets/pump_no_barrel.png" alt="pump_no_barrel.png" />
 </p>
 </div>
@@ -214,7 +214,7 @@ If that post was of any interest to you, I am available for hire. <a href="https
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: emporas</p>
-<p class="date">Created: 2026-03-25 Wed 03:14</p>
+<p class="date">Created: 2026-03-25 Wed 03:25</p>
 </div>
 </body>
 </html>

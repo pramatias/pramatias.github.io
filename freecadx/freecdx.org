@@ -5,7 +5,7 @@ I took a break developing [[https://github.com/pramatias/snippet-agent][snippet-
 
 The last time I 3D modeled was more than 10 years ago, for a week, but I quickly got tired of using the mouse non stop. The general idea is that people who use the mouse to complete tasks, or buttons for that matter, do not know much about computers. The titans of machining look exactly like the guys who use the mouse to accomplish tasks, and they push buttons a lot.
 
-The question that popped in my mind occasionally was, how long till manipulating 3D geometry with code becomes possible? I think we are here, and it is not crazy good, just yet.
+The question that popped in my mind occasionally was, *how long till manipulating 3D geometry with code becomes possible?* I think we are here, and it is not crazy good, just yet.
 
 Below is a list of examples I generated, by instructing Gemini to recognize shapes and objects in a random picture of something, taking that textual description, feeding it to Claude and generating the Rust and Python code for Freecad.
 
