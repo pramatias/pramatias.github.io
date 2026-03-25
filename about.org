@@ -1,2 +1,2 @@
-Kostas Pramatias: programmer from Greece
-email: username here @gmail
+* Kostas Pramatias: programmer from Greece
+* email: username here @gmail
