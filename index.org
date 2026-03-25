@@ -12,10 +12,11 @@
 
 * Articles
 -
+  - [[file:freecadx/freecdx.html][3D Modelling in Freecad using Rust and A.I.]]
+  - [[file:freecadx/freecdx_gr.html][Τρισδιάστατη Μοντελοποίηση στο Freecad με Rust και Τεχνητή Νοημοσύνη]]
+-
   - [[file:cubes/cubes_en.html][The Lowest Level PL]]
   - [[file:cubes/cubes_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
--
-  - [[file:freecadx/freecdx.html][FreeCAD Experiments]]
 
 * About
   - [[file:about.html][About]]
