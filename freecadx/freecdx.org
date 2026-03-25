@@ -1,7 +1,7 @@
 #+title: 3D Modelling in Freecad using Rust and A.I.
 #+SETUPFILE: ../org-html-themes/org/theme-readtheorg.setup
 
-I took a break on developing [[https://github.com/pramatias/snippet-agent][snippet-agent]] for 3 months, and started experimenting with A.I. for automating 3D modeling. Just as was starting out, I watched the [[https://www.youtube.com/watch?v=rWZRh2RXf14][titans of machining]] selling A.I. software to modify in bulk thousands of little faces and edges that spawn up in 3D models, a common problem that one.
+I took a break developing [[https://github.com/pramatias/snippet-agent][snippet-agent]] for 3 months, and started experimenting with A.I. for automating 3D modeling. Just as was starting out, I watched the [[https://www.youtube.com/watch?v=rWZRh2RXf14][titans of machining]] selling A.I. software to modify in bulk thousands of little faces and edges that spawn up in 3D models, a common problem that one.
 
 The last time I 3D modeled was more than 10 years ago, for a week, but I quickly got tired of using the mouse non stop. The general idea is that people who use the mouse to complete tasks, or buttons for that matter, do not know much about computers. The titans of machining look exactly like the guys who use the mouse to accomplish tasks, and they push buttons a lot.
 
@@ -9,11 +9,11 @@ The question that popped in my mind occasionally was, how long till manipulating
 
 Below is a list of examples I generated, by instructing Gemini to recognize shapes and objects in a random picture of something, taking that textual description, feeding it to Claude and generating the Rust and Python code for Freecad.
 
-All the examples except Roy, were completed in that way, sometimes Claude one-shotted the solution, almost correctly. The code usually runs effortessly, but the orientation or absolute position of some elements is slightly off. Sometimes I corrected that by retrying one or two times and that's about it. I adjusted the textual description spitted out by Gemini minimally, maybe one or two lines.
+All the examples except Roy, were completed in that way, sometimes Claude one-shotted the solution, almost correctly. The code usually runs effortessly, but the orientation or absolute position of some elements is slightly off. Sometimes I corrected that by retrying one or two times and that's about it. I adjusted the textual description spitted out by Gemini minimally, one or two lines.
 
-None the above examples was given additional care by me, I am a total noob in Freecad and oh boy, Freecad is pretty complicated. I didn't change much of the Claude code either, but after some tries, I found a code setup that is clear and it helps Claude to write and manipulate the 3D geometry calculations.
+None the examples below was given additional care by me, I am a total noob in Freecad and oh boy, Freecad is pretty complicated. I didn't change much of the Claude code either, but after some tries, I found a code setup that is clear and it helps Claude to write and manipulate the 3D geometry calculations.
 
-I always generated one example of a 3D modelling scene, and gave that code as an example for the next scene. Also the code has some room for improvement.
+I always generated one example of a 3D modelling scene, and gave that code as an example for the next scene. Also the geometry related code has some room for improvement, the better this is expressed even in one example, the next example is generated better. Claude likes good code as much as the next person and it performs better when a human mind has also worked on the problem.
 
 Roy is a 3D Inventory Management Tool for a supermarket with multiple floors, a prototype of the usual CRUD app, with a database holding all the objects and their geometry. It has an admin tool called cli, and additional information can be found in the [[https://github.com/pramatias/freecad-experiments][repo]] .
 
