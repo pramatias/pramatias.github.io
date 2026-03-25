@@ -88,4 +88,4 @@ Original 3d render from Efficient Engineer, essentially 3D render duplication by
 
 [[https://github.com/pramatias/freecad-experiments/tree/main/pump][code]]
 
-If that post was of any interest to you, I am available for hire. [[https://pramatias.github.io/about.html][About]]
+If you thougth this post was interesting to you, I am available for hire. [[https://pramatias.github.io/about.html][About]]
