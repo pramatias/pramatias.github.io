@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-25 Wed 03:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>3D Modelling in Freecad using Rust and A.I.</title>
+<meta name="author" content="emporas" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">3D Modelling in Freecad using Rust and A.I.</h1>
+<div id="table-of-contents" role="doc-toc">
+<h1><a accesskey="H" href="../index.html"> HOME </a></h1><h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org33138a2">Roy</a></li>
+<li><a href="#orge48d98e">Iris</a></li>
+<li><a href="#orgcc79b7f">A7 Vehicle</a></li>
+<li><a href="#orgc12b26f">Shard</a></li>
+<li><a href="#org0cdb9e1">Pump</a></li>
+</ul>
+</div>
+</div>
+<p>
+I took a break on developing <a href="https://github.com/pramatias/snippet-agent">snippet-agent</a> for 3 months, and started experimenting with A.I. for automating 3D modeling. Just as was starting out, I watched the <a href="https://www.youtube.com/watch?v=rWZRh2RXf14">titans of machining</a> selling A.I. software to modify in bulk thousands of little faces and edges that spawn up in 3D models, a common problem that one.
+</p>
+
+<p>
+The last time I 3D modeled was more than 10 years ago, for a week, but I quickly got tired of using the mouse non stop. The general idea is that people who use the mouse to complete tasks, or buttons for that matter, do not know much about computers. The titans of machining look exactly like the guys who use the mouse to accomplish tasks, and they push buttons a lot.
+</p>
+
+<p>
+The question that popped in my mind occasionally was, how long till manipulating 3D geometry with code becomes possible? I think we are here, and it is not crazy good, just yet.
+</p>
+
+<p>
+Below is a list of examples I generated, by instructing Gemini to recognize shapes and objects in a random picture of something, taking that textual description, feeding it to Claude and generating the Rust and Python code for Freecad.
+</p>
+
+<p>
+All the examples except Roy, were completed in that way, sometimes Claude one-shotted the solution, almost correctly. The code usually runs effortessly, but the orientation or absolute position of some elements is slightly off. Sometimes I corrected that by retrying one or two times and that&rsquo;s about it. I adjusted the textual description spitted out by Gemini minimally, maybe one or two lines.
+</p>
+
+<p>
+None the above examples was given additional care by me, I am a total noob in Freecad and oh boy, Freecad is pretty complicated. I didn&rsquo;t change much of the Claude code either, but after some tries, I found a code setup that is clear and it helps Claude to write and manipulate the 3D geometry calculations.
+</p>
+
+<p>
+I always generated one example of a 3D modelling scene, and gave that code as an example for the next scene. Also the code has some room for improvement.
+</p>
+
+<p>
+Roy is a 3D Inventory Management Tool for a supermarket with multiple floors, a prototype of the usual CRUD app, with a database holding all the objects and their geometry. It has an admin tool called cli, and additional information can be found in the <a href="https://github.com/pramatias/freecad-experiments">repo</a> .
+</p>
+
+<p>
+Roy loads thousands of product data for the whole supermarket, it takes forever to start(more than 10 mins), but when everything is rendered, small changes modify only what has changed (from the cli admin tool). Which means that every product modification by the admin, loads in milliseconds. Freecad doesn&rsquo;t refresh automatically of course. Python reads the whole scene, passes everything to Rust, it is compared with what already exists in the database, and the Python macro is informed by Rust, to change that one thing only (or more).
+</p>
+
+<p>
+Roy&rsquo;s functionality was not one shotted by Claude (of course), it was pretty difficult to get it correct, but after some testing, I haven&rsquo;t spotted any more bugs to fix. I did lot&rsquo;s of refactoring and the code is of pretty good quality I assume.
+</p>
+
+<p>
+So here they are, all of the examples apart from the first, were almost one-two-three-shotted with minimal involvement by me. I could specify better geometry myself instead of Gemini, but I didn&rsquo;t bother to.
+</p>
+<div id="outline-container-org33138a2" class="outline-2">
+<h2 id="org33138a2">Roy</h2>
+<div class="outline-text-2" id="text-org33138a2">
+<p>
+A supermarket building from the outside
+<img src="./assets/roy_start.png" alt="roy_start.png" />
+</p>
+
+<p>
+All products inside, color tagged
+<img src="./assets/roy_no_walls.png" alt="roy_no_walls.png" />
+</p>
+
+<p>
+Changing the color of just one product, (Freecad for some reason doesn&rsquo;t colorize all products, it colorizes only half, and that half is different every time, but the uncolorized products are always half, always)
+<img src="./assets/roy_no_walls_updated.png" alt="roy_no_walls_updated.png" />
+</p>
+</div>
+</div>
+<div id="outline-container-orge48d98e" class="outline-2">
+<h2 id="orge48d98e">Iris</h2>
+<div class="outline-text-2" id="text-orge48d98e">
+<p>
+Photo of a random album cover, just a strange eye cropped out
+<img src="./assets/iris_original.png" alt="iris_original.png" />
+</p>
+
+<p>
+3D generation
+<img src="./assets/iris.png" alt="iris.png" />
+</p>
+
+<p>
+Hiding some 3D elements
+<img src="./assets/iris_no_ring.png" alt="iris_no_ring.png" />
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=Virp_HdWRfU">The Album</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgcc79b7f" class="outline-2">
+<h2 id="orgcc79b7f">A7 Vehicle</h2>
+<div class="outline-text-2" id="text-orgcc79b7f">
+<p>
+Photo of a random old car
+<img src="./assets/a7_original.png" alt="a7_original.png" />
+</p>
+
+<p>
+Top view
+<img src="./assets/a7_up.png" alt="a7_up.png" />
+</p>
+
+<p>
+Ground View
+<img src="./assets/a7_down.png" alt="a7_down.png" />
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=_VHI-6KcDZQ">Random old car</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgc12b26f" class="outline-2">
+<h2 id="orgc12b26f">Shard</h2>
+<div class="outline-text-2" id="text-orgc12b26f">
+<p>
+Image of a song of mine
+<img src="./assets/shard_original.png" alt="shard_original.png" />
+</p>
+
+<p>
+Well, not that great
+<img src="./assets/shard_full.png" alt="shard_full.png" />
+</p>
+
+<p>
+Maybe correct,
+<img src="./assets/shard_no_frames.png" alt="shard_no_frames.png" />
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=UL1KmrHMjcM">My song</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org0cdb9e1" class="outline-2">
+<h2 id="org0cdb9e1">Pump</h2>
+<div class="outline-text-2" id="text-org0cdb9e1">
+<p>
+Original 3d render from Efficient Engineer, essentially 3D render duplication by just an image, and no human in the loop. I didn&rsquo;t touch this at all, Gemini&rsquo;s description transported directly into Claude, I just compiled and run the code.
+<img src="./assets/pump_original.png" alt="pump_original.png" />
+</p>
+
+
+<div id="orge6a0dd7" class="figure">
+<p><img src="./assets/pump_no_barrel.png" alt="pump_no_barrel.png" />
+</p>
+</div>
+
+
+<div id="orgb6218ab" class="figure">
+<p><img src="./assets/pump.png" alt="pump.png" />
+</p>
+</div>
+
+<p>
+<a href="https://www.youtube.com/watch?v=vLaFAKnaRJU">Eficient Engineer&rsquo;s video</a>
+</p>
+
+<p>
+If that post was of any interest to you, I am available for hire. <a href="https://pramatias.github.io/about.html">About</a>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emporas</p>
+<p class="date">Created: 2026-03-25 Wed 03:01</p>
+</div>
+</body>
+</html>

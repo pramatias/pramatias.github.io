@@ -3,8 +3,8 @@
 
 * Recent
 -
-  - [[file:cubes/cubes_en.html][The Lowest Level PL]]
-  - [[file:cubes/cubes_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
+  - [[file:freecadx/freecdx.html][FreeCAD Experiments]]
+
 -
   - [[file:frodo_ring/frodo_ring_en.html][Frodo and the Defective Ring]]
   - [[file:frodo_ring/frodo_ring_an.html][Ὁ Φροδίων καὶ ὁ Ἐλαττωματικὸς Δακτύλιος]]
@@ -14,11 +14,14 @@
   - [[file:cubes/cubes_en.html][The Lowest Level PL]]
   - [[file:cubes/cubes_gr.html][Η Γλώσσα Κατώτερου Επιπέδου]]
 
+* About
+  - [[file:about.html][About]]
+
 * Stories
 -
   - [[file:frodo_ring/frodo_ring_en.html][Frodo and the Defective Ring]]
   - [[file:frodo_ring/frodo_ring_an.html][Ὁ Φροδίων καὶ ὁ Ἐλαττωματικὸς Δακτύλιος]]
--
+
   - [[file:frodo/frodo_en.html][Δοκιμαστική Ιστορία Φρόδου]]
   - [[file:frodo/frodo_an.html][Test Frodo Story]]
 -
