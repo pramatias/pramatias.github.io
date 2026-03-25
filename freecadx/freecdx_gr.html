@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-25 Wed 15:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Τρισδιάστατη Μοντελοποίηση στο Freecad με Rust και Τεχνητή Νοημοσύνη</title>
+<meta name="author" content="emporas" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Τρισδιάστατη Μοντελοποίηση στο Freecad με Rust και Τεχνητή Νοημοσύνη</h1>
+<p>
+Έκανα ένα διάλειμμα μετά απο τρείς μήνες προγραμματισμού του <a href="https://github.com/pramatias/snippet-agent">snippet-agent</a> και άρχισα να πειραματίζομαι με την Τ.Ν. για αυτοματοποίηση της τρισδιάστατης μοντελοποίησης. Μόλις ξεκινούσα, έπεσα πάνω στους <a href="https://www.youtube.com/watch?v=rWZRh2RXf14">τιτάνες της μηχανοποίησης</a> να πουλάνε λογισμικό Τ.Ν. για μαζική τροποποίηση χιλιάδων μικροσκοπικών επιφανειών και ακμών που εμφανίζονται στα τρισδιάστατα μοντέλα, πολύ κοινό πρόβλημα όταν συσσωρεύονται πολλά γεωμετρικά σχήματα σε μεγάλα σχέδια.
+</p>
+
+<p>
+Την τελευταία φορά που έκανα τρισδιάστατη μοντελοποίηση ήταν πριν από 10 χρόνια, για μία εβδομάδα, αλλά γρήγορα κουράστηκα από τη συνεχή χρήση του ποντικιού. Η γενική αντίληψη είναι ότι όσοι χρησιμοποιούν το ποντίκι, ή τυχαία κουμπιά, κόκκινα, κίτρινα πράσινα, δεν ξέρουν και πολλά από υπολογιστές. Οι τιτάνες της μηχανοποίησης μοιάζουν ακριβώς με αυτούς τους ανθρώπους που ξέρουν πάνε γύρω γύρω με το ποντίκι αδιάκοπα.
+</p>
+
+<p>
+Κατά καιρούς αναρωτιόμουν: πότε θα γίνει εφικτό να χειριζόμαστε τρισδιάστατη γεωμετρία με κώδικα; Νομίζω ότι φτάσαμε ήδη σε αυτό το σημείο, απλά προς το παρόν η τεχνητή νοημοσύνη δεν είναι πλήρως απίστευτη.
+</p>
+
+<p>
+Παρακάτω υπάρχει μια σειρά παραδειγμάτων που δημιούργησα, κάθε φορά έδινα εντολή στο Gemini να αναγνωρίσει σχήματα και αντικείμενα σε τυχαίες φωτογραφίες, έπαιρνα αυτή την περιγραφή κειμένου, και την έριχνα στο Claude με σκοπό να μου γράψει κώδικα Rust και Python για το Freecad.
+</p>
+
+<p>
+Όλα τα παραδείγματα εκτός του Roy δημιουργήθηκαν με αυτόν τον τρόπο, μερικές φορές το Claude έδινε τη σωστή λύση με την πρώτη προσπάθεια, ή ίσως με την δεύτερη. Ο κώδικας τρέχει συνήθως χωρίς πρόβλημα, αλλά ο προσανατολισμός στον τρισδιάστατο χώρο, ή η απόλυτη θέση ορισμένων στοιχείων δεν είναι πλήρως ευθυγραμμισμένη. Κάποιες φορές το διόρθωνα δοκιμάζοντας μία ή δύο φορές ακόμα, και αυτό ήταν.
+</p>
+
+<p>
+Η περιγραφή που του Gemini δόθηκε αυτούσια στο Claude, πολύ λίγες γραμμές τροποποιήθηκαν απο εμένα. Ούτως ή άλλως είμαι τελείως αρχάριος στο Freecad και είναι αρκετά περίπλοκο. Δεν άλλαξα πολλά από τον κώδικα του Claude, αλλά μετά από κάμποσες δοκιμές βρήκα μια δομή κώδικα που είναι ξεκάθαρη και βοηθά το Claude να γράφει και να χειρίζεται τους υπολογισμούς τρισδιάστατης γεωμετρίας.
+</p>
+
+<p>
+Κάθε φορά δημιουργούσα ένα παράδειγμα κώδικα για κάθε διαφορετική σκηνή τρισδιάστατης μοντελοποίησης και έδινα αυτόν τον κώδικα ως υπόδειγμα για την επόμενη σκηνή. Επίσης, ο κώδικας που σχετίζεται με τη γεωμετρία έχει περιθώρια βελτίωσης, όσο καλύτερα είναι διατυπωμένος ως παράδειγμα, τόσο καλύτερο είναι το επόμενο αποτέλεσμα. Στο Claude αρέσει ο καλός κώδικας όπως στους ανθρώπους, και δουλεύει καλύτερα όταν ένα ανθρώπινο μυαλό έχει ασχοληθεί με το πρόβλημα.
+</p>
+
+<p>
+Το Roy είναι ένα Εργαλείο Διαχείρισης Αποθέματων για ένα σούπερ μάρκετ με πολλούς ορόφους, ένα πρωτότυπο της κλασικής εφαρμογής CRUD, με βάση δεδομένων που αποθηκεύει όλα τα αντικείμενα και τη γεωμετρία τους. Διαθέτει εργαλείο διαχείρισης από γραμμή εντολών (cli), και επιπλέον πληροφορίες υπάρχουν στο <a href="https://github.com/pramatias/freecad-experiments">github</a>.
+</p>
+
+<p>
+Το Roy φορτώνει χιλιάδες δεδομένα προϊόντων για ολόκληρο το σούπερ μάρκετ, χρειάζεται πολύ ώρα για να τα φορτώσει όλα (πάνω από 10 λεπτά), αλλά μόλις τελειώσει, οι μικρές αλλαγές τροποποιούν μόνο ό,τι έχει αλλάξει (μέσω του εργαλείου της γραμμής εντολών). Αυτό σημαίνει ότι κάθε τροποποίηση προϊόντος από τον διαχειριστή φορτώνεται σε χιλιοστά του δευτερολέπτου. Το Freecad βέβαια δεν ανανεώνεται αυτόματα. Η Python διαβάζει ολόκληρη τη σκηνή, περνά τα πάντα στη Rust, συγκρίνονται με ό,τι υπάρχει ήδη στη βάση δεδομένων, και η Python μακροεντολή ενημερώνεται από τη Rust για να αλλάξει μόνο ότι διαφέρει στην βάση δεδομένων.
+</p>
+
+<p>
+Η λειτουργικότητα του Roy δεν αναπτύχθηκε μονομιάς από το Claude (φυσικά) — ήταν αρκετά δύσκολο να υλοποιηθεί σωστά, αλλά μετά από αρκετές δοκιμές δεν έχω εντοπίσει άλλα σφάλματα για διόρθωση. Έγραψα και ξαναέγραψα τον κώδικα, ώστε να είναι αρκετά καλής ποιότητας, πιστεύω.
+</p>
+
+<p>
+Ορίστε λοιπόν — όλα τα παραδείγματα εκτός από το πρώτο δημιουργήθηκαν σχεδόν με μία-δύο-τρεις προσπάθειες και ελάχιστη τροποποίηση από εμένα. Θα μπορούσα να βάλω το μυαλό μου να δουλέψει και να ορίσω τη γεωμετρία καλύτερα στο Gemini, αλλά δεν μπήκα στον κόπο.
+</p>
+
+<p>
+Roy
+Το κτίριο του πολυκαταστήματος καταστήματος από έξω
+<img src="./assets/roy_start.png" alt="roy_start.png" />
+</p>
+
+<p>
+Όλα τα προϊόντα στο εσωτερικό, χρωματικά σημασμένα
+<img src="./assets/roy_no_walls.png" alt="roy_no_walls.png" />
+Αλλαγή χρώματος μόνο ενός προϊόντος (το Freecad για κάποιον λόγο δεν χρωματίζει όλα τα προϊόντα — χρωματίζει μόνο τη μισή σκηνή, και αυτή η μισή σκηνή είναι διαφορετική κάθε φορά, αλλά τα αχρωμάτιστα προϊόντα είναι πάντα τα μισά, πάντοτε)
+<img src="./assets/roy_no_walls_updated.png" alt="roy_no_walls_updated.png" />
+<a href="https://github.com/pramatias/freecad-experiments/tree/main/roy">κώδικας</a>
+</p>
+
+<p>
+Μάτι
+Φωτογραφία ενός τυχαίου εξωφύλλου δίσκου — απλώς ένα παράξενο μάτι κομμένο
+<img src="./assets/iris_original.png" alt="iris_original.png" />
+</p>
+
+<p>
+Τρισδιάστατη απεικόνιση
+<img src="./assets/iris.png" alt="iris.png" />
+Απόκρυψη ορισμένων τρισδιάστατων στοιχείων
+<img src="./assets/iris_no_ring.png" alt="iris_no_ring.png" />
+<a href="https://www.youtube.com/watch?v=Virp_HdWRfU">Ο Δίσκος</a>
+<a href="https://github.com/pramatias/freecad-experiments/tree/main/iris">κώδικας</a>
+</p>
+
+<p>
+Όχημα A7
+Φωτογραφία ενός τυχαίου παλιού αυτοκινήτου
+<img src="./assets/a7_original.png" alt="a7_original.png" />
+</p>
+
+<p>
+Οπτική από ψηλά
+<img src="./assets/a7_up.png" alt="a7_up.png" />
+Οπτική από χαμηλά
+<img src="./assets/a7_down.png" alt="a7_down.png" />
+<a href="https://www.youtube.com/watch?v=_VHI-6KcDZQ">Τυχαίο παλιό αυτοκίνητο</a>
+<a href="https://github.com/pramatias/freecad-experiments/tree/main/a7">κώδικας</a>
+</p>
+
+<p>
+Κομματάκια
+Εικόνα εξώφυλλου ενός τραγουδιού μου
+<img src="./assets/shard_original.png" alt="shard_original.png" />
+</p>
+
+<p>
+Μέτριο αποτέλεσμα
+<img src="./assets/shard_full.png" alt="shard_full.png" />
+Κάπως καλύτερο,
+<img src="./assets/shard_no_frames.png" alt="shard_no_frames.png" />
+<a href="https://www.youtube.com/watch?v=UL1KmrHMjcM">Το τραγούδι μου</a>
+<a href="https://github.com/pramatias/freecad-experiments/tree/main/shard">κώδικας</a>
+</p>
+
+<p>
+Αντλία
+Πρωτότυπη τρισδιάστατη απεικόνιση από τον Efficient Engineer, αναπαραγωγή τρισδιάστατης σκηνής μόνο από μία εικόνα, χωρίς ανθρώπινη παρέμβαση. Δεν άγγιξα τίποτα σε αυτό, η περιγραφή του Gemini πέρασε απευθείας στο Claude, εγώ μόνο μετέγλωττισα και έτρεξα τον κώδικα.
+<img src="./assets/pump_original.png" alt="pump_original.png" />
+</p>
+
+<p>
+<img src="./assets/pump.png" alt="pump.png" />
+<img src="./assets/pump_no_barrel.png" alt="pump_no_barrel.png" />
+<a href="https://www.youtube.com/watch?v=vLaFAKnaRJU">Βίντεο του Efficient Engineer</a>
+<a href="https://github.com/pramatias/freecad-experiments/tree/main/pump">κώδικας</a>
+Αν αυτή η ανάρτηση σας φάνηκε ενδιαφέρουσα, είμαι διαθέσιμος για εργασία. <a href="https://pramatias.github.io/about.html">Σχετικά με εμένα</a>
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emporas</p>
+<p class="date">Created: 2026-03-25 Wed 15:33</p>
+</div>
+</body>
+</html>

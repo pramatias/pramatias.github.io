@@ -3,7 +3,8 @@
 
 * Recent
 -
-  - [[file:freecadx/freecdx.html][FreeCAD Experiments]]
+  - [[file:freecadx/freecdx.html][3D Modelling in Freecad using Rust and A.I.]]
+  - [[file:freecadx/freecdx_gr.html][Τρισδιάστατη Μοντελοποίηση στο Freecad με Rust και Τεχνητή Νοημοσύνη]]
 
 -
   - [[file:frodo_ring/frodo_ring_en.html][Frodo and the Defective Ring]]
