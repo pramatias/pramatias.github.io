@@ -73,9 +73,9 @@ Maybe correct,
 Original 3d render from Efficient Engineer, essentially 3D render duplication by just an image, and no human in the loop. I didn't touch this at all, Gemini's description transported directly into Claude, I just compiled and run the code.
 [[./assets/pump_original.png]]
 
-[[./assets/pump_no_barrel.png]]
-
 [[./assets/pump.png]]
+
+[[./assets/pump_no_barrel.png]]
 
 [[https://www.youtube.com/watch?v=vLaFAKnaRJU][Eficient Engineer's video]]
 
