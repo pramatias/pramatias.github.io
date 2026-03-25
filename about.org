@@ -1,2 +1,5 @@
+#+title: About
+#+SETUPFILE: ./org-html-themes/org/theme-readtheorg.setup
+
 * Kostas Pramatias: programmer from Greece
 * email: username here @gmail
