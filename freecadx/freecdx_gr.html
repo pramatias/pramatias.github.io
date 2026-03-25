@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-03-25 Wed 15:33 -->
+<!-- 2026-03-25 Wed 15:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Τρισδιάστατη Μοντελοποίηση στο Freecad με Rust και Τεχνητή Νοημοσύνη</title>
@@ -19,6 +19,18 @@
 <body>
 <div id="content" class="content">
 <h1 class="title">Τρισδιάστατη Μοντελοποίηση στο Freecad με Rust και Τεχνητή Νοημοσύνη</h1>
+<div id="table-of-contents" role="doc-toc">
+<h1><a accesskey="H" href="../index.html"> Αρχική Σελίδα </a></h1><h2>Πίνακας Περιεχομένων</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org92eb243">Roy</a></li>
+<li><a href="#org65119c9">Μάτι</a></li>
+<li><a href="#org3cfd542">Όχημα A7</a></li>
+<li><a href="#org3cd99a9">Κομματάκια</a></li>
+<li><a href="#orgec487bc">Αντλία</a></li>
+</ul>
+</div>
+</div>
 <p>
 Έκανα ένα διάλειμμα μετά απο τρείς μήνες προγραμματισμού του <a href="https://github.com/pramatias/snippet-agent">snippet-agent</a> και άρχισα να πειραματίζομαι με την Τ.Ν. για αυτοματοποίηση της τρισδιάστατης μοντελοποίησης. Μόλις ξεκινούσα, έπεσα πάνω στους <a href="https://www.youtube.com/watch?v=rWZRh2RXf14">τιτάνες της μηχανοποίησης</a> να πουλάνε λογισμικό Τ.Ν. για μαζική τροποποίηση χιλιάδων μικροσκοπικών επιφανειών και ακμών που εμφανίζονται στα τρισδιάστατα μοντέλα, πολύ κοινό πρόβλημα όταν συσσωρεύονται πολλά γεωμετρικά σχήματα σε μεγάλα σχέδια.
 </p>
@@ -62,9 +74,10 @@
 <p>
 Ορίστε λοιπόν — όλα τα παραδείγματα εκτός από το πρώτο δημιουργήθηκαν σχεδόν με μία-δύο-τρεις προσπάθειες και ελάχιστη τροποποίηση από εμένα. Θα μπορούσα να βάλω το μυαλό μου να δουλέψει και να ορίσω τη γεωμετρία καλύτερα στο Gemini, αλλά δεν μπήκα στον κόπο.
 </p>
-
+<div id="outline-container-org92eb243" class="outline-2">
+<h2 id="org92eb243">Roy</h2>
+<div class="outline-text-2" id="text-org92eb243">
 <p>
-Roy
 Το κτίριο του πολυκαταστήματος καταστήματος από έξω
 <img src="./assets/roy_start.png" alt="roy_start.png" />
 </p>
@@ -76,9 +89,12 @@ Roy
 <img src="./assets/roy_no_walls_updated.png" alt="roy_no_walls_updated.png" />
 <a href="https://github.com/pramatias/freecad-experiments/tree/main/roy">κώδικας</a>
 </p>
-
+</div>
+</div>
+<div id="outline-container-org65119c9" class="outline-2">
+<h2 id="org65119c9">Μάτι</h2>
+<div class="outline-text-2" id="text-org65119c9">
 <p>
-Μάτι
 Φωτογραφία ενός τυχαίου εξωφύλλου δίσκου — απλώς ένα παράξενο μάτι κομμένο
 <img src="./assets/iris_original.png" alt="iris_original.png" />
 </p>
@@ -91,9 +107,12 @@ Roy
 <a href="https://www.youtube.com/watch?v=Virp_HdWRfU">Ο Δίσκος</a>
 <a href="https://github.com/pramatias/freecad-experiments/tree/main/iris">κώδικας</a>
 </p>
-
+</div>
+</div>
+<div id="outline-container-org3cfd542" class="outline-2">
+<h2 id="org3cfd542">Όχημα A7</h2>
+<div class="outline-text-2" id="text-org3cfd542">
 <p>
-Όχημα A7
 Φωτογραφία ενός τυχαίου παλιού αυτοκινήτου
 <img src="./assets/a7_original.png" alt="a7_original.png" />
 </p>
@@ -106,9 +125,12 @@ Roy
 <a href="https://www.youtube.com/watch?v=_VHI-6KcDZQ">Τυχαίο παλιό αυτοκίνητο</a>
 <a href="https://github.com/pramatias/freecad-experiments/tree/main/a7">κώδικας</a>
 </p>
-
+</div>
+</div>
+<div id="outline-container-org3cd99a9" class="outline-2">
+<h2 id="org3cd99a9">Κομματάκια</h2>
+<div class="outline-text-2" id="text-org3cd99a9">
 <p>
-Κομματάκια
 Εικόνα εξώφυλλου ενός τραγουδιού μου
 <img src="./assets/shard_original.png" alt="shard_original.png" />
 </p>
@@ -121,9 +143,12 @@ Roy
 <a href="https://www.youtube.com/watch?v=UL1KmrHMjcM">Το τραγούδι μου</a>
 <a href="https://github.com/pramatias/freecad-experiments/tree/main/shard">κώδικας</a>
 </p>
-
+</div>
+</div>
+<div id="outline-container-orgec487bc" class="outline-2">
+<h2 id="orgec487bc">Αντλία</h2>
+<div class="outline-text-2" id="text-orgec487bc">
 <p>
-Αντλία
 Πρωτότυπη τρισδιάστατη απεικόνιση από τον Efficient Engineer, αναπαραγωγή τρισδιάστατης σκηνής μόνο από μία εικόνα, χωρίς ανθρώπινη παρέμβαση. Δεν άγγιξα τίποτα σε αυτό, η περιγραφή του Gemini πέρασε απευθείας στο Claude, εγώ μόνο μετέγλωττισα και έτρεξα τον κώδικα.
 <img src="./assets/pump_original.png" alt="pump_original.png" />
 </p>
@@ -136,9 +161,11 @@ Roy
 Αν αυτή η ανάρτηση σας φάνηκε ενδιαφέρουσα, είμαι διαθέσιμος για εργασία. <a href="https://pramatias.github.io/about.html">Σχετικά με εμένα</a>
 </p>
 </div>
+</div>
+</div>
 <div id="postamble" class="status">
 <p class="author">Author: emporas</p>
-<p class="date">Created: 2026-03-25 Wed 15:33</p>
+<p class="date">Created: 2026-03-25 Wed 15:38</p>
 </div>
 </body>
 </html>

@@ -23,7 +23,7 @@
 
 Ορίστε λοιπόν — όλα τα παραδείγματα εκτός από το πρώτο δημιουργήθηκαν σχεδόν με μία-δύο-τρεις προσπάθειες και ελάχιστη τροποποίηση από εμένα. Θα μπορούσα να βάλω το μυαλό μου να δουλέψει και να ορίσω τη γεωμετρία καλύτερα στο Gemini, αλλά δεν μπήκα στον κόπο.
 
-Roy
+* Roy
 Το κτίριο του πολυκαταστήματος καταστήματος από έξω
 [[./assets/roy_start.png]]
 
@@ -33,7 +33,7 @@ Roy
 [[./assets/roy_no_walls_updated.png]]
 [[https://github.com/pramatias/freecad-experiments/tree/main/roy][κώδικας]]
 
-Μάτι
+* Μάτι
 Φωτογραφία ενός τυχαίου εξωφύλλου δίσκου — απλώς ένα παράξενο μάτι κομμένο
 [[./assets/iris_original.png]]
 
@@ -44,7 +44,7 @@ Roy
 [[https://www.youtube.com/watch?v=Virp_HdWRfU][Ο Δίσκος]]
 [[https://github.com/pramatias/freecad-experiments/tree/main/iris][κώδικας]]
 
-Όχημα A7
+* Όχημα A7
 Φωτογραφία ενός τυχαίου παλιού αυτοκινήτου
 [[./assets/a7_original.png]]
 
@@ -55,7 +55,7 @@ Roy
 [[https://www.youtube.com/watch?v=_VHI-6KcDZQ][Τυχαίο παλιό αυτοκίνητο]]
 [[https://github.com/pramatias/freecad-experiments/tree/main/a7][κώδικας]]
 
-Κομματάκια
+* Κομματάκια
 Εικόνα εξώφυλλου ενός τραγουδιού μου
 [[./assets/shard_original.png]]
 
@@ -66,7 +66,7 @@ Roy
 [[https://www.youtube.com/watch?v=UL1KmrHMjcM][Το τραγούδι μου]]
 [[https://github.com/pramatias/freecad-experiments/tree/main/shard][κώδικας]]
 
-Αντλία
+* Αντλία
 Πρωτότυπη τρισδιάστατη απεικόνιση από τον Efficient Engineer, αναπαραγωγή τρισδιάστατης σκηνής μόνο από μία εικόνα, χωρίς ανθρώπινη παρέμβαση. Δεν άγγιξα τίποτα σε αυτό, η περιγραφή του Gemini πέρασε απευθείας στο Claude, εγώ μόνο μετέγλωττισα και έτρεξα τον κώδικα.
 [[./assets/pump_original.png]]
 
